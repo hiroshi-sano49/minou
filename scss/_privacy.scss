@@ -1,0 +1,38 @@
+@use "vars" as *;
+
+#page-privacy,#page-news,#page-news_details{
+	@include mq(md-min){
+		.sec-mv__ct{
+			min-height: 170px;
+		}
+	}
+}
+
+.sec-privacy{
+	padding: 73px 0 90px;
+	@include mq(){
+		padding: 60px 0;
+	}
+}
+
+.privacy-list{
+	&__item{
+		@include mq(md-min){
+			.c-ttl__03 {
+				padding-bottom: 13px;
+				margin-bottom: 21px;
+			}
+		}
+		@include mq(){
+			.c-ttl__03 {
+				margin-bottom: 15px;
+			}
+		}
+		&:not(:last-child){
+			margin-bottom: 46.5px;
+			@include mq(){
+				margin-bottom: 35px;
+			}
+		}
+	}
+}

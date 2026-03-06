@@ -1,0 +1,102 @@
+@use "vars" as *;
+
+.sec-medical {
+	padding: 88px 0 162px;
+	@include mq {
+		padding: 50px 0;
+	}
+}
+
+.medical-list {
+	counter-reset: my-sec-counter;
+	@include mq(sm-min) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 55px 30px;
+		@include mq(lg) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__item {
+		@include mq(sm) {
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
+		a {
+			position: relative;
+			display: block;
+			background: #F3F5F6;
+			border-radius: 8px;
+			&::before {
+				counter-increment: my-sec-counter;
+				content: counter(my-sec-counter, decimal-leading-zero);
+				position: absolute;
+				text-align: center;
+				top: -27px;
+				right: 18px;
+				z-index: 1;
+				width: 75px;
+				background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				font-family: $font-en;
+				font-weight: bold;
+				@include font-size(55);
+				line-height: 1;
+			}
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: 19px;
+				right: 21px;
+				width: 15px;
+				height: 15px;
+				background: url(../img/medical/icon-arrow.svg) center / contain no-repeat;
+				opacity: 0;
+				transition: 0.3s ease;
+			}
+			@include hover {
+				opacity: 1;
+				background: #00A5B1;
+				color: white;
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&__img {
+		position: relative;
+		&::before {
+			content: "";
+			display: block;
+			padding-bottom: calc(250 / 380 * 100%);
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 8px;
+			object-fit: cover;
+		}
+	}
+	&__ct {
+		padding: 23px 33px 42px;
+		@include fts(14, 21.8);
+		@include mq{
+			padding: 15px 15px 20px;
+		}
+		&-ttl {
+			font-weight: 500;
+			@include font-size(20);
+			margin-bottom: 21px;
+			@include mq{
+				@include font-size(18);
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,180 @@
+@use "vars" as *;
+
+/* ====================================================
+Footer
+==================================================== */
+
+.footer{
+	padding: 59px 0 63px;
+	background: #4C4948;
+	color: #fff;
+	.inner{
+		max-width: 1288px;
+		padding-right: 45px;
+		@include mq(xl){
+			padding-right: 15px;
+		}
+	}
+	&-flex{
+		@include flex(between,0,wrap);
+		margin-bottom: 79px;
+		@include mq(){
+			margin-bottom: 50px;
+		}
+	}
+	&-ct{
+		max-width: 400px;
+		@include mq(xl){
+			max-width: 350px;
+		}
+		@include mq(){
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	&-logo{
+		display: block;
+		max-width: 350px;
+		width: 100%;
+		margin-bottom: 46px;
+		@include mq(xl){
+			max-width: 300px;
+			margin-bottom: 30px;
+		}
+		@include mq(){
+			max-width: 350px;
+		}
+		img{
+			width: 100%;
+		}
+	}
+	&-address{
+		font-family: $font-Roboto;
+		color: #fff;
+		padding-left: 28px;
+		position: relative;
+		line-height: 1.8667;
+		@include font-size(12);
+		@include mq(){
+			padding-left: 20px;
+			@include font-size(14);
+		}
+		@include p-before(15px,21px){
+			background: url('../img/common/icon-map-white.png') center no-repeat;
+			background-size: contain;
+			left: 3px;
+			top: -1px;
+			@include mq(){
+				width: 12px;
+				height: 18px;
+				top: 2px;
+			}
+		}
+		a{
+			display: inline-block;
+			color: #fff;
+		}
+	}
+	&-nav{
+		margin-top: 8px;
+		padding-left: 41px;
+		border-left: 1px solid #BBBBBB;
+		max-width: 526px;
+		width: 100%;
+		@include flex(between,0,wrap);
+		@include mq(xl){
+			max-width: 450px;
+			padding-left: 20px;
+		}
+		@include mq(){
+			border-top: 1px solid #BBBBBB;
+			border-left: 0;
+			margin-top: 20px;
+			padding-top: 20px;
+			padding-left: 0;
+			width: 100%;
+			max-width: 100%;
+			gap: 20px 0;
+		}
+		&__item{
+			@include mq(){
+				width: 100%;
+			}
+			>span{
+				font-family: $font-Roboto;
+				color: #fff;
+				display: block;
+				font-weight: bold;
+				margin-bottom: 13px;
+				@include font-size(15);
+			}
+		}
+		&__flex{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 27px;
+			@include mq(xl){
+				gap: 20px;
+			}
+		}
+		&__list{
+			&-item{
+				&:not(:last-child){
+					margin-bottom: 4px;
+				}
+				a{
+					display: block;
+					color: #C5C5C5;
+					font-family: $font-Roboto;
+					font-weight: 500;
+					@include font-size(13);
+					@include mq(){
+						@include font-size(14);
+					}
+				}
+				&--external{
+					a{
+						position: relative;
+						@include p-after(11px, 11px){
+							background: url(../img/common/ico-external.png) no-repeat center/100%;
+							position: relative;
+							margin-left: 3px;
+							top: 1px;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-bottom{
+		padding-right: 7px;
+		@include flex(between,0,wrap);
+	}
+	&-privacy{
+		@include flex();
+		gap: 26px;
+		@include mq(){
+			width: 100%;
+			margin-bottom: 25px;
+		}
+		&__item{
+			a{
+				color: #C0C0C0;
+				font-family: $font-Roboto;
+				@include font-size(13);
+				@include mq(){
+					@include font-size(14);
+				}
+			}
+		}
+	}
+	&-copyright{
+		color: #fff;
+		font-family: $font-Roboto;
+		@include font-size(13);
+		@include mq(){
+			width: 100%;
+			@include font-size(14);
+		}
+	}
+}

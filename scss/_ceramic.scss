@@ -1,0 +1,79 @@
+@use "vars" as *;
+
+.p-ceramic {
+  .preventive-block {
+    .c-txt__03 {
+      margin-bottom: 42px;
+    }
+  }
+
+  .preventive-check {
+    margin-bottom: 30px;
+  }
+
+  .check-list--ceramic {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    @include mq(lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mq(md) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .sec-menu--02 {
+    .pediatric-menu {
+      margin-bottom: 20px;
+    }
+  }
+
+  .sec-merit--03 {
+    .c-txt__04 {
+      margin-bottom: 17px;
+    }
+
+    .preventive-list__option-item {
+      padding: 39px 32px 30px;
+      .c-txt__04 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .sec-gumpeeling--04 {
+    margin-bottom: 40px;
+    .c-txt__03 {
+      margin-bottom: 17px;
+    }
+    .c-txt__05 {
+      font-size: 13px;
+    }
+  }
+
+  .sec-price {
+    table {
+      tr {
+        .green {
+          color: #00a5b1;
+          font-weight: 500;
+        }
+      }
+      .border-none{
+        border-bottom: none !important;
+      }
+    }
+
+    &-text {
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+
+  .preventive-list__option-icon {
+    width: 92px;
+     @include mq(md) {
+      width: 82px;
+    }
+  }
+}

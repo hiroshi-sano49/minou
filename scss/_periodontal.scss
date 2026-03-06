@@ -1,0 +1,213 @@
+@use "vars" as *;
+
+.sec-periodontal {
+	padding: 90px 0 83px;
+	@include mq(){
+		padding: 50px 0;
+	}
+}
+
+.preventive-check{
+	&--periodontal{
+		display: block !important;
+		@include mq(xl-min){
+			margin-bottom: 104px;
+			padding: 23px 9% 23px 9.9%;
+		}
+		&-ttl{
+			display: block;
+			text-align: center;
+			@include font-size(20);
+			font-weight: 500;
+			color: #9395D7;
+			margin-bottom: 29px;
+			@include mq(){
+				@include font-size(17);
+				margin-bottom:20px;
+			}
+			span{
+				display: inline-block;
+				background: white;
+				line-height: 1.3;
+				padding: 7px 57px;
+				border-radius: 40px;
+				@include mq(){
+					padding: 7px 7px 9px;
+				}
+
+			}
+		}
+	}
+	.check-list{
+		&--periodontal{
+			width: 100%;
+			@include mq(xl-min){
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0;
+				.check-list__item{
+					margin-bottom: 15px;
+					&:nth-child(1),&:nth-child(4){
+						width: 27%;
+					}
+					&:nth-child(2),&:nth-child(5){
+						width: 30%;
+					}
+					&:nth-child(3),&:nth-child(6){
+						width: 43%;
+					}
+				}
+			}
+		}
+		&--maternity{
+			width: 100%;
+			@include mq(xl-min){
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0;
+				.check-list__item{
+					margin-bottom: 15px;
+					&:nth-child(1),&:nth-child(4){
+						width: 27%;
+					}
+					&:nth-child(2),&:nth-child(5){
+						width: 40%;
+					}
+					&:nth-child(3),&:nth-child(6){
+						width: 33%;
+					}
+				}
+			}
+		}
+	}
+}
+
+.preventive-list__option{
+	&--periodontal{
+		counter-reset: periodontal;
+		margin-bottom: 103px;
+		@include mq(){
+			margin-bottom: 50px;
+		}
+		.preventive-list__option{
+			&-item{
+				background: #FAF4E2;
+				position: relative;
+				@include mq(md-min){
+					padding-top: 23px;
+					padding-bottom: 24px;
+				}
+				&:before{
+					counter-increment: periodontal;
+					content: counter(periodontal, decimal-leading-zero);
+					@include font-size(68);
+					line-height: 1;
+					font-weight: bold;
+					font-family: $font-en;
+					background: #EE9394;
+					background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					position: absolute;
+					top: 14px;
+					left: 19px;
+					@include mq(xl){
+						left: 10px;
+						top: 10px;
+						@include font-size(50);
+					}
+					@include mq(){
+						@include font-size(40);
+					}
+				}
+			}
+			&-icon{
+				width: 103px;
+				margin: 0 auto 11px;
+				@include mq(){
+					width: 88px;
+				}
+			}
+		}
+	}
+}
+.periodontal-curative{
+	margin-bottom: 106px;
+	@include mq(){
+		margin-bottom: 50px;
+	}
+	dl{
+		background: #F3F3F3;
+		border-radius: 8px;
+		margin-bottom: 18px;
+		padding: 36px 54px 32px;
+		@include mq(){
+			padding: 20px 15px;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		dt{
+			@include font-size(20);
+			line-height: 1.4;
+			font-weight: 500;
+			color: #00A5B1;
+			margin-bottom: 13px;
+			@include mq(){
+				@include font-size(18);
+				margin-bottom: 10px;
+			}
+		}
+		dd{
+			@include font-size(14);
+			line-height: 1.5;
+			@include mq(){
+				@include font-size(14);
+			}
+			p{
+				margin-bottom: 19px;
+				@include mq(){
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	&__note{
+		@include font-size(18);
+		font-weight: 500;
+		@include mq(){
+			@include font-size(14);
+		}
+		span{
+			background: white;
+			display: inline-block;
+			border-radius: 10px;
+			padding: 7px 12px;
+		}
+	}
+}
+
+
+.periodontal-relation{
+	p{
+		margin-bottom: 26px;
+		@include mq(){
+			margin-bottom: 15px;
+		}
+	}
+	&__tag{
+		@include font-size(18);
+		font-weight: 500;
+		@include mq(){
+			@include font-size(14);
+		}
+	}
+}
+
+#page-orthodontics {
+	@include mq(){
+		.sec-price{
+			padding-bottom: 20px !important;
+		}
+	}
+}

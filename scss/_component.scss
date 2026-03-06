@@ -1,0 +1,588 @@
+@use "vars" as *;
+
+/* ====================================================
+Control
+==================================================== */
+.c-fc { //font-color
+	&--ff {
+		color: #fff
+	}
+	&--green{
+		color: #EB8E6C !important;
+	}
+	&--red{
+		color: #DA0303 !important;
+	}
+	&--basic{
+		color:  #4C4948 !important;
+	}
+	&--blue {
+		color: #00A5B1 !important;
+	}
+}
+
+
+.c-ft { //font-family
+	&--jp {
+		font-family: $font-jp;
+	}
+
+	&--en {
+		font-family: $font-en;
+	}
+	&--roboto{
+		font-family: $font-Roboto;
+	}
+}
+
+
+.c-fw { //font-weight
+	&--lt {
+		font-weight: 300 !important
+	}
+
+	&--rg {
+		font-weight: 400 !important
+	}
+
+	&--md {
+		font-weight: 500 !important
+	}
+
+	&--sbd {
+		font-weight: 600 !important
+	}
+
+	&--bd {
+		font-weight: 700 !important
+	}
+
+	&--bk {
+		font-weight: 900 !important
+	}
+}
+
+
+.c-tx--v { //Vertical writing
+	//display: inline-block;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+
+	&-pc {
+		@include mq(md-min) {
+			-ms-writing-mode: tb-rl;
+			writing-mode: vertical-rl;
+		}
+	}
+}
+
+
+.c-al { //text-align
+	&--c {
+		text-align: center !important
+	}
+
+	&--r {
+		text-align: right !important
+	}
+
+	&--l {
+		text-align: left !important
+	}
+}
+
+
+.c-val { //vertical-align
+	&--md {
+		vertical-align: middle
+	}
+
+	&--top {
+		vertical-align: top
+	}
+}
+
+
+/* ====================================================
+Component
+==================================================== */
+// Common Text style
+.c-txt {
+	&__01{
+		font-weight: 500;
+		line-height: 1.988;
+		@include font-size(17);
+		@include mq(xl){
+			@include font-size(15);
+		}
+		@include mq(){
+			line-height: 1.7;
+			@include font-size(14);
+		}
+	}
+	&__02{
+		font-weight: 500;
+		line-height: 1.557;
+		@include font-size(14);
+		@include mq(){
+			line-height: 1.5;
+		}
+	}
+	&__03{
+		line-height: 1.5866;
+		@include font-size(15);
+		@include mq(xl){
+			@include font-size(14);
+		}
+		@include mq(){
+			line-height: 1.5;
+		}
+	}
+	&__04{
+		line-height: 1.5625;
+		@include font-size(16);
+		@include mq(xl){
+			@include font-size(15);
+		}
+		@include mq(){
+			line-height: 1.5;
+			@include font-size(14);
+		}
+	}
+}
+
+
+//ttl
+.c-ttl {
+	&__01 {
+		margin-bottom: 24px;
+		position: relative;
+		z-index: 2;
+		text-align: center;
+		span{
+			display: block;
+			position: relative;
+			z-index: 2;
+		}
+		.c-ft{
+			&--en{
+				background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+				background: -webkit-linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				font-family: $font-en;
+				font-weight: bold;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+				@include font-size(31);
+				@include mq(xl){
+					@include font-size(24);
+				}
+				@include mq(){
+					margin-bottom: 0;
+					@include font-size(20);
+				}
+			}
+			&--jp{
+				color: #4C4948;
+				font-weight: 500;
+				@include font-size(44);
+				@include mq(xl){
+					@include font-size(35);
+				}
+				@include mq(){
+					line-height: 1.2;
+					@include font-size(30);
+				}
+				>span{
+					margin-bottom: 4px;
+					@include font-size(31);
+					@include mq(xl){
+						@include font-size(24);
+					}
+					@include mq(){
+						margin-bottom: 0;
+						@include font-size(20);
+					}
+				}
+			}
+		}
+		strong{
+			position: absolute;
+			z-index: 1;
+			line-height: 0.9;
+			font-family: $font-en;
+			top: 33%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100vw;
+			text-align: center;
+			background: linear-gradient(360deg, #FFF7F4 0%, #FFF9F8 100%);
+			background: -webkit-linear-gradient(360deg, #FFF7F4 0%, #FFF9F8 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin-left: calc(((100vw - 100%) / 2) * -1);
+			margin-right: calc(((100vw - 100%) / 2) * -1);
+			@include font-size(150);
+			@include mq(xxl){
+				@include font-size(120);
+			}
+			@include mq(xl){
+				top: 50%;
+				@include font-size(90);
+			}
+			@include mq(){
+				@include font-size(45);
+			}
+		}
+	}
+	&__02{
+		font-weight: 500;
+		@include font-size(16);
+		@include mq(xl){
+			@include font-size(14);
+		}
+		span{
+			display: block;
+			background: linear-gradient(360deg, #EE9394 0%, #BD92DA 100%);
+			background:  -webkit-linear-gradient(360deg, #EE9394 0%, #BD92DA 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-family: $font-en;
+			font-weight: bold;
+			margin-right: 25px;
+			@include font-size(35);
+			@include mq(xl){
+				margin-right: 7px;
+				@include font-size(28);
+			}
+			@include mq(){
+				margin-right: 5px;
+				@include font-size(24);
+			}
+		}
+	}
+	&__03{
+		border-bottom: 1px solid #cecece;
+		padding-bottom: 15px;
+		margin-bottom: 35px;
+		position: relative;
+		padding-left: 44px;
+		z-index: 2;
+		@include mq(){
+			padding-left: 32px;
+			padding-bottom: 10px;
+			margin-bottom: 25px;
+		}
+		@include p-before(15px,30px){
+			left: -2px;
+			top: 31%;
+			transform: rotate(43deg) translateY(-50%);
+			border-radius: 100px;
+			background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+			@include mq(){
+				width: 12px;
+				height: 25px;
+				top: 5px;
+				transform: rotate(43deg);
+				left: 3px;
+			}
+		}
+		>span{
+			display: block;
+		}
+		&--number{
+			padding: 0 0 17px 94px;
+			@include mq(){
+				padding: 0 0 12px 65px;
+			}
+			&:before{
+				display: none;
+			}
+		}
+		&-number{
+			counter-increment: promise;
+			content: counter(promise, decimal-leading-zero);
+			@include font-size(68);
+			line-height: 1;
+			font-weight: bold;
+			font-family: $font-en;
+			background: #EE9394;
+			background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			position: absolute;
+			top: -14px;
+			left: 5px;
+			@include mq(){
+				left: 0;
+				top: 2px;
+				@include font-size(50);
+			}
+		}
+		.c-ft{
+			&--jp{
+				font-weight: 500;
+				@include font-size(30);
+				@include mq(){
+					@include font-size(22);
+				}
+				span{
+					@include font-size(25);
+					@include mq(){
+						@include font-size(18);
+					}
+				}
+				small{
+					display: inline-block;
+					font-size: 1.7rem;
+					color: #848484;
+					margin: 0 0 0 18px;
+					position: relative;
+					top: -7px;
+					@include mq(){
+						@include font-size(14);
+						top: 0;
+						margin: 0;
+						display: block;
+					}
+				}
+				b{
+					font-weight: normal;
+					margin-left: 30px;
+					@include font-size(15);
+					@include mq(){
+						margin-left: 0;
+						@include font-size(14);
+						display: block;
+					}
+				}
+			}
+			&--en{
+				line-height: 1;
+				position: absolute;
+				right: -10px;
+				bottom: -22px;
+				z-index: -1;
+				font-family: $font-en;
+				font-weight: bold;
+				text-transform: uppercase;
+				background: linear-gradient(90deg, #FFF7F4 0%, #FFF9F8 100%);
+				background:  -webkit-linear-gradient(90deg, #FFF7F4 0%, #FFF9F8 100%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;	
+				@include font-size(150);
+				@include mq(xl){
+					bottom: -18px;
+					@include font-size(120);
+				}
+				@include mq(){
+					bottom: -6px;
+					@include font-size(50);
+				}		
+			}
+		}
+	}
+	&__04{
+		padding-left: 26px;
+		position: relative;
+		font-weight: 500;
+		margin-bottom: 22px;
+		@include font-size(20);
+		@include mq(){
+			padding-left: 15px;
+			margin-bottom: 15px;
+			@include font-size(18);
+		}
+		@include p-before(10px,30px){
+			background: #00A5B1;
+			top: 0px;
+			left: 0;
+			@include mq(){
+				width: 8px;
+				height: 25px;
+			}
+		}
+	}
+	&__05{
+		font-weight: 500;
+		margin-bottom: 14px;
+		@include font-size(23);
+		@include mq(){
+			margin-bottom: 10px;
+			@include font-size(20);
+		}
+	}
+	&__06{
+		color: #00A5B1;
+		margin-bottom: 19px;
+		font-weight: 500;
+		@include font-size(20);
+		@include mq(){
+			margin-bottom: 12px;
+			@include font-size(18);
+		}
+	}
+}
+
+//btn
+.c-btn {
+	&__01 {
+		border-radius: 100px;
+		background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+		height: 60px;
+		max-width: 400px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px 40px 12px 45px;
+		position: relative;
+		color: #fff;
+		font-weight: bold;
+		@include flex(start,center);
+		@include font-size(19);
+		@include mq(){
+			height: 50px;
+			max-width: 250px;
+			padding: 5px 25px;
+			@include font-size(16);
+		}
+		@include p-after(8px,8px){
+			border-top: 2px solid #fff;
+			border-right: 2px solid #fff;
+			top: 50%;
+			right: 32px;
+			transform: rotate(45deg) translateY(-50%);
+			@include mq(){
+				right: 15px;
+				width: 6px;
+				height: 6px;
+			}
+		}
+
+		&--shorter{
+			max-width: 218px;
+		}
+	}
+	&__02{
+		color: #EB8E6C;
+		font-weight: 500;
+		display: inline-block;
+		padding-right: 23px;
+		position: relative;
+		@include font-size(14);
+		@include mq(xl){
+			padding-right: 12px;
+		}
+		@include p-after(7px,7px){
+			border-top: 2px solid #EB8E6C;
+			border-right: 2px solid #EB8E6C;
+			top: 6px;
+			right: 2px;
+			transform: rotate(45deg);
+			@include mq(){
+				right: 0;
+				width: 5px;
+				height: 5px;
+				top: 7px;
+			}
+		}
+	}
+	&__03{
+		background:  linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+		padding: 10px 10px 10px 63px;
+		position: relative;
+		color: #fff;
+		font-weight: bold;
+		text-align: center;
+		height: 85px;
+		width: 100%;
+		max-width: 340px;
+		border-radius: 11px;
+		@include flex(center,center,wrap,center);
+		@include font-size(25);
+		@include p-before(38px,38px){
+			background: url('../img/common/icon-calendar.png') center no-repeat;
+			background-size: contain;
+			left: 40px;
+			top: 50%;
+			transform: translateY(-50%);
+			@include mq(){
+				width: 30px;
+				height: 30px;
+				left: 10px;
+			}
+		}
+		@include mq(){
+			height: 70px;
+			max-width: 300px;
+			justify-content: flex-start;
+			text-align: left;
+			padding: 5px 30px 5px 50px;
+			margin: 0 auto;
+			@include font-size(22);
+		}
+	}
+}
+
+
+//fade up
+.js-scrollin {
+	opacity: 0;
+	transform: translate(0, 70px);
+	&.active {
+		opacity: 1;
+		transform: translate(0, 0);
+		transition: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	}
+	@include mq(md-min){
+		&.delay01{
+			&.active {
+				transition-delay: 0.2s;
+			}
+		}
+		&.delay02{
+			&.active {
+				transition-delay: 0.4s;
+			}
+		}
+		&.delay03{
+			&.active {
+				transition-delay: 0.6s;
+			}
+		}
+		&.delay04{
+			&.active {
+				transition-delay: 0.8s;
+			}
+		}
+		&.delay05{
+			&.active {
+				transition-delay: 1s;
+			}
+		}
+		&.delay06{
+			&.active {
+				transition-delay: 1.2s;
+			}
+		}
+		&.delay07{
+			&.active {
+				transition-delay: 1.4s;
+			}
+		}
+		&.delay08{
+			&.active {
+				transition-delay: 1.6s;
+			}
+		}
+		&.delay09{
+			&.active {
+				transition-delay: 1.8s;
+			}
+		}
+	}
+}

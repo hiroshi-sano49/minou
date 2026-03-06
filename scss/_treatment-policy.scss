@@ -1,0 +1,457 @@
+@use "vars" as *;
+
+.sec-yourself {
+	padding-top: 25px;
+}
+
+.yourself-ttl {
+	position: relative;
+	margin-bottom: -11px;
+	@include mq {
+		margin-bottom: 10px;
+	}
+	.c-ft {
+		&--en {
+			display: block;
+			width: max-content;
+			max-width: 100%;
+			background: linear-gradient(90deg, #FFF7F4 0%, #FFF9F8 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+			margin: 0 auto;
+			font-weight: bold;
+			font-size: clamp(5.3rem, 10.5vw, 15rem);
+			line-height: 1;
+		}
+		&--jp {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			text-align: center;
+			font-weight: 500;
+			font-size: clamp(2.4rem, 3.1vw, 4.4rem);
+		}
+	}
+}
+
+.yourself-list {
+	font-weight: 400;
+	margin: 59px 0 80px;
+	@include mq {
+		margin: 30px 0;
+	}
+	&__item {
+		background: #EAEDF7;
+		border-radius: 19px;
+		padding: 33px 40px;
+		@include mq {
+			padding: 30px 15px 15px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
+		&:first-child {
+			@include mq(md-min) {
+				.yourself-list__ct {
+					padding: 20px 40px 24px;
+				}
+			}
+		}
+		&:last-child {
+			@include mq(md-min) {
+				padding-bottom: 49px;
+			}
+		}
+	}
+	&__ttl {
+		position: relative;
+		margin-bottom: 37px;
+		padding-left: 82px;
+		font-weight: bold;
+		@include font-size(26);
+		@include mq {
+			margin-bottom: 20px;
+			padding-left: 60px;
+			@include font-size(20);
+		}
+		span {
+			position: absolute;
+			@include flex(center, center);
+			top: -9px;
+			left: 0;
+			width: 63px;
+			height: 63px;
+			background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+			color: white;
+			border-radius: 50%;
+			font-family: $font-en;
+			@include font-size(31);
+			line-height: 1;
+			@include mq {
+				width: 50px;
+				height: 50px;
+				@include font-size(24);
+			}
+		}
+		&--center {
+			text-align: center;
+			padding: 0;
+			margin: -4px 0 21px;
+		}
+	}
+	&__ct {
+		background: white;
+		border-radius: 19px;
+		padding: 27px 40px;
+		@include mq {
+			padding: 20px;
+		}
+	}
+	&__check {
+		margin: 14px 0 17px;
+		&-item {
+			position: relative;
+			padding-left: 34px;
+			font-weight: 500;
+			@include mq {
+				padding-left: 23px;
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 9px;
+				left: 2px;
+				width: 17px;
+				height: 17px;
+				background: url(../img/treatment-policy/icon-check.png) center / contain no-repeat;
+				@include mq {
+					top: 3px;
+					left: 0;
+				}
+			}
+		}
+	}
+	&__flex {
+		margin: 24px 0 -5px;
+		padding-bottom: 10px;
+		@include mq(sm-min) {
+			position: relative;
+			@include flex(between);
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				@include h-align;
+				width: 1px;
+				height: 100%;
+				background: #D4D8E7;
+			}
+		}
+		&-item {
+			padding-left: 28px;
+			@include mq {
+				padding-left: 23px;
+			}
+			@include mq(sm-min) {
+				width: 47%;
+			}
+			@include mq(sm) {
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&-ttl {
+			position: relative;
+			margin: 3px 2px 9px;
+			font-weight: 500;
+			@include mq(md-min) {
+				@include font-size(17);
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 5px;
+				left: -28px;
+				width: 17px;
+				height: 17px;
+				background: url(../img/treatment-policy/icon-check.png) center / contain no-repeat;
+				@include mq {
+					top: 2px;
+					left: -23px;
+				}
+			}
+		}
+	}
+}
+
+.yourself-step {
+	position: relative;
+	z-index: 1;
+	padding: 66px 0 99px;
+	@include mq {
+		padding: 50px 0;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		@include h-align;
+		z-index: -1;
+		width: 100vw;
+		height: 100%;
+		background: linear-gradient(45deg, #FFEBE4 0%, #FFF2EE 100%);
+	}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 40px;
+		}
+		@include mq(md-min) {
+			&:nth-child(3) {
+				.yourself-step__ct-check {
+					margin: 29px 0 -5px;
+				}
+			}
+			&:nth-child(4) {
+				.yourself-step__ct-check {
+					margin-top: 20px;
+				}
+			}
+			&:nth-child(5) {
+				.yourself-step__ct-wrapImg {
+					margin: -19px 9px 0 0;
+				}
+				.yourself-step__ct-check {
+					margin-top: 18px;
+				}
+			}
+			&:nth-child(6) {
+				.yourself-step__ct-check {
+					margin-top: 25px;
+				}
+			}
+		}
+	}
+	&__ttl {
+		position: relative;
+		margin-bottom: 17px;
+		padding-left: 45px;
+		font-weight: 500;
+		@include font-size(30);
+		@include mq {
+			padding-left: 30px;
+			@include font-size(22);
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 14px;
+			left: 2px;
+			width: 30px;
+			height: 15px;
+			background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+			border-radius: 100px;
+			transform: rotate(-45deg);
+			@include mq {
+				top: 12px;
+				left: 0;
+				width: 24px;
+				height: 10px;
+			}
+		}
+	}
+	&__ct {
+		background: white;
+		border-radius: 19px;
+		padding: 40px 36px 37px;
+		@include mq {
+			padding: 30px 20px;
+		}
+		&-wrap {
+			@include mq(sm-min) {
+				@include flex(between, start, wrap);
+				flex-direction: row-reverse;
+			}
+			&Ct {
+				@include mq(sm-min) {
+					width: calc(100% - 155px);
+				}
+			}
+			&Img {
+				width: 100%;
+				max-width: 130px;
+				text-align: right;
+				margin: -5px 5px 0 0;
+				@include mq(sm) {
+					text-align: center;
+					margin: 0 auto 25px;
+				}
+			}
+		}
+		&-ttl {
+			color: #00A5B1;
+			margin-bottom: 21px;
+			font-weight: bold;
+			@include font-size(20);
+		}
+		&-desc {
+			font-weight: bold;
+			margin: 7px 0 -21px;
+			@include mq {
+				margin: 15px 0 0;
+			}
+		}
+		&-check {
+			font-weight: 500;
+			@include font-size(18);
+			line-height: 1.6;
+			margin-top: 35px;
+			@include mq {
+				margin-top: 20px;
+				@include font-size(16);
+			}
+			@include mq(sm-min) {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				gap: 15px 50px;
+			}
+			&Item {
+				@include flex(0, center);
+				background: #FFF2ED;
+				border-radius: 10px;
+				padding: 11px 15px 10px;
+				@include mq(sm) {
+					&:not(:last-child) {
+						margin-bottom: 20px;
+					}
+				}
+				p {
+					position: relative;
+					width: 100%;
+					padding-left: 40px;
+					@include mq {
+						padding-left: 19px;
+					}
+					&::before {
+						content: "";
+						position: absolute;
+						top: 3px;
+						left: 0;
+						width: 23px;
+						height: 23px;
+						background: url(../img/treatment-policy/icon-check.png) center / contain no-repeat;
+						@include mq {
+							top: 5px;
+							left: -3px;
+							width: 15px;
+							height: 15px;
+						}
+					}
+				}
+			}
+			&--3s {
+				@include mq(sm-min) {
+					grid-template-columns: repeat(3, 1fr);
+					gap: 13px 43px;
+					margin-bottom: -7px;
+				}
+			}
+		}
+	}
+}
+
+.sec-way {
+	position: relative;
+	background: url(../img/treatment-policy/way-bg.jpg) center / cover no-repeat;
+	padding: 77px 0 89px;
+	z-index: 1;
+	@include mq {
+		padding: 50px 0;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+.way-ttl {
+	color: white;
+	margin-bottom: 36px;
+	text-align: center;
+	font-weight: bold;
+	@include font-size(44);
+	@include mq {
+		margin-bottom: 20px;
+		@include font-size(28);
+	}
+}
+
+.way-list {
+	@include mq(sm-min) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 43px;
+		@include mq(lg) {
+			gap: 20px;
+		}
+	}
+	&__item {
+		background: rgba(2, 2, 2, 0.31);
+		color: white;
+		border: 1px solid white;
+		border-radius: 19px;
+		backdrop-filter: blur(10px);
+		padding: 22px 29px 28px;
+		@include mq(lg) {
+			padding: 20px;
+		}
+		@include mq(sm) {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	&__img {
+		@include flex(center, center);
+		height: 116px;
+		margin-bottom: 16px;
+		text-align: center;
+		@include mq {
+			display: block;
+			max-width: 80px;
+			height: auto;
+			margin: 0 auto 20px;
+		}
+	}
+	&__ttl {
+		text-align: center;
+		margin-bottom: 18px;
+		font-weight: bold;
+		@include font-size(26);
+		@include mq {
+			margin-bottom: 15px;
+			@include font-size(22);
+		}
+	}
+}
+
+#page-treatment-policy {
+	@include mq(md-min) {
+		.sec-entry {
+			padding: 46px 0 81px;
+		}
+		.entry-list {
+			margin-top: 54px;
+			gap: 20px 26px;
+		}
+	}
+}
