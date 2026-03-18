@@ -24,11 +24,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <link rel="shortcut icon" href="<?php echo T_HTTP; ?>favicon.ico">
-  <link type="text/css" rel="stylesheet" href="<?php echo T_HTTP; ?>js/slick/slick-theme.css">
-  <link type="text/css" rel="stylesheet" href="<?php echo T_HTTP; ?>js/slick/slick.css">
+  <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/js/slick/slick-theme.css">
+  <link type="text/css" rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/js/slick/slick.css">
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-  <link type="text/css" rel="stylesheet" href="<?php echo T_HTTP; ?>css/styles.css">
+  <link type="text/css" rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/css/styles.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -395,60 +395,62 @@
         <p>2026.4 NEW OPEN</p>
         <picture>
           <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo02.png">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo.png" alt="2026.2 NEW OPEN ヨクシオ歯科　箕面萱野">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo.png"
+            alt="2026.2 NEW OPEN ヨクシオ歯科　箕面萱野"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="high">
         </picture>
       </a>
       <nav class="header-nav">
         <ul class="header-nav__menu">
           <li class="header-nav__menu-item <?php if (is_front_page()): echo 'active';
                                             endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>">ホーム</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>">ホーム</a>
           </li>
           <li class="header-nav__menu-item <?php if (is_page('first-visit')): echo 'active';
                                             endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>first-visit/">初診の方へ</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>first-visit/">初診の方へ</a>
           </li>
           <li class="header-nav__menu-item has-sub <?php if (is_page('about') || is_page('sterilization')): echo 'active';
                                                     endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>about/">医院紹介</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>about/">医院紹介</a>
             <div class="js-submenu"></div>
             <div class="header-nav__submenu">
               <ul class="header-nav__submenu-list center">
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>about">医院紹介</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>treatment-policy">治療方針</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>sterilization">減菌体制</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>about">医院紹介</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>treatment-policy">治療方針</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>sterilization">減菌体制</a></li>
               </ul>
             </div>
           </li>
           <li class="header-nav__menu-item has-sub <?php if (is_page('medical') || is_page('general') || is_page('periodontal') || is_page('preventive') || is_page('pediatric') || is_page('pediatric-ortho') || is_page('orthodontics') || is_page('ceramic') || is_page('implant') || is_page('denture') || is_page('visit')): echo 'active';
                                                     endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>medical">診療内容</a>
-
-            <div class="js-submenu">
-            </div>
+            <a href="<?php echo esc_url(home_url('/')); ?>medical">診療内容</a>
+            <div class="js-submenu"></div>
             <div class="header-nav__submenu">
               <ul class="header-nav__submenu-list">
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>general">一般歯科・根管治療</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>periodontal">歯周病治療</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>preventive">予防・メンテナンス</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>pediatric">小児歯科</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>pediatric-ortho">小児矯正</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>orthodontics">成人矯正</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>ceramic">セラミック・審美治療</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>implant">インプラント</a></li>
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>denture">入れ歯（義歯）</a></li>
-                <!-- <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>visit">訪問診療</a></li> -->
-                <li class="header-nav__submenu-item"><a href=" <?php echo esc_url(home_url('/')); ?>maternity">マタニティ歯科</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>general">一般歯科・根管治療</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>periodontal">歯周病治療</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>preventive">予防・メンテナンス</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>pediatric">小児歯科</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>pediatric-ortho">小児矯正</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>orthodontics">成人矯正</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>ceramic">セラミック・審美治療</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>implant">インプラント</a></li>
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>denture">入れ歯（義歯）</a></li>
+                <!-- <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>visit">訪問診療</a></li> -->
+                <li class="header-nav__submenu-item"><a href="<?php echo esc_url(home_url('/')); ?>maternity">マタニティ歯科</a></li>
               </ul>
             </div>
           </li>
           <!-- <li class="header-nav__menu-item <?php if (is_page('staff')): echo 'active';
                                                 endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>staff">院長・スタッフ</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>staff">院長・スタッフ</a>
           </li> -->
           <li class="header-nav__menu-item <?php if (is_page('access')): echo 'active';
                                             endif; ?>">
-            <a href=" <?php echo esc_url(home_url('/')); ?>access">診療時間・アクセス</a>
+            <a href="<?php echo esc_url(home_url('/')); ?>access">診療時間・アクセス</a>
           </li>
         </ul>
         <div class="header-nav__tel">

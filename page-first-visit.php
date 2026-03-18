@@ -53,7 +53,7 @@
           <div class="reservation-list__tel">
             TEL. <a href="tel:05058404618">050-5840-4618</a>
           </div>
-          <p class="reservation-list__note">受付時間：月～土 9:30-13:00 / 14:30-18:00（木・日・祝休診）</p>
+          <p class="reservation-list__note">受付時間<span>9:30〜13:00／14:30〜18:30（木・日・祝休診）</p>
         </div>
         <div class="reservation-list__item js-scrollin">
           <h3 class="reservation-list__ttl reservation-list__ttl--sub">3) LINEでのご相談・ご予約</h3>

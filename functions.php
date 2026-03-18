@@ -1,29 +1,6 @@
 <?php
 
 // ============================================================
-// 定数定義
-// ============================================================
-define('H_HTTP', home_url('/'));                        // ホーム 絶対パス
-define('T_HTTP', get_template_directory_uri() . '/');  // テーマディレクトリ 絶対パス
-define('H_URL', rootRelativeURL(H_HTTP));               // ホーム ルート相対パス
-define('T_URL', rootRelativeURL(T_HTTP));               // テーマディレクトリ ルート相対パス
-define('T_PATH', get_template_directory() . '/');      // テーマディレクトリ フルパス
-define('U_URL', content_url() . '/uploads/');          // メディアアップロードディレクトリURL
-
-function rootRelativeURL($url)
-{
-	$siteRootUrl = '';
-	if (empty($_SERVER['HTTPS'])) {
-		$siteRootUrl = 'http://' . $_SERVER['HTTP_HOST'];
-	} else {
-		$siteRootUrl = 'https://' . $_SERVER['HTTP_HOST'];
-	}
-	$url = str_replace($siteRootUrl, '', $url);
-	return $url;
-}
-
-
-// ============================================================
 // 基本設定
 // ============================================================
 
@@ -36,55 +13,61 @@ add_image_size("sq-image", 500, 500, true);
 add_image_size("se-image", 500, 300, true);
 
 // 抜粋文末文字を変更
-function custom_excerpt_more($more) {
+function custom_excerpt_more($more)
+{
 	return ' ... ';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
 
-function custom_excerpt_length($length) {
+function custom_excerpt_length($length)
+{
 	return 48;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 // 固定ページのみ自動的に付与される p タグや br タグを無効
-function disable_page_wpautop() {
+function disable_page_wpautop()
+{
 	if (is_page()) remove_filter('the_content', 'wpautop');
 }
 add_action('wp', 'disable_page_wpautop');
 
 remove_filter('the_excerpt', 'wpautop');
 
+// jQueryの重複排除
+function fix_jquery_duplicate()
+{
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_deregister_script('jquery-core');
+		wp_deregister_script('jquery-migrate');
+	}
+}
+add_action('wp_enqueue_scripts', 'fix_jquery_duplicate', 999);
 
-// ============================================================
-// 以下は page-*.php への移行完了後に削除予定
-// ============================================================
 
-// // ACFフィールド内の相対画像パスを絶対パスに変換（the_content()フック）
-// // → page-*.php では get_template_directory_uri() で直接記述するため不要
-// function replaceImagePath($arg) {
-// 	$content = str_replace('"img/', '"' . get_bloginfo('template_directory') . '/img/', $arg);
-// 	return $content;
-// }
-// add_action('the_content', 'replaceImagePath');
+function defer_js($tag, $handle)
+{
+	if (is_admin()) return $tag;
+	return str_replace(' src', ' defer src', $tag);
+}
+add_filter('script_loader_tag', 'defer_js', 10, 2);
 
-// // [tp] ショートコード → テーマディレクトリURI
-// // → page-*.php では get_template_directory_uri() で直接記述するため不要
-// function shortcode_tp() {
-// 	return get_template_directory_uri();
-// }
-// add_shortcode('tp', 'shortcode_tp');
+function original_css_js_init()
+{
+	// Google Fonts の読み込み
+	wp_enqueue_style('google_font_style', 'https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Teachers:ital,wght@0,400..800;1,400..800&family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap', array(), null);
 
-// // [home] ショートコード → ホームURL
-// // → page-*.php では home_url('/') で直接記述するため不要
-// function shortcode_home() {
-// 	return home_url('/');
-// }
-// add_shortcode('home', 'shortcode_home');
+	// ScrollHintのCSS
+	wp_enqueue_style('scrollhint-css', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), null);
 
-// // <source> タグの srcset 属性へのショートコード許可
-// // → [tp] ショートコード廃止に伴い不要
-// function allow_shortcode_in_source_tag($allowedposttags) {
-// 	$allowedposttags['source']['srcset'] = true;
-// 	return $allowedposttags;
-// }
-// add_filter('wp_kses_allowed_html', 'allow_shortcode_in_source_tag', 10, 1);
+	// メインスタイルの読み込み
+	wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
+
+	// jQuery の読み込み
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), null, false);
+	}
+}
+add_action('wp_enqueue_scripts', 'original_css_js_init');
