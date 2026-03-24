@@ -8,7 +8,7 @@
         <span class="c-ft--en">ACCESS</span>
         <span class="c-ft--jp">診療時間・アクセス</span>
       </h1>
-      <p class="sec-mv__desc">北大阪急行「箕面萱野駅」より徒歩5分。<br>みのおキューズモール近く、<br class="sp">通いやすい立地です。</p>
+      <p class="sec-mv__desc">北大阪急行「箕面萱野駅」より徒歩2分。<br>みのおキューズモール近く、<br class="sp">通いやすい立地です。</p>
     </div>
   </section>
   <div class="breadcrumb">
@@ -26,7 +26,7 @@
             <span class="c-ft--jp">ヨクシオ歯科 箕面萱野</span>
             <span class="c-ft--en">Yokushio Dental Clinic Minoh Kayano</span>
           </div>
-          <p class="access-wrap__ct-location js-scrollin">〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br>北大阪急行「箕面萱野駅」徒歩5分</p>
+          <p class="access-wrap__ct-location js-scrollin">〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br>北大阪急行「箕面萱野駅」徒歩2分</p>
           <a href="tel:05058404618" class="access-wrap__ct-tel js-scrollin">TEL.<span>050-5840-4618</span></a>
           <div class="access-wrap__ct-btn js-scrollin">
             <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank"><img width="38" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/access/icon-calendar.svg" alt="WEB予約">WEB予約</a>
@@ -89,7 +89,7 @@
           </div>
           <div class="access-vehicle__ct js-scrollin">
             <h3 class="access-vehicle__ct-ttl">電車でお越しの方</h3>
-            <p>北大阪急行「箕面萱野駅」より徒歩5分。<br>駅直結のデッキを通ってスムーズにご来院いただけます。雨の日でも濡れずにアクセス可能です。</p>
+            <p>北大阪急行「箕面萱野駅」より徒歩2分。<br>駅直結のデッキを通ってスムーズにご来院いただけます。雨の日でも濡れずにアクセス可能です。</p>
           </div>
         </li>
         <li class="access-vehicle__item">
@@ -101,7 +101,7 @@
           </div>
           <div class="access-vehicle__ct js-scrollin">
             <h3 class="access-vehicle__ct-ttl">お車でお越しの方</h3>
-            <p>提携駐車場あり（みのおキューズモール駐車場）。<br>診療時間分の駐車サービス券をお渡しいたしますので、駐車券を受付までお持ちください。</p>
+            <p>駐車場あり（みのおキューズモール駐車場）。</p>
           </div>
         </li>
       </ul>

@@ -18,7 +18,7 @@
 					<ul class="mv-index__list">
 						<li class="mv-index__list-item">
 							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-01.png" alt="icon"></small>
-							<span>箕面萱野駅<span>徒歩5分</span></span>
+							<span>箕面萱野駅<span>徒歩2分</span></span>
 						</li>
 						<li class="mv-index__list-item">
 							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-02.png" alt="icon"></small>
@@ -105,6 +105,11 @@
 			wp_reset_postdata(); ?>
 		</div>
 	</div>
+
+	<a href="https://minohkayano.yasuoka-dental.net/2026/03/13/%e5%86%85%e8%a6%a7%e4%bc%9a%ef%bc%883-28%e3%83%bb29%e3%80%814-4%e3%83%bb5%ef%bc%89%e9%96%8b%e5%82%ac%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/" class="p-banner">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/index/banner.JPG" alt="">
+	</a>
+
 	<section class="sec-family">
 		<div class="inner">
 			<div class="family-box">
@@ -596,7 +601,7 @@
 					<h2 class="c-ttl__02"><span>ACCESS</span>アクセス・診療時間</h2>
 					<h3 class="access-flex__ttl">ヨクシオ歯科 箕面萱野</h3>
 					<p class="access-flex__txt"> 〒562-0013<br> 大阪府箕面市坊島4丁目10-8 TEN24BLDG..<br>
-						<br>北大阪急行「箕面萱野駅」徒歩5分
+						<br>北大阪急行「箕面萱野駅」徒歩2分
 					</p>
 					<div class="access-flex__table">
 						<table>

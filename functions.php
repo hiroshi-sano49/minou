@@ -62,7 +62,12 @@ function original_css_js_init()
 	wp_enqueue_style('scrollhint-css', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), null);
 
 	// メインスタイルの読み込み
-	wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
+	wp_enqueue_style(
+		'style',
+		get_stylesheet_directory_uri() . '/css/styles.css',
+		[],
+		filemtime(get_stylesheet_directory() . '/css/styles.css')
+	);
 
 	// jQuery の読み込み
 	if (!is_admin()) {
@@ -71,3 +76,38 @@ function original_css_js_init()
 	}
 }
 add_action('wp_enqueue_scripts', 'original_css_js_init');
+
+
+// add_action('init', function () {
+
+// 	if (
+// 		isset($_GET['opcache_clear']) &&
+// 		$_GET['opcache_clear'] === '1' &&
+// 		isset($_GET['key']) &&
+// 		$_GET['key'] === 'A03V03!'
+// 	) {
+
+// 		// IP制限（ここ修正）
+// 		$allowed_ip = '14.132.197.245';
+// 		if ($_SERVER['REMOTE_ADDR'] !== $allowed_ip) {
+// 			status_header(403);
+// 			exit('Forbidden');
+// 		}
+
+// 		// 管理者チェック
+// 		if (!is_user_logged_in() || !current_user_can('administrator')) {
+// 			status_header(403);
+// 			exit('No permission');
+// 		}
+
+// 		// OPcacheクリア
+// 		if (function_exists('opcache_reset')) {
+// 			opcache_reset();
+// 			echo 'OPcache cleared';
+// 		} else {
+// 			echo 'OPcache not enabled';
+// 		}
+
+// 		exit;
+// 	}
+// });
