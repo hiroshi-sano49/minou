@@ -34,21 +34,21 @@ add_action('wp', 'disable_page_wpautop');
 
 remove_filter('the_excerpt', 'wpautop');
 
-// jQueryの重複排除
-function fix_jquery_duplicate()
-{
-	if (!is_admin()) {
-		wp_deregister_script('jquery');
-		wp_deregister_script('jquery-core');
-		wp_deregister_script('jquery-migrate');
-	}
-}
-add_action('wp_enqueue_scripts', 'fix_jquery_duplicate', 999);
-
 
 function defer_js($tag, $handle)
 {
 	if (is_admin()) return $tag;
+
+	// deferしないスクリプトを除外
+	$exclude = [
+		'jquery',
+		'jquery-core',
+		'jquery-migrate',
+		'sbi-scripts',
+		'sbi-init',
+	];
+	if (in_array($handle, $exclude)) return $tag;
+
 	return str_replace(' src', ' defer src', $tag);
 }
 add_filter('script_loader_tag', 'defer_js', 10, 2);
@@ -68,12 +68,6 @@ function original_css_js_init()
 		[],
 		filemtime(get_stylesheet_directory() . '/css/styles.css')
 	);
-
-	// jQuery の読み込み
-	if (!is_admin()) {
-		wp_deregister_script('jquery');
-		wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.min.js', array(), null, false);
-	}
 }
 add_action('wp_enqueue_scripts', 'original_css_js_init');
 

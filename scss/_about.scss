@@ -50,11 +50,11 @@
 		}
 		&-ttl{
 			display: block;
-			@include fts(44,61.8);
+			@include fts(34,51.8);
 			font-weight: 500;
 			margin-bottom: 37px;
 			@include mq(xl){
-				@include font-size(38);
+				@include font-size(27);
 			}
 			@include mq(){
 				@include font-size(24);

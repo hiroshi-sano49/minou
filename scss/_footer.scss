@@ -17,7 +17,7 @@ Footer
 	}
 	&-flex{
 		@include flex(between,0,wrap);
-		margin-bottom: 79px;
+		margin-bottom: 50px;
 		@include mq(){
 			margin-bottom: 50px;
 		}
@@ -177,4 +177,49 @@ Footer
 			@include font-size(14);
 		}
 	}
+}
+
+.l-footer-container {
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 600px) {
+      font-size: 22px;
+    }
+  }
+
+  nav {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      @media screen and (max-width: 600px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+      }
+
+      li {
+        a {
+          font-size: 15px;
+					font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          @media screen and (max-width: 600px) {
+            font-size: 13px;
+          }
+          span {
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
 }

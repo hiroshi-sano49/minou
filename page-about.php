@@ -21,8 +21,8 @@
             <h2 class="about-block__ct-ttl">
               <span class="c-ft--en">PHILOSOPHY</span>
               <span class="c-ft--jp">
-                妥協なき歯科医療で <br>
-                人々を幸せに。
+                私たちは歯科医療を通じて<br>
+                世界で一番人々を幸せにする
               </span>
             </h2>
             <p>
@@ -77,7 +77,7 @@
             <div class="about-list__ct c-txt__02">
               <h3 class="about-list__ct-ttl">チーム医療で幅広く対応</h3>
               <p>
-                大阪エリアに4院を展開する医療法人ならではのネットワーク。 インプラント指導医、矯正認定医など、各分野の専門家が連携し、 難症例にも対応可能な高度な治療を提供します。
+                大阪エリアに5院を展開する医療法人ならではのネットワーク。 インプラント指導医、矯正認定医など、各分野の専門家が連携し、 難症例にも対応可能な高度な治療を提供します。
               </p>
               <ul class="about-list__tag">
                 <li><span>ICOI指導医</span></li>

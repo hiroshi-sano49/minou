@@ -89,7 +89,7 @@
           </div>
           <div class="access-vehicle__ct js-scrollin">
             <h3 class="access-vehicle__ct-ttl">電車でお越しの方</h3>
-            <p>北大阪急行「箕面萱野駅」より徒歩2分。<br>駅直結のデッキを通ってスムーズにご来院いただけます。雨の日でも濡れずにアクセス可能です。</p>
+            <p>北大阪急行「箕面萱野駅」より徒歩2分。<br>駅直結のデッキを通ってスムーズにご来院いただけます。</p>
           </div>
         </li>
         <li class="access-vehicle__item">
@@ -101,7 +101,7 @@
           </div>
           <div class="access-vehicle__ct js-scrollin">
             <h3 class="access-vehicle__ct-ttl">お車でお越しの方</h3>
-            <p>駐車場あり（みのおキューズモール駐車場）。</p>
+            <p>当院は提携駐車場はございません。<br>お車でお越しの患者様は周辺駐車場をご利用ください。</p>
           </div>
         </li>
       </ul>

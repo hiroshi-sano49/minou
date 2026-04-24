@@ -247,7 +247,7 @@
           </li>
           <li class="difference-cycle__list-item">
             <h4 class="difference-cycle__list-ttl">内部洗浄・注油</h4>
-            <p class="c-txt__02">「アシスティーナ TWIN」を使用し、ハンドピース内部の回路をわずか 10 秒で洗浄・注油します。</p>
+            <p class="c-txt__02">「アシスティーナ TWIN」を使用し、ハンドピース内部の回路をわずか 10 秒で洗浄・注油します。<br><small>※対象は、歯を削る器具（ハンドピースやタービン）</small></p>
           </li>
           <li class="difference-cycle__list-item">
             <h4 class="difference-cycle__list-ttl">パック包装</h4>

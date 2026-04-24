@@ -37,6 +37,16 @@
 							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/mv01.jpg" alt="あたりまえを最期まで。">
 						</picture>
 					</div>
+
+					<!-- <div class="mv-index__img">
+						<video
+							src="<?php echo esc_url(get_theme_file_uri('img/index/your-video.mp4')); ?>"
+							autoplay
+							muted
+							loop
+							playsinline>
+						</video>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -105,10 +115,6 @@
 			wp_reset_postdata(); ?>
 		</div>
 	</div>
-
-	<a href="https://minohkayano.yasuoka-dental.net/2026/03/13/%e5%86%85%e8%a6%a7%e4%bc%9a%ef%bc%883-28%e3%83%bb29%e3%80%814-4%e3%83%bb5%ef%bc%89%e9%96%8b%e5%82%ac%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/" class="p-banner">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/index/banner.JPG" alt="">
-	</a>
 
 	<section class="sec-family">
 		<div class="inner">
@@ -558,9 +564,10 @@
 						<h2 class="c-ttl__02 topics-list__heading"><span>INSTAGRAM</span>インスタグラム</h2>
 						<a href="https://www.instagram.com/yokucio_dental_official/" target="_blank" class="c-btn__02">フォローする</a>
 					</div>
-					<div class="instagram-box">
-						<?php echo do_shortcode('[instagram-feed feed=1]'); ?>
-					</div>
+
+					<!-- <?php echo do_shortcode('[instagram-feed feed=1]'); ?> -->
+					<?php the_content(); ?>
+
 				</li>
 			</ul>
 		</div>
@@ -575,8 +582,7 @@
 				<li class="fqa-list__item js-scrollin">
 					<h3 class="fqa-list__question"><span>駐車場はありますか？</span></h3>
 					<p class="fqa-list__answer">
-						<span>はい、提携駐車場をご用意しております。診療時間分のサービス券をお渡しします。</span><br>
-						<a href="https://qs-mall.jp/minoh/information/detail/309" target="_blank">https://qs-mall.jp/minoh/information/detail/309</a>
+						<span>周辺の駐車場をご利用ください。</span>
 					</p>
 				</li>
 				<li class="fqa-list__item js-scrollin">
@@ -600,7 +606,7 @@
 				<div class="access-flex__ct js-scrollin">
 					<h2 class="c-ttl__02"><span>ACCESS</span>アクセス・診療時間</h2>
 					<h3 class="access-flex__ttl">ヨクシオ歯科 箕面萱野</h3>
-					<p class="access-flex__txt"> 〒562-0013<br> 大阪府箕面市坊島4丁目10-8 TEN24BLDG..<br>
+					<p class="access-flex__txt"> 〒562-0013<br> 大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br>
 						<br>北大阪急行「箕面萱野駅」徒歩2分
 					</p>
 					<div class="access-flex__table">
@@ -673,8 +679,6 @@
 			</ul>
 		</div>
 	</section>
-	<a href="https://lin.ee/1gHDCfb" target="_blank" class="btn-float">
-		<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/img-line.png" alt="LINE予約">
-	</a>
+
 </main>
 <?php get_footer(); ?>
