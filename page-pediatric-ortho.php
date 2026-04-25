@@ -70,8 +70,8 @@
             <li class="menu-posts__item js-scrollin">
               <div class="menu-posts__img">
                 <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-dummy.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-dummy.jpg" alt="プレオルソ（マウスピース型矯正装置）">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-03.webp" type="image/webp">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-03.jpg" alt="プレオルソ（マウスピース型矯正装置）">
                 </picture>
               </div>
               <div class="menu-posts__ct">
@@ -83,8 +83,8 @@
             <li class="menu-posts__item js-scrollin">
               <div class="menu-posts__img">
                 <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-dummy.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-dummy.jpg" alt="床矯正（しょうきょうせい）装置">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-04.webp" type="image/webp">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-04.jpg" alt="床矯正（しょうきょうせい）装置">
                 </picture>
               </div>
               <div class="menu-posts__ct">
@@ -96,8 +96,8 @@
             <li class="menu-posts__item js-scrollin">
               <div class="menu-posts__img">
                 <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-dummy.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-dummy.jpg" alt="インビザライン・ファースト">
+                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-05.webp" type="image/webp">
+                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-05.jpg" alt="インビザライン・ファースト">
                 </picture>
               </div>
               <div class="menu-posts__ct">

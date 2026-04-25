@@ -29,16 +29,16 @@
 						<a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank">
 							<span>初診予約はこちら</span>24時間受付 </a>
 					</div>
-					<div class="mv-index__img">
+					<!-- <div class="mv-index__img">
 						<picture>
 							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/mv-sp01.webp" media="(max-width:640px)" type="image/webp">
 							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/mv-sp01.jpg" media="(max-width:767px)">
 							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/mv01.webp" type="image/webp">
 							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/mv01.jpg" alt="あたりまえを最期まで。">
 						</picture>
-					</div>
+					</div> -->
 
-					<!-- <div class="mv-index__img">
+					<div class="mv-index__img">
 						<video
 							src="<?php echo esc_url(get_theme_file_uri('img/index/your-video.mp4')); ?>"
 							autoplay
@@ -46,7 +46,7 @@
 							loop
 							playsinline>
 						</video>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</section>

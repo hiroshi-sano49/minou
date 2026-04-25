@@ -7476,6 +7476,26 @@ a.p-banner {
     padding: 50px 0;
   }
 }
+.sec-accesspage-bicycle {
+  margin-bottom: 60px;
+}
+.sec-accesspage-bicycle p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.sec-accesspage-bicycle_flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+@media screen and (max-width: 834px) {
+  .sec-accesspage-bicycle_flex {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sec-accesspage-bicycle_flex img {
+  border-radius: 8px;
+}
 
 .access-wrap {
   margin-bottom: 50px;
@@ -7595,7 +7615,7 @@ a.p-banner {
   gap: 22px;
   width: calc(50% - 6.5px);
   height: 70px;
-  background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
   color: white;
   border-radius: 11px;
   padding: 10px 19px 13px;
@@ -7613,7 +7633,7 @@ a.p-banner {
   }
 }
 .access-wrap__ct-btn a.btn-line {
-  background: #00BD0D;
+  background: #00bd0d;
 }
 @media screen and (min-width: 641px) {
   .access-wrap__ct-btn a.btn-line {
@@ -7637,7 +7657,7 @@ a.p-banner {
   align-items: center;
   gap: 9px;
   background: white;
-  color: #00A5B1;
+  color: #00a5b1;
   border-bottom-right-radius: 8px;
   padding: 11px 19px 17px 9px;
   font-weight: 500;
@@ -7675,7 +7695,7 @@ a.p-banner {
 .access-wrap__calendar-table {
   position: relative;
   max-width: 100%;
-  background: #F3F5F6;
+  background: #f3f5f6;
   border-radius: 8px;
   padding: 28px 37px 33px 50px;
 }
@@ -7689,7 +7709,7 @@ a.p-banner {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #F3F5F6;
+  background: #f3f5f6;
   border-top-left-radius: 8px;
   z-index: 1;
 }
@@ -7722,15 +7742,18 @@ a.p-banner {
     font-size: 1.8rem;
   }
 }
-.access-wrap__calendar-table table th, .access-wrap__calendar-table table td {
+.access-wrap__calendar-table table th,
+.access-wrap__calendar-table table td {
   text-align: center;
 }
-.access-wrap__calendar-table table th:first-child, .access-wrap__calendar-table table td:first-child {
+.access-wrap__calendar-table table th:first-child,
+.access-wrap__calendar-table table td:first-child {
   width: 120px;
   font-size: 2.1rem;
 }
 @media screen and (max-width: 834px) {
-  .access-wrap__calendar-table table th:first-child, .access-wrap__calendar-table table td:first-child {
+  .access-wrap__calendar-table table th:first-child,
+  .access-wrap__calendar-table table td:first-child {
     width: 100px;
     font-size: 1.6rem;
   }
@@ -7745,7 +7768,7 @@ a.p-banner {
   }
 }
 .access-wrap__calendar-table table th span {
-  color: #EB8E6C;
+  color: #eb8e6c;
 }
 .access-wrap__calendar-table table td {
   height: 51px;

@@ -5,6 +5,26 @@
 	@include mq {
 		padding: 50px 0;
 	}
+
+	&-bicycle {
+		margin-bottom: 60px;
+		p {
+			font-size: 14px;
+			margin-bottom: 30px;
+		}
+
+		&_flex {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px;
+			@include mq() {
+				grid-template-columns: repeat(1, 1fr);
+			}
+			img {
+				border-radius: 8px;
+			}
+		}
+	}
 }
 
 .access-wrap {
@@ -23,7 +43,7 @@
 		}
 		&-ttl {
 			margin-bottom: 39px;
-			@include mq(){
+			@include mq() {
 				margin-bottom: 20px;
 			}
 			.c-ft {
@@ -32,7 +52,7 @@
 					font-weight: 500;
 					@include font-size(33);
 					margin-bottom: 9px;
-					@include mq(){
+					@include mq() {
 						margin-bottom: 5px;
 						@include font-size(24);
 					}
@@ -42,7 +62,7 @@
 					margin-left: 4px;
 					font-weight: bold;
 					@include font-size(19);
-					@include mq(){
+					@include mq() {
 						margin-left: 0;
 						@include font-size(16);
 					}
@@ -55,7 +75,7 @@
 			margin-bottom: 25px;
 			font-weight: 500;
 			@include font-size(15);
-			@include mq(){
+			@include mq() {
 				margin-bottom: 15px;
 			}
 			&::before {
@@ -77,7 +97,7 @@
 			font-weight: 600;
 			@include font-size(20);
 			line-height: 1;
-			@include mq(){
+			@include mq() {
 				margin-bottom: 12px;
 			}
 			&::before {
@@ -104,7 +124,7 @@
 				gap: 22px;
 				width: calc(50% - 6.5px);
 				height: 70px;
-				background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+				background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
 				color: white;
 				border-radius: 11px;
 				padding: 10px 19px 13px;
@@ -118,8 +138,8 @@
 						width: 25px;
 					}
 				}
-				&.btn-line{
-					background: #00BD0D;
+				&.btn-line {
+					background: #00bd0d;
 					@include mq(sm-min) {
 						gap: 18px;
 					}
@@ -140,7 +160,7 @@
 			@include flex(0, center);
 			gap: 9px;
 			background: white;
-			color: #00A5B1;
+			color: #00a5b1;
 			border-bottom-right-radius: 8px;
 			padding: 11px 19px 17px 9px;
 			font-weight: 500;
@@ -149,7 +169,8 @@
 				padding: 9px 10px 10px 5px;
 				@include font-size(18);
 			}
-			&::before, &::after {
+			&::before,
+			&::after {
 				content: "";
 				position: absolute;
 				width: 10px;
@@ -174,18 +195,19 @@
 		&-table {
 			position: relative;
 			max-width: 100%;
-			background: #F3F5F6;
+			background: #f3f5f6;
 			border-radius: 8px;
 			padding: 28px 37px 33px 50px;
 			@include mq {
 				padding: 13px 20px;
 			}
-			&::before, &::after {
+			&::before,
+			&::after {
 				content: "";
 				position: absolute;
 				width: 10px;
 				height: 10px;
-				background: #F3F5F6;
+				background: #f3f5f6;
 				border-top-left-radius: 8px;
 				z-index: 1;
 			}
@@ -211,7 +233,8 @@
 				@include mq {
 					@include font-size(18);
 				}
-				th, td {
+				th,
+				td {
 					text-align: center;
 					&:first-child {
 						width: 120px;
@@ -229,7 +252,7 @@
 						height: 40px;
 					}
 					span {
-						color: #EB8E6C;
+						color: #eb8e6c;
 					}
 				}
 				td {
@@ -266,7 +289,7 @@
 	@include mq(md-min) {
 		@include flex(between);
 	}
-	@include mq(){
+	@include mq() {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 12px;
