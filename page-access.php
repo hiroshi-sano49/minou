@@ -107,7 +107,20 @@
       </ul>
     </div>
   </section>
+  <section class="sec-accesspage-bicycle">
+    <div class="inner">
+      <h2 class="c-ttl__03 js-scrollin">
+        <span class="c-ft--jp">駐輪場</span>
+        <span class="c-ft--en">ACCESS</span>
+      </h2>
+      <p class="js-scrollin">駐輪所完備。（当院の駐輪所は入り口・出口が一方通行となっております）</p>
 
+      <div class="sec-accesspage-bicycle_flex js-scrollin">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/access/bicycle-01.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/access/bicycle-02.jpg" alt="">
+      </div>
+    </div>
+  </section>
   <?php get_template_part('inc/entry'); ?>
 
 </main>

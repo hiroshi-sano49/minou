@@ -12,12 +12,25 @@ Header
 	background: #fff;
 	z-index: 99;
 	padding: 13px 140px 13px 48px;
-	@include mq(xxl){
+	@include mq(xxl) {
 		padding: 13px 130px 13px 10px;
 	}
-	.inner{
+	&::before {
+		@include mq(xl) {
+			content: "";
+			width: 76px;
+			height: 76px;
+			text-align: center;
+			border-radius: 0 0 0 30px;
+			background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	.inner {
 		max-width: 100%;
-		@include flex(between,center);
+		@include flex(between, center);
 		padding: 0 15px;
 	}
 	.header-logo {
@@ -26,29 +39,29 @@ Header
 		position: relative;
 		z-index: 99;
 		padding-top: 10px;
-		@include mq(xxl){
+		@include mq(xxl) {
 			max-width: 25%;
 		}
-		@include mq(xl){
+		@include mq(xl) {
 			max-width: 250px;
 		}
-		img{
+		img {
 			width: 100%;
 		}
 		p {
 			font-size: 15px;
 			font-weight: 700;
-			color: #EB8E6C;
+			color: #eb8e6c;
 			margin-left: 14.2%;
 			line-height: 1;
-			@include mq(md){
+			@include mq(md) {
 				font-size: 13px;
 				margin-left: 36px;
 			}
 		}
 	}
 	.header-nav {
-		@include mq(xl-min){
+		@include mq(xl-min) {
 			display: flex !important;
 			justify-content: center;
 		}
@@ -61,7 +74,7 @@ Header
 			height: 100vh;
 			padding: 100px 20px 60px;
 			overflow-y: scroll;
-			background: rgba(#fff,0.9);
+			background: rgba(#fff, 0.9);
 			&.active {
 				display: block;
 			}
@@ -71,33 +84,34 @@ Header
 			flex-wrap: wrap;
 			align-items: flex-end;
 			gap: 0 25px;
-			@include mq(xxl){
+			@include mq(xxl) {
 				gap: 0 18px;
 			}
-			@include mq(xl){
+			@include mq(xl) {
 				display: block;
 				margin-bottom: 25px;
 			}
 			&-item {
 				padding: 35px 0 25px;
-				@include mq(xl){
+				@include mq(xl) {
 					position: relative;
 					padding: 0;
-					border-bottom: 1px solid #B2B2B2;
+					border-bottom: 1px solid #b2b2b2;
 				}
-				> span, a {
+				> span,
+				a {
 					position: relative;
 					display: block;
 					@include font-size(14);
 					font-weight: 500;
-					color: #4C4948;
+					color: #4c4948;
 					cursor: pointer;
-					@include mq(xl){
+					@include mq(xl) {
 						padding: 13px 0;
 						@include font-size(18);
 					}
-					@include p-before(10px,10px){
-						background: #00A5B1;
+					@include p-before(10px, 10px) {
+						background: #00a5b1;
 						top: -15px;
 						left: 50%;
 						transform: translateX(-50%);
@@ -106,44 +120,44 @@ Header
 						transition: all 0.3s;
 					}
 				}
-				@include mq(xl-min){
-					&.active{
-						>a,.header-nav__menu-cate{
-							&::before{
+				@include mq(xl-min) {
+					&.active {
+						> a,
+						.header-nav__menu-cate {
+							&::before {
 								opacity: 1;
 								transition: all 0.3s;
 							}
 						}
 					}
 				}
-				&:hover{
-					>a{
-						@include mq(xl-min){
+				&:hover {
+					> a {
+						@include mq(xl-min) {
 							opacity: 1;
-							&::before{
+							&::before {
 								opacity: 1;
 								transition: all 0.3s;
 							}
 						}
 					}
 				}
-				.accordion{
+				.accordion {
 					display: none;
-					@include mq(xl){
-						
+					@include mq(xl) {
 					}
 				}
 			}
-			.js-submenu{
+			.js-submenu {
 				display: none;
-				@include mq(xl){
+				@include mq(xl) {
 					width: 51px;
 					height: 51px;
 					position: absolute;
 					right: 0;
 					top: 0;
 					display: block;
-					@include p-after(10px, 10px){
+					@include p-after(10px, 10px) {
 						border-style: solid;
 						border-color: #00a5b1;
 						border-width: 0px 2px 2px 0px;
@@ -152,8 +166,8 @@ Header
 						right: 20px;
 						transition: 0.3s ease all;
 					}
-					&.on{
-						&:after{
+					&.on {
+						&:after {
 							top: calc(50% - 3px);
 							transform: rotate(-135deg);
 						}
@@ -161,7 +175,7 @@ Header
 				}
 			}
 		}
-		&__submenu{
+		&__submenu {
 			position: fixed;
 			top: 88px;
 			left: 0;
@@ -169,167 +183,167 @@ Header
 			background: rgba(#fff, 0.6);
 			backdrop-filter: blur(50px);
 			padding: 60px 15px;
-			@include mq(xl){
+			@include mq(xl) {
 				position: static;
 				display: none;
 				padding: 0;
 				width: 100%;
 			}
-			@include mq(xl-min){
+			@include mq(xl-min) {
 				opacity: 0;
 				visibility: hidden;
 				z-index: -1;
 				pointer-events: none;
 				transition: all 0.4s;
-				&.on{
+				&.on {
 					opacity: 1;
 					visibility: visible;
 					pointer-events: auto;
 					z-index: 99;
 				}
 			}
-			&-list{
+			&-list {
 				max-width: 1050px;
 				width: 100%;
 				gap: 19px 0;
 				margin: 0 auto;
-				@include flex(0,0,wrap);
-				@include mq(xl){
+				@include flex(0, 0, wrap);
+				@include mq(xl) {
 					gap: 0;
 					max-width: 100%;
 				}
-				&.center{
+				&.center {
 					justify-content: center;
 				}
 			}
-			&-item{
+			&-item {
 				padding: 0 20px;
 				width: 25%;
-				@include mq(xl){
+				@include mq(xl) {
 					width: 100%;
 					padding: 0 20px;
-					border-top: 1px solid #B2B2B2;
+					border-top: 1px solid #b2b2b2;
 				}
-				a{
+				a {
 					display: block;
-					border-bottom: 1px solid #B2B2B2;
-					color: #4C4948;
+					border-bottom: 1px solid #b2b2b2;
+					color: #4c4948;
 					font-weight: 500;
 					padding-right: 20px;
 					padding-bottom: 10px;
 					position: relative;
 					transition: all 0.3s;
 					@include font-size(18);
-					@include mq(xl){
+					@include mq(xl) {
 						border-bottom: 0;
 						padding: 11px 0 12px;
 						@include font-size(16);
 					}
-					@include p-after(8px,8px){
+					@include p-after(8px, 8px) {
 						transition: all 0.3s;
 						border-top: 2px solid #00a5b1;
 						border-right: 2px solid #00a5b1;
 						transform: rotate(45deg);
 						right: 5px;
 						top: 8px;
-						@include mq(xl){
+						@include mq(xl) {
 							top: 50%;
 							width: 6px;
 							height: 6px;
 							transform: rotate(45deg) translateY(-50%);
 						}
 					}
-					&:hover{
+					&:hover {
 						opacity: 1;
 						transition: all 0.3s;
-						color: #00A5B1;
-						border-color: #00A5B1;
-						&::after{
+						color: #00a5b1;
+						border-color: #00a5b1;
+						&::after {
 							transition: all 0.3s;
-							border-color: #00A5B1;
+							border-color: #00a5b1;
 						}
 					}
 				}
 			}
 		}
-		&__tel{
+		&__tel {
 			margin-left: 23px;
 			padding-left: 23px;
 			line-height: 1.2;
 			position: relative;
-			@include mq(xxl){
+			@include mq(xxl) {
 				margin-left: 15px;
 				padding-left: 15px;
 				white-space: nowrap;
 			}
-			@include mq(xl){
+			@include mq(xl) {
 				margin-left: 0;
 				padding-left: 0;
 				margin-bottom: 25px;
 				text-align: center;
 			}
-			@include p-before(1px,65px){
-				background: #4C4948;
+			@include p-before(1px, 65px) {
+				background: #4c4948;
 				top: 50%;
 				left: 0;
 				transform: translateY(-50%);
-				@include mq(xl){
+				@include mq(xl) {
 					display: none;
 				}
 			}
-			a{
+			a {
 				display: block;
-				@include mq(xl){
+				@include mq(xl) {
 					display: inline-block;
 				}
-				>span{
+				> span {
 					display: block;
 					font-weight: 500;
 					@include font-size(12);
-					@include mq(){
+					@include mq() {
 						@include font-size(14);
 					}
-					span{
+					span {
 						margin-left: 12px;
 					}
 				}
 			}
-			small{
+			small {
 				display: block;
 				margin-bottom: 2px;
-				color: #8E78B6;
+				color: #8e78b6;
 				font-weight: 500;
 				@include font-size(11);
-				@include mq(){
+				@include mq() {
 					@include font-size(14);
 				}
 			}
-			strong{
+			strong {
 				margin-bottom: -1px;
 				display: block;
 				font-family: $font-LeagueSpartan;
 				font-weight: 600;
 				@include font-size(20);
-				@include mq(xxl){
+				@include mq(xxl) {
 					@include font-size(18);
 				}
-				@include mq(xl){
+				@include mq(xl) {
 					@include font-size(20);
 				}
-				span{
-					color: #4C4948;
+				span {
+					color: #4c4948;
 					@include font-size(32);
-					@include mq(xxl){
+					@include mq(xxl) {
 						@include font-size(28);
 					}
-					@include mq(xl){
+					@include mq(xl) {
 						@include font-size(32);
 					}
 				}
 			}
 		}
-		&__web{
-			@include flex(center,center,wrap,center);
+		&__web {
+			@include flex(center, center, wrap, center);
 			position: fixed;
 			right: 0;
 			top: 0;
@@ -338,17 +352,17 @@ Header
 			height: 134px;
 			text-align: center;
 			border-radius: 0 0 0 70px;
-			background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+			background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
 			color: #fff;
 			font-weight: bold;
 			line-height: 1;
 			@include font-size(21);
-			@include mq(xxl){
+			@include mq(xxl) {
 				width: 120px;
 				height: 120px;
 				@include font-size(18);
 			}
-			@include mq(xl){
+			@include mq(xl) {
 				position: static;
 				max-width: 280px;
 				height: 50px;
@@ -357,18 +371,18 @@ Header
 				padding: 5px;
 				border-radius: 50px;
 			}
-			span{
+			span {
 				width: 100%;
-				display: block;	
+				display: block;
 				margin-bottom: 10px;
-				@include mq(xl){
+				@include mq(xl) {
 					margin-bottom: 0;
 					width: 30px;
 					margin-right: 10px;
 				}
-				img{
+				img {
 					width: 45px;
-					@include mq(){
+					@include mq() {
 						width: 100%;
 					}
 				}
@@ -394,16 +408,17 @@ Header
 			display: block;
 			width: 100%;
 			height: 2px;
-			background: #333;
+			background: #FFF;
 			border-radius: 3px;
 
-			&:before, &:after {
+			&:before,
+			&:after {
 				position: absolute;
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: #333;
-				content: '';
+				background: #FFF;
+				content: "";
 				-webkit-transition: -webkit-transform 0.3s;
 				transition: transform 0.3s;
 				border-radius: 3px;
@@ -426,7 +441,8 @@ Header
 			span {
 				background-color: transparent;
 
-				&:before, &:after {
+				&:before,
+				&:after {
 					width: 100%;
 					background: #333;
 				}
@@ -445,9 +461,9 @@ Header
 			}
 		}
 	}
-	&.header-page{
-		@include mq(xl-min){
-			.header-nav__web{
+	&.header-page {
+		@include mq(xl-min) {
+			.header-nav__web {
 				width: 100px;
 				height: 70px;
 				border-radius: 11px;
@@ -455,17 +471,16 @@ Header
 				right: 35px;
 				padding: 6px 5px 4px;
 				@include font-size(16);
-				span{
+				span {
 					margin-bottom: 6px;
 				}
-				img{
+				img {
 					width: 32px;
 				}
 			}
 		}
 	}
 }
-
 
 .js-locked {
 	overflow: hidden;

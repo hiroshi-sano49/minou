@@ -9,8 +9,8 @@
 					<p class="mv-index__ct-desc"> 小さなお子様から大人まで、<br>世界基準のケアで一生涯の健康をサポートします。 </p>
 					<div class="mv-index__ct-note">
 						<picture>
-							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ttl-mv.webp" type="image/webp">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ttl-mv.png" alt="Grand open!">
+							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ttl-mv02.webp" type="image/webp">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ttl-mv02.png" alt="Grand open!">
 						</picture>
 					</div>
 				</div>
@@ -38,6 +38,8 @@
 						</picture>
 					</div> -->
 
+					<p class="mv-index__ct-txt mv-index__ct-txt-sp"><span>2026年4月 グランドオープン！</span></p>
+
 					<div class="mv-index__img">
 						<video
 							src="<?php echo esc_url(get_theme_file_uri('img/index/your-video.mp4')); ?>"
@@ -46,6 +48,24 @@
 							loop
 							playsinline>
 						</video>
+					</div>
+
+					<ul class="mv-info">
+						<li class="mv-index__list-item">
+							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-01.png" alt="icon"></small>
+							<span>箕面萱野駅<span><br>徒歩2分</span></span>
+						</li>
+						<li class="mv-index__list-item">
+							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-02.png" alt="icon"></small>
+							<span><span>安心安全</span>な<br>歯科治療</span>
+						</li>
+					</ul>
+
+					<div class="mv-index__calendar-sp">
+						<a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/common/icon-calendar.png" alt="">
+							<div><span>初診予約はこちら</span>24時間受付</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -231,11 +251,11 @@
 					<p class="c-txt__02 mh">各分野の専門知識を持つ歯科医師が在籍。難症例においても、チーム医療で質の高い治療を提供します。</p>
 				</li>
 				<li class="point-list__item js-scrollin delay03">
-					<h3 class="point-list__ttl">4 Ggroup</h3>
+					<h3 class="point-list__ttl">Equipment</h3>
 					<div class="point-list__img">
 						<picture>
 							<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/img-point-04.webp" type="image/webp">
-							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/img-point-04.jpg" alt="4 Ggroup">
+							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/img-point-04.jpg" alt="Equipment">
 						</picture>
 					</div>
 					<h4 class="point-list__desc">患者様にとって一番よい治療を提供xするための最先端、最高峰の設備</h4>
@@ -444,6 +464,28 @@
 					<p class="c-txt__02 environment-director__ct-txt">
 						「木を見て森を見ず」の治療では、本当の健康は手に入りません。私は、噛み合わせ、歯周病、審美性をトータルで回復させる「フルマウスリコンストラクション」を専門とし、患者様が一生涯、自分の歯で美味しく食事ができ、自信を持って笑える人生をサポートします。
 					</p>
+					<h3 class="environment-docter__flex-name"><span>経歴・資格</span></h3>
+					<ul class="environment-docter__flex-txt">
+						<li>・2001年 　大阪歯科大学卒業</li>
+						<li>・2007年 　安岡デンタルオフィス 開院</li>
+						<li>・9月　 大阪歯科大学　細菌学講座入局</li>
+						<li>・2010年 　医療法人翼翔会　設立</li>
+					</ul>
+					<h3 class="environment-docter__flex-name"><span>経歴・資格</span></h3>
+					<ul class="environment-docter__flex-txt">
+						<li>・AAID （AmericanAcademyof Implant Dentistry）</li>
+						<li>・ICOI （International Congress of Oral Implantologists）</li>
+						<li>・iACD （International Academy of Contemporary Dentistry）</li>
+						<li>・OJ（Osseointegration studyclub of Japan）</li>
+						<li>・5D（5-D Japan Communit）</li>
+						<li>・JACID　(The Japan Association of Clinical Implant Dentistry)</li>
+						<li>・NYU（New York University）</li>
+						<li>・臨床歯周病学会</li>
+						<li>・デジタル歯科学会</li>
+						<li>・日本口腔インプラント学会</li>
+						<li>・日本臨床歯科学会</li>
+						<li>・ENの会</li>
+					</ul>
 				</div>
 				<div class="environment-director__img js-scrollin">
 					<picture>
@@ -457,11 +499,13 @@
 				<div class="environment-docter__flex">
 					<div class="environment-docter__flex-ct js-scrollin">
 						<h2 class="environment-docter__flex-ttl"> 箕面萱野の皆様の<br>健康を守るパートナーとして </h2>
-						<p class="environment-docter__flex-desc"> はじめまして。<br class="sp">ヨクシオ歯科 箕面萱野 院長の川越です。<br> 当院では、患者様一人ひとりのライフスタイルやご要望に合わせた最適な治療プランをご提案いたします。<br> 「歯医者は怖い」というイメージを払拭し、通うのが楽しみになるような歯科医院を目指しています。 </p>
+						<p class="environment-docter__flex-desc"> はじめまして。<br class="sp">ヨクシオ歯科 箕面萱野 院長の川越智仁です。<br> 当院では、患者様一人ひとりのライフスタイルやご要望に合わせた最適な治療プランをご提案いたします。<br> 「歯医者は怖い」というイメージを払拭し、通うのが楽しみになるような歯科医院を目指しています。 </p>
 						<h3 class="environment-docter__flex-name"><span>経歴・資格</span></h3>
 						<ul class="environment-docter__flex-txt">
-							<li>・大阪歯科大学 卒業</li>
-							<li>・医療法人翼翔会 入職</li>
+							<li>・2018年　大阪歯科大学　卒業</li>
+							<li>・2019年　医療法人翼翔会入社</li>
+							<li>・2022年　安岡デンタルオフィス梅田医院　副院長就任</li>
+							<li>・2026年　ヨクシオ歯科箕面萱野開院　院長就任</li>
 						</ul>
 						<!-- <a href=" <?php echo esc_url(home_url('/')); ?>staff" class="c-btn__01">ドクター紹介を見る</a> -->
 					</div>
