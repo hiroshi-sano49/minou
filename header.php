@@ -34,7 +34,7 @@
       "@context": "https://schema.org",
       "@type": "Dentist",
       "name": "ヨクシオ歯科 箕面萱野",
-      "url": "<?php echo esc_url(get_template_directory_uri()); ?>",
+      "url": "<?php echo esc_url(home_url('/')); ?>",
       "logo": "<?php echo esc_url(get_template_directory_uri() . '/img/common/logo.png'); ?>",
       "telephone": "+81-050-5840-4618",
       "address": {
@@ -391,17 +391,18 @@
                                 echo 'header-page';
                               } ?>">
     <div class="inner">
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="header-logo">
-        <p>2026.4 NEW OPEN</p>
-        <picture>
-          <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo02.png">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo.png"
-            alt="2026.2 NEW OPEN ヨクシオ歯科　箕面萱野"
-            loading="lazy"
-            decoding="async"
-            fetchpriority="high">
-        </picture>
-      </a>
+      <h1 class="header-logo">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+          <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo02.png">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo.png"
+              alt="歯医者なら箕面市のヨクシオ歯科箕面萱野"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="high">
+          </picture>
+        </a>
+      </h1>
       <nav class="header-nav">
         <ul class="header-nav__menu">
           <li class="header-nav__menu-item <?php if (is_front_page()): echo 'active';

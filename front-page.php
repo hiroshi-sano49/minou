@@ -5,7 +5,7 @@
 			<div class="mv-index__main">
 				<div class="mv-index__ct">
 					<p class="mv-index__ct-txt"><span>2026年4月 グランドオープン！</span></p>
-					<h1 class="mv-index__ct-ttl">あたりまえを<br class="pc">最期まで。</h1>
+					<h2 class="mv-index__ct-ttl">あたりまえを<br class="pc">最期まで。</h2>
 					<p class="mv-index__ct-desc"> 小さなお子様から大人まで、<br>世界基準のケアで一生涯の健康をサポートします。 </p>
 					<div class="mv-index__ct-note">
 						<picture>
@@ -135,64 +135,6 @@
 			wp_reset_postdata(); ?>
 		</div>
 	</div>
-
-	<section class="sec-family">
-		<div class="inner">
-			<div class="family-box">
-				<h2 class="c-ttl__01 js-scrollin">
-					<span class="c-ft--jp"><span>ヨクシオ歯科が</span>大切にする3つのこと</span>
-				</h2>
-				<p class="c-txt__01 js-scrollin">
-					「あたりまえを最期まで」とは？<br>それは単に病気がない状態のことではありません。<br>人が人としての尊厳を保ち、<br class="sp-sm">自分らしく生き続けること。<br><br>私たちは、この使命を実現するために、<br>3つの視点から皆様の人生をサポートします。
-				</p>
-				<ol class="family-list">
-					<li class="family-list__item js-scrollin">
-						<h3 class="family-list__ttl">Happiness</h3>
-						<div class="family-list__ico">
-							<picture>
-								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-01.webp" type="image/webp">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-01.png" alt="Happiness" width="133">
-							</picture>
-						</div>
-						<h4 class="family-list__caption">人間の根源的な喜び</h4>
-						<p class="c-txt__02">
-							「食べる・話す・笑う」。<br>これらは人間にとって根源的な喜びであり、尊厳ある日々の象徴です。 私たちは生涯を通じて、この「あたりまえ」の楽しみを損なわないよう守り続けます。
-						</p>
-					</li>
-					<li class="family-list__item js-scrollin">
-						<h3 class="family-list__ttl">Quality of time</h3>
-						<div class="family-list__ico">
-							<picture>
-								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-02.webp" type="image/webp">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-02.png" alt="Quality of time" width="127">
-							</picture>
-						</div>
-						<h4 class="family-list__caption">「時間の質」としての健康</h4>
-						<p class="c-txt__02">
-							健康とは、単に病気がないことではありません。<br>「尊厳・笑顔・自立」を失わずに生きる"時間の質"そのものです。 最期まで自分らしく、健やかに生きる人生（ピンピンコロリ）を実現します。
-						</p>
-					</li>
-					<li class="family-list__item js-scrollin">
-						<h3 class="family-list__ttl">Control</h3>
-						<div class="family-list__ico">
-							<picture>
-								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-03.webp" type="image/webp">
-								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-03.png" alt="Control" width="137">
-							</picture>
-						</div>
-						<h4 class="family-list__caption">「あたりまえ」を支える実践</h4>
-						<p class="c-txt__02">
-							「炎症のコントロール」で全身の健康を守り、<br>「力のコントロール」で生きる力を取り戻す。<br>この2つの医療哲学の実践により、失われた「あたりまえ」を取り戻し、未来へとつなぎます。
-						</p>
-					</li>
-				</ol>
-				<div class="family-control js-scrollin">
-					<!-- 修正: T_HTTP（テーマディレクトリ）→ home_url（ページURL）へ修正 -->
-					<a href=" <?php echo esc_url(home_url('/')); ?>treatment-policy/" class="c-btn__01">治療方針・理念について</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<section class="sec-point">
 		<div class="inner">
@@ -499,6 +441,10 @@
 				<div class="environment-docter__flex">
 					<div class="environment-docter__flex-ct js-scrollin">
 						<h2 class="environment-docter__flex-ttl"> 箕面萱野の皆様の<br>健康を守るパートナーとして </h2>
+						<p class="environment-director__ct-info">
+							ヨクシオ歯科 箕面萱野 院長
+							<span>川越 智仁</span>
+						</p>
 						<p class="environment-docter__flex-desc"> はじめまして。<br class="sp">ヨクシオ歯科 箕面萱野 院長の川越智仁です。<br> 当院では、患者様一人ひとりのライフスタイルやご要望に合わせた最適な治療プランをご提案いたします。<br> 「歯医者は怖い」というイメージを払拭し、通うのが楽しみになるような歯科医院を目指しています。 </p>
 						<h3 class="environment-docter__flex-name"><span>経歴・資格</span></h3>
 						<ul class="environment-docter__flex-txt">
@@ -519,6 +465,65 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="sec-family">
+		<div class="inner">
+			<div class="family-box">
+				<h2 class="c-ttl__01 js-scrollin">
+					<span class="c-ft--jp"><span>ヨクシオ歯科が</span>大切にする3つのこと</span>
+				</h2>
+				<p class="c-txt__01 js-scrollin">
+					「あたりまえを最期まで」とは？<br>それは単に病気がない状態のことではありません。<br>人が人としての尊厳を保ち、<br class="sp-sm">自分らしく生き続けること。<br><br>私たちは、この使命を実現するために、<br>3つの視点から皆様の人生をサポートします。
+				</p>
+				<ol class="family-list">
+					<li class="family-list__item js-scrollin">
+						<h3 class="family-list__ttl">Happiness</h3>
+						<div class="family-list__ico">
+							<picture>
+								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-01.webp" type="image/webp">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-01.png" alt="Happiness" width="133">
+							</picture>
+						</div>
+						<h4 class="family-list__caption">人間の根源的な喜び</h4>
+						<p class="c-txt__02">
+							「食べる・話す・笑う」。<br>これらは人間にとって根源的な喜びであり、尊厳ある日々の象徴です。 私たちは生涯を通じて、この「あたりまえ」の楽しみを損なわないよう守り続けます。
+						</p>
+					</li>
+					<li class="family-list__item js-scrollin">
+						<h3 class="family-list__ttl">Quality of time</h3>
+						<div class="family-list__ico">
+							<picture>
+								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-02.webp" type="image/webp">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-02.png" alt="Quality of time" width="127">
+							</picture>
+						</div>
+						<h4 class="family-list__caption">「時間の質」としての健康</h4>
+						<p class="c-txt__02">
+							健康とは、単に病気がないことではありません。<br>「尊厳・笑顔・自立」を失わずに生きる"時間の質"そのものです。 最期まで自分らしく、健やかに生きる人生（ピンピンコロリ）を実現します。
+						</p>
+					</li>
+					<li class="family-list__item js-scrollin">
+						<h3 class="family-list__ttl">Control</h3>
+						<div class="family-list__ico">
+							<picture>
+								<source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/index/ico-family-03.webp" type="image/webp">
+								<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/ico-family-03.png" alt="Control" width="137">
+							</picture>
+						</div>
+						<h4 class="family-list__caption">「あたりまえ」を支える実践</h4>
+						<p class="c-txt__02">
+							「炎症のコントロール」で全身の健康を守り、<br>「力のコントロール」で生きる力を取り戻す。<br>この2つの医療哲学の実践により、失われた「あたりまえ」を取り戻し、未来へとつなぎます。
+						</p>
+					</li>
+				</ol>
+				<div class="family-control js-scrollin">
+					<!-- 修正: T_HTTP（テーマディレクトリ）→ home_url（ページURL）へ修正 -->
+					<a href=" <?php echo esc_url(home_url('/')); ?>treatment-policy/" class="c-btn__01">治療方針・理念について</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="sec-flow">
 		<div class="inner">
 			<div class="flow-block js-scrollin">

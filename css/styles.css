@@ -2872,6 +2872,11 @@ Header
     padding: 13px 130px 13px 10px;
   }
 }
+@media screen and (max-width: 834px) {
+  #header {
+    padding: 13px 100px 13px 10px;
+  }
+}
 @media screen and (max-width: 1200px) {
   #header::before {
     content: "";
@@ -2907,6 +2912,11 @@ Header
 @media screen and (max-width: 1200px) {
   #header .header-logo {
     max-width: 250px;
+  }
+}
+@media screen and (max-width: 834px) {
+  #header .header-logo {
+    max-width: 270px;
   }
 }
 #header .header-logo img {
@@ -3346,7 +3356,7 @@ Header
   display: block;
   width: 100%;
   height: 2px;
-  background: #FFF;
+  background: #fff;
   border-radius: 3px;
 }
 #header .js-mobile span:before, #header .js-mobile span:after {
@@ -3354,7 +3364,7 @@ Header
   left: 0;
   width: 100%;
   height: 100%;
-  background: #FFF;
+  background: #fff;
   content: "";
   transition: transform 0.3s;
   border-radius: 3px;

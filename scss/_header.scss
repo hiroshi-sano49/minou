@@ -15,6 +15,9 @@ Header
 	@include mq(xxl) {
 		padding: 13px 130px 13px 10px;
 	}
+	@include mq {
+		padding: 13px 100px 13px 10px;
+	}
 	&::before {
 		@include mq(xl) {
 			content: "";
@@ -44,6 +47,9 @@ Header
 		}
 		@include mq(xl) {
 			max-width: 250px;
+		}
+			@include mq {
+			max-width: 270px;
 		}
 		img {
 			width: 100%;
@@ -408,7 +414,7 @@ Header
 			display: block;
 			width: 100%;
 			height: 2px;
-			background: #FFF;
+			background: #fff;
 			border-radius: 3px;
 
 			&:before,
@@ -417,7 +423,7 @@ Header
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background: #FFF;
+				background: #fff;
 				content: "";
 				-webkit-transition: -webkit-transform 0.3s;
 				transition: transform 0.3s;
