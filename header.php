@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html <?php language_attributes(); ?>>
 
 <head>
@@ -20,7 +21,6 @@
     })(window, document, 'script', 'dataLayer', 'GTM-NKLKRLZ6');
   </script>
   <!-- End Google Tag Manager -->
-  <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta name="format-detection" content="telephone=no">

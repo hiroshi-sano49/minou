@@ -1,127 +1,131 @@
 @use "vars" as *;
 
-.sec-news-page{
+.sec-news-page {
 	padding: 32px 0 74px;
-	@include mq(){
+	@include mq() {
 		padding: 50px 0 60px;
 	}
-	.inner{
+	.inner {
 		max-width: calc(1000px + 10%);
 	}
 }
 
-.news-list{
+.news-list {
 	margin-bottom: 43px;
-	@include mq(){
+	@include mq() {
 		margin-bottom: 35px;
 	}
-	&__item{
-		&:not(:last-child){
+	&__item {
+		&:not(:last-child) {
 			margin-bottom: 13px;
 		}
-		a{
+		a {
 			padding: 17px 42px 19px;
 			display: block;
 			border-radius: 5px;
-			background: #F3F5F6;
-			@include mq(){
+			background: #f3f5f6;
+			@include mq() {
 				padding: 15px;
 			}
 		}
 	}
-	&__ttl{
-		color: #4C4948;
+	&__ttl {
+		color: #4c4948;
 		font-weight: 500;
 		line-height: 1.3;
 		@include font-size(14);
 	}
 }
 
-.news-meta{
+.news-meta {
 	margin-bottom: 9px;
-	@include flex(0,center,wrap);
-	&__time{
+	@include flex(0, center, wrap);
+	&__time {
 		font-weight: 500;
 		display: inline-block;
 		@include font-size(17);
 	}
-	&__cate{
-		@include flex(center,center);
+	&__cate {
+		@include flex(center, center);
 		display: inline-flex;
 		margin-left: 17px;
 		border-radius: 4px;
-		background: #9395D7;
+		background: #9395d7;
 		color: #fff;
 		font-weight: 500;
 		min-width: 65px;
 		height: 27px;
 		@include font-size(12);
-		@include mq(){
+		@include mq() {
 			@include font-size(14);
 		}
-		&.green{
-			background: #49BC9B;
+		&.green {
+			background: #49bc9b;
 		}
-		&.yellow{
-			background: #D4A385;
+		&.yellow {
+			background: #d4a385;
+		}
+
+		&_column {
+			background: #dd90ac !important;
 		}
 	}
 }
 
 //news-detail
 
-.sec-news-detail{
+.sec-news-detail {
 	padding: 69px 0 80px;
-	@include mq(){
+	@include mq() {
 		padding: 50px 0 60px;
 	}
 }
-.news-detail{
-	.news-meta{
+.news-detail {
+	.news-meta {
 		margin-bottom: 27px;
 		justify-content: center;
-		@include mq(){
+		@include mq() {
 			margin-bottom: 15px;
 		}
 	}
-	&__ttl{
+	&__ttl {
 		text-align: center;
-		color: #4C4948;
+		color: #4c4948;
 		padding-bottom: 30px;
 		margin-bottom: 61px;
 		font-weight: 500;
-		border-bottom: 1px solid #CECECE;
+		border-bottom: 1px solid #cecece;
 		@include font-size(36);
-		@include mq(){
+		@include mq() {
 			padding-bottom: 15px;
 			margin-bottom: 35px;
 			@include font-size(24);
 		}
 	}
-	&__main{
+	&__main {
 		line-height: 2.2533;
 		@include font-size(15);
 		max-width: 900px;
 		margin: 0 auto 32px;
 		width: 100%;
-		@include mq(){
+		@include mq() {
 			margin-bottom: 30px;
 			line-height: 1.6;
 			@include font-size(14);
 		}
-		img{
+		img {
 			margin-bottom: 43px;
 			max-width: 100%;
 			height: auto !important;
-			@include mq(){
+			@include mq() {
 				margin-bottom: 25px;
 			}
 		}
-		p{
+		p {
 			line-height: 2.2533;
 			@include font-size(15);
 			margin-bottom: 35px;
-			@include mq(){
+			@include mq() {
 				line-height: 1.6;
 				@include font-size(14);
 				margin-bottom: 20px;
@@ -147,19 +151,19 @@
 			font-weight: 500;
 			line-height: 1.5;
 			z-index: 2;
-			@include mq(){
+			@include mq() {
 				padding-left: 32px;
 				padding-bottom: 10px;
 				margin-bottom: 25px;
 				@include font-size(22);
 			}
-			@include p-before(15px,30px){
+			@include p-before(15px, 30px) {
 				left: -2px;
 				top: 10px;
 				transform: rotate(43deg);
 				border-radius: 100px;
-				background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
-				@include mq(){
+				background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
+				@include mq() {
 					width: 12px;
 					height: 25px;
 					top: 6px;
@@ -168,53 +172,55 @@
 				}
 			}
 		}
-		
+
 		h3 {
 			line-height: 1.3;
 			display: block;
 			@include font-size(25);
 			font-weight: 500;
 			padding: 14px 45px;
-			background: #EBEFF2;
+			background: #ebeff2;
 			border-radius: 20px;
 			margin-bottom: 35px;
-			@include mq{
+			text-align: left;
+			@include mq {
 				@include font-size(20);
 				padding: 12px 20px;
 			}
 		}
-		
+
 		h4 {
 			line-height: 1.3;
 			display: block;
 			@include font-size(22);
 			font-weight: 500;
-			color: #00A5B1;
-			border-bottom: 1px solid #B2B2B2;
+			color: #00a5b1;
+			border-bottom: 1px solid #b2b2b2;
 			position: relative;
 			padding: 0 15px 15px;
 			margin-bottom: 35px;
-			@include mq{
+			@include mq {
 				@include font-size(20);
 			}
-			&::before, &:after{
+			&::before,
+			&:after {
 				content: "";
 				display: inline-block;
 				width: 6px;
 				height: 6px;
-				background: #B2B2B2;
+				background: #b2b2b2;
 				border-radius: 50%;
 				position: absolute;
 				bottom: 0;
 				left: 0;
 				transform: translateY(50%);
 			}
-			&:after{
+			&:after {
 				left: auto;
 				right: 0;
 			}
 		}
-		
+
 		h5 {
 			line-height: 1.3;
 			display: block;
@@ -225,7 +231,7 @@
 			margin-inline-end: 0;
 			font-weight: bold;
 		}
-		
+
 		h6 {
 			line-height: 1.3;
 			display: block;
@@ -235,7 +241,7 @@
 			margin-inline-end: 0;
 			font-weight: bold;
 		}
-		
+
 		ol {
 			display: block;
 			list-style-type: decimal;
@@ -249,12 +255,12 @@
 				display: list-item;
 				text-align: -webkit-match-parent;
 				list-style: decimal;
-				&:not(:last-child){
+				&:not(:last-child) {
 					margin-bottom: 10px;
 				}
 			}
 		}
-		
+
 		ul {
 			display: block;
 			list-style-type: disc;
@@ -268,41 +274,42 @@
 				display: list-item;
 				text-align: -webkit-match-parent;
 				list-style: disc;
-				&:not(:last-child){
+				&:not(:last-child) {
 					margin-bottom: 10px;
 				}
 			}
 		}
-		
-		del, ins {
+
+		del,
+		ins {
 			line-height: 1.3;
 			text-decoration: line-through;
 		}
-		a{
+		a {
 			line-height: 1.3;
 			text-decoration: underline;
 			color: #000;
 		}
 	}
-	&__link{
+	&__link {
 		text-align: center;
-		a{
+		a {
 			display: inline-block;
 			padding-left: 59px;
 			position: relative;
 			font-weight: 500;
 			@include font-size(18);
-			@include mq(){
+			@include mq() {
 				padding-left: 30px;
 				@include font-size(16);
 			}
-			@include p-before(25px,18px){
-				background: url('../img/news/arrow.svg') center no-repeat;
+			@include p-before(25px, 18px) {
+				background: url("../img/news/arrow.svg") center no-repeat;
 				background-size: contain;
 				left: 18px;
 				top: 50%;
 				transform: translateY(-50%);
-				@include mq(){
+				@include mq() {
 					width: 18px;
 					height: 13px;
 					left: 0;
@@ -312,38 +319,39 @@
 	}
 }
 
-
-.wp-pagenavi{
-	@include flex(center,center,wrap);
+.wp-pagenavi {
+	@include flex(center, center, wrap);
 	gap: 13px;
-	span,a{
+	span,
+	a {
 		width: 40px;
 		height: 40px;
-		background: #B7B7B7;
+		background: #b7b7b7;
 		border-radius: 50%;
 		font-weight: 500;
 		color: #fff;
 		padding-bottom: 2px;
 		transition: all 0.3s;
-		@include flex(center,center);
+		@include flex(center, center);
 		margin: 0 !important;
 		border: 0 !important;
 		@include font-size(21);
-		@include mq{
+		@include mq {
 			@include font-size(17);
 		}
-		&.current{
-			background: #00A5B1;
+		&.current {
+			background: #00a5b1;
 			color: #fff;
 		}
-		&:hover{
+		&:hover {
 			opacity: 1;
-			background: #00A5B1;
+			background: #00a5b1;
 			color: #fff;
 			transition: all 0.3s;
 		}
 	}
-	.nextpostslink,.prevtpostslink{
+	.nextpostslink,
+	.prevtpostslink {
 		padding-bottom: 6px;
 	}
 }

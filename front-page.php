@@ -18,7 +18,7 @@
 					<ul class="mv-index__list">
 						<li class="mv-index__list-item">
 							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-01.png" alt="icon"></small>
-							<span>箕面萱野駅<span>徒歩2分</span></span>
+							<span>箕面萱野駅<span>徒歩5分</span></span>
 						</li>
 						<li class="mv-index__list-item">
 							<small><img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/icon-02.png" alt="icon"></small>
@@ -564,13 +564,69 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="sec-column">
+		<div class="inner">
+			<div class="environment-block js-scrollin">
+				<h2 class="c-ttl__01">
+					<strong>COLUMN</strong>
+					<span class="c-ft--en">column</span>
+					<span class="c-ft--jp">コラム</span>
+				</h2>
+			</div>
+
+			<?php
+			$column_query = new WP_Query([
+				'post_type'      => 'column',
+				'posts_per_page' => 3,
+				'orderby'        => 'date',
+				'order'          => 'DESC',
+			]);
+			?>
+
+			<?php if ($column_query->have_posts()) : ?>
+				<div class="top-column">
+					<?php while ($column_query->have_posts()) : $column_query->the_post(); ?>
+						<?php
+						// タクソノミー（column-category）を取得
+						$terms = get_the_terms(get_the_ID(), 'column-category');
+						?>
+						<article class="js-scrollin">
+							<a href="<?php the_permalink(); ?>" class="column-list">
+								<div class="column-posts__thumbnail">
+									<?php the_post_thumbnail('medium', ['alt' => get_the_title()]); ?>
+								</div>
+								<div class="column-posts__meta">
+									<time class="column-posts__meta-time"><?php the_time('Y.m.d'); ?></time>
+									<?php if ($terms && ! is_wp_error($terms)) : ?>
+										<?php foreach ($terms as $term) : ?>
+											<span class="column-posts__meta-cate"><?php echo esc_html($term->name); ?></span>
+										<?php endforeach; ?>
+									<?php else : ?>
+										<span class="column-posts__meta-cate">コラム</span>
+									<?php endif; ?>
+								</div>
+								<p class="column-posts__ttl"><?php the_title(); ?></p>
+							</a>
+						</article>
+					<?php endwhile; ?>
+				</div>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+
+			<div class="js-scrollin">
+				<a href="<?php echo esc_url(home_url('/column/')); ?>" class="c-btn__01 c-btn__01--shorter">一覧を見る</a>
+			</div>
+		</div>
+	</section>
+
 	<section class="sec-topics">
 		<div class="inner">
 			<ul class="topics-list">
 				<li class="topics-list__item">
 					<div class="topics-list__flex js-scrollin">
 						<h2 class="c-ttl__02 topics-list__heading"><span>TOPICS</span>最新情報</h2>
-						<a href=" <?php echo esc_url(home_url('/')); ?>news/" class="c-btn__02">一覧を見る</a>
+						<a href="<?php echo esc_url(home_url('/news/')); ?>" class="c-btn__02">一覧を見る</a>
 					</div>
 					<?php
 					$query = new WP_Query(
@@ -589,14 +645,11 @@
 											<time class="topics-posts__meta-time"><?php the_time('Y.m.d') ?></time>
 											<?php
 											$category = get_the_category();
-											for ($i = 0; $i < count($category); ++$i) {
-												$term_idsp = "category_" . $category[$i]->term_id;
-												if (get_field('背景カテゴリ', $term_idsp)) {
-													$color = get_field('背景カテゴリ', $term_idsp);
-													echo "<span class='topics-posts__meta-cate' style='background-color:" . $color . ";'>" . $category[$i]->cat_name . "</span>";
-												} else {
-													echo "<span class='topics-posts__meta-cate'>" . $category[$i]->cat_name . "</span>";
-												}
+											foreach (get_the_category() as $cat) {
+												$term_idsp = 'category_' . $cat->term_id;
+												$color     = get_field('背景カテゴリ', $term_idsp);
+												$style     = $color ? ' style="background-color:' . esc_attr($color) . ';"' : '';
+												echo "<span class='topics-posts__meta-cate'" . $style . ">" . esc_html($cat->cat_name) . "</span>";
 											}
 											?>
 										</div>
@@ -621,6 +674,7 @@
 			</ul>
 		</div>
 	</section>
+
 	<section class="sec-fqa">
 		<div class="inner">
 			<h2 class="c-ttl__01 js-scrollin">
@@ -649,6 +703,7 @@
 			</ul>
 		</div>
 	</section>
+
 	<section class="sec-access">
 		<div class="inner">
 			<div class="access-flex">
@@ -700,6 +755,7 @@
 			</div>
 		</div>
 	</section>
+
 	<section class="sec-calendar sec-calendar--02">
 		<div class="inner">
 			<ul class="calendar-list">

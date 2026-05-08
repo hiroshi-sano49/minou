@@ -71,37 +71,77 @@ function original_css_js_init()
 }
 add_action('wp_enqueue_scripts', 'original_css_js_init');
 
+// 標準投稿のアーカイブを有効化し、スラッグを news に設定
+add_action('registered_post_type_post', function ($post_type, $post_type_object) {
+	$post_type_object->has_archive = 'news';
+	$post_type_object->rewrite = [
+		'slug'       => 'news',
+		'with_front' => false,
+	];
+	// リライトルールを再登録
+	add_rewrite_rule(
+		'news/page/([0-9]{1,})/?$',
+		'index.php?post_type=post&paged=$matches[1]',
+		'top'
+	);
+	add_rewrite_rule(
+		'news/?$',
+		'index.php?post_type=post',
+		'top'
+	);
+}, 10, 2);
 
-// add_action('init', function () {
+// Yoastパンくず：お知らせアーカイブ・カテゴリページ対応
+add_filter('wpseo_breadcrumb_links', function ($links) {
+	if (is_post_type_archive('post') || is_home()) {
+		// /news/ アーカイブ：TOP ＞ お知らせ
+		$links[] = [
+			'text' => 'お知らせ',
+			'url'  => home_url('/news/'),
+		];
+	} elseif (is_category()) {
+		// カテゴリページ：TOP ＞ お知らせ ＞ カテゴリ名
+		$news_link = [
+			'text' => 'お知らせ',
+			'url'  => home_url('/news/'),
+		];
+		array_splice($links, 1, 0, [$news_link]);
+	}
+	return $links;
+});
 
-// 	if (
-// 		isset($_GET['opcache_clear']) &&
-// 		$_GET['opcache_clear'] === '1' &&
-// 		isset($_GET['key']) &&
-// 		$_GET['key'] === 'A03V03!'
-// 	) {
+// アーカイブ・タクソノミーページの表示件数を10件に設定
+add_action('pre_get_posts', function ($query) {
+	if (is_admin() || ! $query->is_main_query()) return;
 
-// 		// IP制限（ここ修正）
-// 		$allowed_ip = '14.132.197.245';
-// 		if ($_SERVER['REMOTE_ADDR'] !== $allowed_ip) {
-// 			status_header(403);
-// 			exit('Forbidden');
-// 		}
+	// お知らせ（標準投稿）アーカイブ
+	if ($query->is_home() || $query->is_archive() && $query->get('post_type') === 'post') {
+		$query->set('posts_per_page', 10);
+	}
 
-// 		// 管理者チェック
-// 		if (!is_user_logged_in() || !current_user_can('administrator')) {
-// 			status_header(403);
-// 			exit('No permission');
-// 		}
+	// コラム（CPT）アーカイブ・タクソノミー
+	if ($query->is_post_type_archive('column') || $query->is_tax('column-category')) {
+		$query->set('posts_per_page', 10);
+	}
+});
 
-// 		// OPcacheクリア
-// 		if (function_exists('opcache_reset')) {
-// 			opcache_reset();
-// 			echo 'OPcache cleared';
-// 		} else {
-// 			echo 'OPcache not enabled';
-// 		}
-
-// 		exit;
-// 	}
-// });
+// 管理画面の「投稿」表示を「お知らせ」に変更
+add_action('init', function () {
+	global $wp_post_types;
+	if (isset($wp_post_types['post'])) {
+		$labels = &$wp_post_types['post']->labels;
+		$labels->name                  = 'お知らせ';
+		$labels->singular_name         = 'お知らせ';
+		$labels->add_new               = '新規お知らせを追加';
+		$labels->add_new_item          = '新規お知らせを追加';
+		$labels->edit_item             = 'お知らせを編集';
+		$labels->new_item              = '新規お知らせ';
+		$labels->view_item             = 'お知らせを表示';
+		$labels->search_items          = 'お知らせを検索';
+		$labels->not_found             = 'お知らせが見つかりません';
+		$labels->not_found_in_trash    = 'ゴミ箱にお知らせはありません';
+		$labels->all_items             = 'お知らせ一覧';
+		$labels->menu_name             = 'お知らせ';
+		$labels->name_admin_bar        = 'お知らせ';
+	}
+});
