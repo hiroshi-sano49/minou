@@ -16,7 +16,7 @@
 						<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/logo.png" alt="ヨクシオ歯科　箕面萱野">
 					</picture>
 				</a>
-				<p class="footer-address"> 〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br> （みのおキューズモール近く）　<a href="https://maps.app.goo.gl/NFaQMEdqw68fTJJG8" target="_blank">Google map ＞</a>
+				<p class="footer-address"> 〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG3F<br> （みのおキューズモール近く）　<a href="https://maps.app.goo.gl/NFaQMEdqw68fTJJG8" target="_blank">Google map ＞</a>
 				</p>
 			</div>
 			<ul class="footer-nav">

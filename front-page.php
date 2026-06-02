@@ -710,8 +710,8 @@
 				<div class="access-flex__ct js-scrollin">
 					<h2 class="c-ttl__02"><span>ACCESS</span>アクセス・診療時間</h2>
 					<h3 class="access-flex__ttl">ヨクシオ歯科 箕面萱野</h3>
-					<p class="access-flex__txt"> 〒562-0013<br> 大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br>
-						<br>北大阪急行「箕面萱野駅」徒歩2分
+					<p class="access-flex__txt"> 〒562-0013<br> 大阪府箕面市坊島4丁目10-8 TEN24BLDG3F<br>
+						<br>北大阪急行「箕面萱野駅」徒歩5分
 					</p>
 					<div class="access-flex__table">
 						<table>

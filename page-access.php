@@ -26,7 +26,7 @@
             <span class="c-ft--jp">ヨクシオ歯科 箕面萱野</span>
             <span class="c-ft--en">Yokushio Dental Clinic Minoh Kayano</span>
           </div>
-          <p class="access-wrap__ct-location js-scrollin">〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG.<br>北大阪急行「箕面萱野駅」徒歩5分</p>
+          <p class="access-wrap__ct-location js-scrollin">〒562-0013　大阪府箕面市坊島4丁目10-8 TEN24BLDG3F<br>北大阪急行「箕面萱野駅」徒歩5分</p>
           <a href="tel:05058404618" class="access-wrap__ct-tel js-scrollin">TEL.<span>050-5840-4618</span></a>
           <div class="access-wrap__ct-btn js-scrollin">
             <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank"><img width="38" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/access/icon-calendar.svg" alt="WEB予約">WEB予約</a>
