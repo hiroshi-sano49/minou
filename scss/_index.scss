@@ -1597,7 +1597,7 @@ PAGE INDEX
 
 .topics-list {
 	display: grid;
-	grid-template-columns: 3fr 1fr;
+	grid-template-columns: 2.3fr 1fr;
 	gap: 39px;
 	@include mq() {
 		grid-template-columns: 1fr;

@@ -1,0 +1,212 @@
+@use "vars" as *;
+
+.sec-preventive.botox__preventive {
+  padding-bottom: 6px;
+}
+
+.botox .sec-mv__ttl .c-ft--en {
+  top: 55%;
+}
+
+.botox__preventive-catch {
+  margin-bottom: 37px;
+  @include font-size(19);
+  font-weight: 500;
+  line-height: calc(23.8 / 19);
+  letter-spacing: -0.01em;
+  @include mq() {
+    margin-bottom: 20px;
+    @include font-size(16);
+  }
+}
+
+.botox .c-txt__03 + .c-txt__03 {
+  margin-top: 25px;
+}
+
+/* botox__worries
+---------------------------------------------------------- */
+.botox__worries {
+  padding-block: 55px 107px;
+  @include mq() {
+    padding-block: 50px;
+  }
+}
+
+.botox__worries-text {
+  margin-top: 35px;
+  @include font-size(19);
+  font-weight: 500;
+  line-height: calc(36.8 / 19);
+  text-align: center;
+  @include mq() {
+    margin-bottom: 20px;
+    @include font-size(16);
+  }
+}
+
+/* なぜ「歯科」でボトックスを受けるのか
+---------------------------------------------------------- */
+.botox__about-text + p {
+  margin-top: 23px;
+}
+
+.botox__about-table {
+  margin-top: 84px;
+  margin-bottom: 30px;
+  @include mq() {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+.general-show.botox__about-table table tr th:nth-child(1),
+.general-show.botox__about-table table tr td:nth-child(1) {
+  width: 27%;
+  font-weight: bold;
+  @include mq() {
+    width: 21%;
+  }
+}
+.general-show.botox__about-table table tr th:nth-child(2),
+.general-show.botox__about-table table tr td:nth-child(2) {
+  width: 31.5%;
+  @include mq() {
+    width: 35%;
+  }
+}
+.general-show.botox__about-table table tr th:nth-child(3),
+.general-show.botox__about-table table tr td:nth-child(3) {
+  color: #00a5b1;
+}
+
+.general-show.botox__about-table table tr th,
+.general-show.botox__about-table table tr td {
+  padding: 18px 48px 19px;
+  @include mq(xxl) {
+    padding: 18px calc(48 / 1440 * 100vw) 19px;
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* 期待できること
+---------------------------------------------------------- */
+.botox__merit {
+  padding-block: 116px 20px;
+  @include mq() {
+    padding-block: 50px 20px;
+  }
+}
+
+.botox__merit-list {
+  padding-top: 20px;
+  counter-reset: number;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 43px;
+  @include mq() {
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.botox__merit-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.botox__merit-item-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.botox__merit-item-ttl::before {
+  counter-increment: number;
+  content: "" counter(number) ".";
+}
+
+.botox__merit-item-text {
+  margin-top: 10px;
+  @include font-size(15);
+  font-weight: 400;
+  line-height: calc(25 / 15);
+  @include mq() {
+    @include font-size(14);
+  }
+}
+
+/* 治療の流れ
+---------------------------------------------------------- */
+.botox__flow {
+  z-index: 1;
+}
+
+.botox__flow .flow-step__item {
+  padding-right: 55px;
+  @include mq() {
+    padding-right: 15px;
+  }
+}
+
+.botox__flow .flow-step__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.botox__flow .flow-step__item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+}
+
+/* 料金案内
+---------------------------------------------------------- */
+.botox__price {
+  padding-block: 0 164px;
+  @include mq() {
+    padding-block: 0 50px;
+  }
+}
+
+.botox__price-table {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.general-show.botox__price-table table tr th:nth-child(1),
+.general-show.botox__price-table table tr td:nth-child(1) {
+  width: 82%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 69%;
+  }
+}
+
+.general-show.botox__price-table table tr th,
+.general-show.botox__price-table table tr td {
+  padding: 18px 48px 19px;
+  @include mq(xxl) {
+    padding: 18px calc(48 / 1440 * 100vw) 19px;
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.botox__price-text {
+  text-indent: -1em;
+  padding-left: 1em;
+  @include font-size(14);
+  font-weight: 400;
+  line-height: calc(23.8 / 14);
+  color: #858585;
+  @include mq() {
+    @include font-size(12);
+  }
+}

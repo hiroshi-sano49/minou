@@ -1,0 +1,32 @@
+@use "vars" as *;
+
+.sec-entry.cta {
+  padding-block: 40px 50px;
+}
+
+.sec-entry.cta .entry-block {
+  margin-bottom: 17px;
+}
+
+.sec-entry.cta .entry-list__item {
+  width: 340px;
+}
+
+.sec-entry.cta .entry-list__item a {
+  height: 85px;
+}
+
+.cta .entry-list__item .btn-line.c-btn__03 {
+  background: #68b82b;
+}
+.cta .entry-list__item .btn-line.c-btn__03::before {
+  width: 48px;
+  height: 46px;
+  left: 25px;
+  background: url(../img/access/icon-line.svg) center no-repeat;
+  @include mq() {
+    width: 36px;
+    height: 36px;
+    left: 10px;
+  }
+}

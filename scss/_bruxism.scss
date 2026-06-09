@@ -1,0 +1,469 @@
+@use "vars" as *;
+
+.sec-preventive.bruxism__preventive {
+  padding-bottom: 28px;
+}
+
+.bruxism .sec-mv__ttl .c-ft--en {
+  top: 55%;
+}
+
+.bruxism__preventive-catch {
+  margin-bottom: 22px;
+  @include font-size(19);
+  font-weight: 500;
+  line-height: calc(31.8 / 19);
+  @include mq() {
+    margin-bottom: 20px;
+    @include font-size(16);
+  }
+}
+
+.bruxism .c-txt__03 + .c-txt__03 {
+  margin-top: 25px;
+}
+
+/* bruxism__worries
+---------------------------------------------------------- */
+.bruxism__worries {
+  padding-block: 55px 83px;
+  @include mq() {
+    padding-block: 50px;
+  }
+}
+
+.bruxism__worries .preventive-check .check-list.c-worries__list {
+  column-gap: 24px;
+}
+
+.bruxism__worries-text {
+  margin-top: 35px;
+  @include font-size(19);
+  font-weight: 500;
+  line-height: calc(36.8 / 19);
+  text-align: center;
+  @include mq() {
+    margin-bottom: 20px;
+    @include font-size(16);
+  }
+}
+
+/* 歯ぎしり・食いしばり（ブラキシズム）とは
+---------------------------------------------------------- */
+.bruxism__about {
+  padding-block: 70px 40px;
+  @include mq() {
+    padding-block: 0 20px;
+  }
+}
+
+.bruxism__about-content-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.bruxism__about-content-text {
+  margin-top: 14px;
+}
+
+.bruxism__about-content-text + p {
+  margin-top: 24px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__about-table {
+  margin-top: 55px;
+  margin-bottom: 25px;
+  @include mq() {
+    margin-top: 35px;
+  }
+}
+
+.general-show.bruxism__about-table table tr th:nth-child(1),
+.general-show.bruxism__about-table table tr td:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 29%;
+  }
+}
+.general-show.bruxism__about-table table tr th:nth-child(2),
+.general-show.bruxism__about-table table tr td:nth-child(2) {
+  width: 15%;
+  @include mq(xl) {
+    width: 25%;
+  }
+}
+
+.general-show.bruxism__about-table table tr th:nth-child(3),
+.general-show.bruxism__about-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__about-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__about-table table tr th,
+.general-show.bruxism__about-table table tr td {
+  padding: 18px 20px 19px 42px;
+  @include mq(xxl) {
+    padding: 18px calc(20 / 1440 * 100vw) 19px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* 見落とされがちな「TCH（歯列接触癖）」
+---------------------------------------------------------- */
+.bruxism__tch {
+  padding-block: 50px 40px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.bruxism__tch-content-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.bruxism__tch-content-text {
+  margin-top: 14px;
+}
+
+.bruxism__tch-content-text + p {
+  margin-top: 24px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__tch-content + .bruxism__tch-content {
+  margin-top: 38px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__tch-content-list {
+  margin-top: 27px;
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+.bruxism__tch-content-item {
+  padding-left: 1em;
+  position: relative;
+}
+
+.bruxism__tch-content-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+/* 放置すると
+---------------------------------------------------------- */
+.bruxism__leave {
+  padding-block: 70px 40px;
+  @include mq() {
+    padding-block: 20px 20px;
+  }
+}
+
+.bruxism__leave-table {
+  margin-top: 27px;
+  margin-bottom: 47px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.general-show.bruxism__leave-table table tr th:nth-child(1),
+.general-show.bruxism__leave-table table tr td:nth-child(1) {
+  width: 4%;
+  font-weight: bold;
+  @include mq() {
+    width: 21%;
+  }
+}
+
+.general-show.bruxism__leave-table table tr th,
+.general-show.bruxism__leave-table table tr td {
+  padding: 18px 10px 19px 42px;
+  @include mq(xxl) {
+    padding: 18px calc(10 / 1440 * 100vw) 19px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.bruxism__leave-catch {
+  margin: 0 auto;
+  width: calc(987 / 1200 * 100%);
+  @include font-size(19);
+  font-weight: 500;
+  line-height: calc(36.8 / 19);
+  text-align: center;
+  @include mq() {
+    width: 100%;
+    text-align: left;
+    @include font-size(16);
+  }
+}
+
+/* アプローチ
+---------------------------------------------------------- */
+.bruxism__approach {
+  padding-block: 113px 40px;
+  @include mq() {
+    padding-block: 50px 20px;
+  }
+}
+
+.bruxism__approach-list {
+  margin-top: 86px;
+  counter-reset: number;
+  display: grid;
+  gap: 26px;
+  @include mq() {
+    margin-top: 40px;
+  }
+}
+
+.bruxism__approach-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.bruxism__approach-item-ttl {
+  margin-bottom: 10px;
+  text-indent: -1em;
+  padding-left: 1em;
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.bruxism__approach-item-ttl::before {
+  counter-increment: number;
+  content: "" counter(number) ".";
+}
+
+.bruxism__approach-item-text.c-txt__03 {
+  line-height: calc(25 / 15);
+}
+
+.bruxism__approach-sub-ttl {
+  margin-top: 20px;
+  @include font-size(18);
+  font-weight: bold;
+  line-height: calc(25 / 18);
+  @include mq() {
+    @include font-size(16);
+  }
+}
+
+.bruxism__approach-sub-ttl--17 {
+  @include font-size(17);
+  @include mq() {
+    @include font-size(16);
+  }
+}
+
+.bruxism__approach-sub-list + p {
+  margin-top: 25px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__approach-sub-item {
+  padding-left: 1.5em;
+  position: relative;
+  @include mq() {
+    padding-left: 1em;
+  }
+}
+
+.bruxism__approach-sub-item.c-txt__03 {
+  line-height: calc(25 / 15);
+}
+
+.bruxism__approach-sub-item.c-txt__03 + .bruxism__approach-sub-item.c-txt__03 {
+  margin-top: 0;
+}
+
+.bruxism__approach-sub-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.bruxism__approach-content {
+  margin-top: 45px;
+  padding: 20px 28px 24px;
+  background-color: #faf4e2;
+  border-radius: 8px;
+  @include mq() {
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+}
+
+.bruxism__approach-content-ttl {
+  @include font-size(18);
+  font-weight: bold;
+  line-height: calc(25 / 18);
+  @include mq() {
+    @include font-size(16);
+  }
+}
+
+.bruxism__approach-table {
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.general-show.bruxism__approach-table table tr th:nth-child(1),
+.general-show.bruxism__approach-table table tr td:nth-child(1) {
+  width: 37.5%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 22%;
+  }
+}
+.general-show.bruxism__approach-table table tr th:nth-child(2),
+.general-show.bruxism__approach-table table tr td:nth-child(2) {
+  width: 27%;
+  @include mq(xl) {
+    width: 39%;
+  }
+}
+
+.general-show.bruxism__approach-table table tr th:nth-child(3),
+.general-show.bruxism__approach-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__approach-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__approach-table table tr th,
+.general-show.bruxism__approach-table table tr td {
+  padding: 18px 10px 19px 42px;
+  @include mq(xxl) {
+    padding: 18px calc(10 / 1440 * 100vw) 19px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* 治療の流れ
+---------------------------------------------------------- */
+.bruxism__flow {
+  z-index: 1;
+  padding-block: 78px 40px;
+  @include mq() {
+    padding-block: 50px 20px;
+  }
+}
+
+.bruxism__flow .flow-step__item {
+  padding-right: 55px;
+  @include mq() {
+    padding-right: 15px;
+  }
+}
+
+.bruxism__flow .flow-step__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.bruxism__flow .flow-step__item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+}
+
+/* 料金案内
+---------------------------------------------------------- */
+.bruxism__price {
+  padding-block: 33px 58px;
+  @include mq() {
+    padding-block: 0 50px;
+  }
+}
+
+.bruxism__price-table {
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+
+.general-show.bruxism__price-table table tr th:nth-child(1),
+.general-show.bruxism__price-table table tr td:nth-child(1) {
+  width: 52%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 35%;
+  }
+}
+.general-show.bruxism__price-table table tr th:nth-child(2),
+.general-show.bruxism__price-table table tr td:nth-child(2) {
+  width: 22%;
+  @include mq(xl) {
+    width: 26%;
+  }
+}
+
+.general-show.bruxism__price-table table tr th:nth-child(3),
+.general-show.bruxism__price-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__price-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__price-table table tr th,
+.general-show.bruxism__price-table table tr td {
+  padding: 18px 10px 19px 46px;
+  @include mq(xxl) {
+    padding: 18px calc(10 / 1440 * 100vw) 19px calc(46 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.bruxism__price-text {
+  @include font-size(14);
+  font-weight: 400;
+  line-height: calc(23.8 / 14);
+  color: #858585;
+  @include mq() {
+    @include font-size(12);
+  }
+}
