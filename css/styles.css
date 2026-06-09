@@ -2199,16 +2199,16 @@ Control
   color: #fff;
 }
 .c-fc--green {
-  color: #EB8E6C !important;
+  color: #eb8e6c !important;
 }
 .c-fc--red {
-  color: #DA0303 !important;
+  color: #da0303 !important;
 }
 .c-fc--basic {
-  color: #4C4948 !important;
+  color: #4c4948 !important;
 }
 .c-fc--blue {
-  color: #00A5B1 !important;
+  color: #00a5b1 !important;
 }
 
 .c-ft--jp {
@@ -2339,8 +2339,8 @@ Component
   z-index: 2;
 }
 .c-ttl__01 .c-ft--en {
-  background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
-  background: -webkit-linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
+  background: -webkit-linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2362,7 +2362,7 @@ Component
   }
 }
 .c-ttl__01 .c-ft--jp {
-  color: #4C4948;
+  color: #4c4948;
   font-weight: 500;
   font-size: 4.4rem;
 }
@@ -2402,8 +2402,8 @@ Component
   transform: translateY(-50%);
   width: 100vw;
   text-align: center;
-  background: linear-gradient(360deg, #FFF7F4 0%, #FFF9F8 100%);
-  background: -webkit-linear-gradient(360deg, #FFF7F4 0%, #FFF9F8 100%);
+  background: linear-gradient(360deg, #fff7f4 0%, #fff9f8 100%);
+  background: -webkit-linear-gradient(360deg, #fff7f4 0%, #fff9f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2438,8 +2438,8 @@ Component
 }
 .c-ttl__02 span {
   display: block;
-  background: linear-gradient(360deg, #EE9394 0%, #BD92DA 100%);
-  background: -webkit-linear-gradient(360deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background: -webkit-linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2485,7 +2485,7 @@ Component
   top: 31%;
   transform: rotate(43deg) translateY(-50%);
   border-radius: 100px;
-  background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
 }
 @media screen and (max-width: 834px) {
   .c-ttl__03:before {
@@ -2517,8 +2517,8 @@ Component
   line-height: 1;
   font-weight: bold;
   font-family: "Teachers", sans-serif;
-  background: #EE9394;
-  background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -2586,8 +2586,8 @@ Component
   font-family: "Teachers", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #FFF7F4 0%, #FFF9F8 100%);
-  background: -webkit-linear-gradient(90deg, #FFF7F4 0%, #FFF9F8 100%);
+  background: linear-gradient(90deg, #fff7f4 0%, #fff9f8 100%);
+  background: -webkit-linear-gradient(90deg, #fff7f4 0%, #fff9f8 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2625,7 +2625,7 @@ Component
   position: absolute;
   width: 10px;
   height: 30px;
-  background: #00A5B1;
+  background: #00a5b1;
   top: 0px;
   left: 0;
 }
@@ -2647,7 +2647,7 @@ Component
   }
 }
 .c-ttl__06 {
-  color: #00A5B1;
+  color: #00a5b1;
   margin-bottom: 19px;
   font-weight: 500;
   font-size: 2rem;
@@ -2661,7 +2661,7 @@ Component
 
 .c-btn__01 {
   border-radius: 100px;
-  background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
   height: 60px;
   max-width: 400px;
   width: 100%;
@@ -2712,7 +2712,7 @@ Component
   max-width: 218px;
 }
 .c-btn__02 {
-  color: #EB8E6C;
+  color: #eb8e6c;
   font-weight: 500;
   display: inline-block;
   padding-right: 23px;
@@ -2730,8 +2730,8 @@ Component
   position: absolute;
   width: 7px;
   height: 7px;
-  border-top: 2px solid #EB8E6C;
-  border-right: 2px solid #EB8E6C;
+  border-top: 2px solid #eb8e6c;
+  border-right: 2px solid #eb8e6c;
   top: 6px;
   right: 2px;
   transform: rotate(45deg);
@@ -2745,7 +2745,7 @@ Component
   }
 }
 .c-btn__03 {
-  background: linear-gradient(90deg, #EE9394 0%, #BD92DA 100%);
+  background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
   padding: 10px 10px 10px 63px;
   position: relative;
   color: #fff;
@@ -2840,6 +2840,90 @@ Component
   .js-scrollin.delay09.active {
     transition-delay: 1.8s;
   }
+}
+
+.preventive-check.c-worries {
+  margin-bottom: 0;
+  padding-top: 38px;
+  padding-inline: 10px;
+  display: block;
+  background-color: #eaedf7;
+}
+@media screen and (max-width: 834px) {
+  .preventive-check.c-worries {
+    padding: 20px 15px;
+  }
+}
+
+.c-worries__title {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.4285714286;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .c-worries__title {
+    font-size: 2.2rem;
+  }
+}
+
+.c-worries__text {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.6666666667;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .c-worries__text {
+    line-height: 1.5;
+  }
+}
+
+.c-worries__content {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 88%;
+}
+@media screen and (max-width: 834px) {
+  .c-worries__content {
+    width: 100%;
+  }
+}
+
+.c-worries__content + .c-worries__content {
+  margin-top: 20px;
+}
+@media screen and (max-width: 834px) {
+  .c-worries__content + .c-worries__content {
+    margin-top: 5px;
+  }
+}
+
+.preventive-check--periodontal-ttl.c-worries__list-title span {
+  width: 414px;
+}
+@media screen and (max-width: 834px) {
+  .preventive-check--periodontal-ttl.c-worries__list-title span {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.preventive-check .check-list.c-worries__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 35px;
+}
+@media screen and (max-width: 834px) {
+  .preventive-check .check-list.c-worries__list {
+    gap: 0 20px;
+  }
+}
+
+.c-worries__list-item--w100 {
+  width: 100%;
 }
 
 /* ====================================================
@@ -5820,7 +5904,7 @@ PAGE INDEX
 
 .topics-list {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.3fr 1fr;
   gap: 39px;
 }
 @media screen and (max-width: 834px) {
@@ -12059,6 +12143,61 @@ a.p-banner {
   padding-bottom: 6px;
 }
 
+.bl_author {
+  border: solid 2px #ffebe4;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 3rem auto 3rem;
+}
+
+.bl_author .bl_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.bl_author figure {
+  width: 150px;
+}
+
+.bl_author .bl_txt-area {
+  flex: 1;
+  font-size: 1.5rem;
+}
+
+.bl_author .bl_txt-area span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.bl_author .bl_txt-area dt {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.bl_author p {
+  border-top: solid 2px #ccc;
+  margin-top: 1em;
+  padding-top: 0.5em;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .bl_author {
+    border: solid 2px #7ecc30;
+    border-radius: 20px;
+    padding: 1rem;
+  }
+  .bl_author .bl_flex {
+    display: block;
+  }
+  .bl_author figure {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto 1rem;
+  }
+}
 .sec-yourself {
   padding-top: 25px;
 }
@@ -12656,4 +12795,1394 @@ a.p-banner {
   .p-ceramic .preventive-list__option-icon {
     width: 82px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.sec-preventive.botox__preventive {
+  padding-bottom: 6px;
+}
+
+.botox .sec-mv__ttl .c-ft--en {
+  top: 55%;
+}
+
+.botox__preventive-catch {
+  margin-bottom: 37px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.2526315789;
+  letter-spacing: -0.01em;
+}
+@media screen and (max-width: 834px) {
+  .botox__preventive-catch {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.botox .c-txt__03 + .c-txt__03 {
+  margin-top: 25px;
+}
+
+/* botox__worries
+---------------------------------------------------------- */
+.botox__worries {
+  padding-block: 55px 107px;
+}
+@media screen and (max-width: 834px) {
+  .botox__worries {
+    padding-block: 50px;
+  }
+}
+
+.botox__worries-text {
+  margin-top: 35px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.9368421053;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .botox__worries-text {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+/* なぜ「歯科」でボトックスを受けるのか
+---------------------------------------------------------- */
+.botox__about-text + p {
+  margin-top: 23px;
+}
+
+.botox__about-table {
+  margin-top: 84px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 834px) {
+  .botox__about-table {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+.general-show.botox__about-table table tr th:nth-child(1),
+.general-show.botox__about-table table tr td:nth-child(1) {
+  width: 27%;
+  font-weight: bold;
+}
+@media screen and (max-width: 834px) {
+  .general-show.botox__about-table table tr th:nth-child(1),
+  .general-show.botox__about-table table tr td:nth-child(1) {
+    width: 21%;
+  }
+}
+
+.general-show.botox__about-table table tr th:nth-child(2),
+.general-show.botox__about-table table tr td:nth-child(2) {
+  width: 31.5%;
+}
+@media screen and (max-width: 834px) {
+  .general-show.botox__about-table table tr th:nth-child(2),
+  .general-show.botox__about-table table tr td:nth-child(2) {
+    width: 35%;
+  }
+}
+
+.general-show.botox__about-table table tr th:nth-child(3),
+.general-show.botox__about-table table tr td:nth-child(3) {
+  color: #00a5b1;
+}
+
+.general-show.botox__about-table table tr th,
+.general-show.botox__about-table table tr td {
+  padding: 18px 48px 19px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.botox__about-table table tr th,
+  .general-show.botox__about-table table tr td {
+    padding: 18px 3.3333333333vw 19px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.botox__about-table table tr th,
+  .general-show.botox__about-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+/* 期待できること
+---------------------------------------------------------- */
+.botox__merit {
+  padding-block: 116px 20px;
+}
+@media screen and (max-width: 834px) {
+  .botox__merit {
+    padding-block: 50px 20px;
+  }
+}
+
+.botox__merit-list {
+  padding-top: 20px;
+  counter-reset: number;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 43px;
+}
+@media screen and (max-width: 834px) {
+  .botox__merit-list {
+    padding-top: 10px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.botox__merit-item {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.botox__merit-item-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .botox__merit-item-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.botox__merit-item-ttl::before {
+  counter-increment: number;
+  content: "" counter(number) ".";
+}
+
+.botox__merit-item-text {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.6666666667;
+}
+@media screen and (max-width: 834px) {
+  .botox__merit-item-text {
+    font-size: 1.4rem;
+  }
+}
+
+/* 治療の流れ
+---------------------------------------------------------- */
+.botox__flow {
+  z-index: 1;
+}
+
+.botox__flow .flow-step__item {
+  padding-right: 55px;
+}
+@media screen and (max-width: 834px) {
+  .botox__flow .flow-step__item {
+    padding-right: 15px;
+  }
+}
+
+.botox__flow .flow-step__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.botox__flow .flow-step__item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.44;
+}
+
+/* 料金案内
+---------------------------------------------------------- */
+.botox__price {
+  padding-block: 0 164px;
+}
+@media screen and (max-width: 834px) {
+  .botox__price {
+    padding-block: 0 50px;
+  }
+}
+
+.botox__price-table {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.general-show.botox__price-table table tr th:nth-child(1),
+.general-show.botox__price-table table tr td:nth-child(1) {
+  width: 82%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.botox__price-table table tr th:nth-child(1),
+  .general-show.botox__price-table table tr td:nth-child(1) {
+    width: 69%;
+  }
+}
+
+.general-show.botox__price-table table tr th,
+.general-show.botox__price-table table tr td {
+  padding: 18px 48px 19px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.botox__price-table table tr th,
+  .general-show.botox__price-table table tr td {
+    padding: 18px 3.3333333333vw 19px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.botox__price-table table tr th,
+  .general-show.botox__price-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+.botox__price-text {
+  text-indent: -1em;
+  padding-left: 1em;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #858585;
+}
+@media screen and (max-width: 834px) {
+  .botox__price-text {
+    font-size: 1.2rem;
+  }
+}
+
+.sec-preventive.bruxism__preventive {
+  padding-bottom: 28px;
+}
+
+.bruxism .sec-mv__ttl .c-ft--en {
+  top: 55%;
+}
+
+.bruxism__preventive-catch {
+  margin-bottom: 22px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.6736842105;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__preventive-catch {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.bruxism .c-txt__03 + .c-txt__03 {
+  margin-top: 25px;
+}
+
+/* bruxism__worries
+---------------------------------------------------------- */
+.bruxism__worries {
+  padding-block: 55px 83px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__worries {
+    padding-block: 50px;
+  }
+}
+
+.bruxism__worries .preventive-check .check-list.c-worries__list {
+  column-gap: 24px;
+}
+
+.bruxism__worries-text {
+  margin-top: 35px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.9368421053;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__worries-text {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+/* 歯ぎしり・食いしばり（ブラキシズム）とは
+---------------------------------------------------------- */
+.bruxism__about {
+  padding-block: 70px 40px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__about {
+    padding-block: 0 20px;
+  }
+}
+
+.bruxism__about-content-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__about-content-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.bruxism__about-content-text {
+  margin-top: 14px;
+}
+
+.bruxism__about-content-text + p {
+  margin-top: 24px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__about-content-text + p {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__about-table {
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__about-table {
+    margin-top: 35px;
+  }
+}
+
+.general-show.bruxism__about-table table tr th:nth-child(1),
+.general-show.bruxism__about-table table tr td:nth-child(1) {
+  width: 20%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__about-table table tr th:nth-child(1),
+  .general-show.bruxism__about-table table tr td:nth-child(1) {
+    width: 29%;
+  }
+}
+
+.general-show.bruxism__about-table table tr th:nth-child(2),
+.general-show.bruxism__about-table table tr td:nth-child(2) {
+  width: 15%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__about-table table tr th:nth-child(2),
+  .general-show.bruxism__about-table table tr td:nth-child(2) {
+    width: 25%;
+  }
+}
+
+.general-show.bruxism__about-table table tr th:nth-child(3),
+.general-show.bruxism__about-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__about-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__about-table table tr th,
+.general-show.bruxism__about-table table tr td {
+  padding: 18px 20px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.bruxism__about-table table tr th,
+  .general-show.bruxism__about-table table tr td {
+    padding: 18px 1.3888888889vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.bruxism__about-table table tr th,
+  .general-show.bruxism__about-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+/* 見落とされがちな「TCH（歯列接触癖）」
+---------------------------------------------------------- */
+.bruxism__tch {
+  padding-block: 50px 40px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__tch {
+    padding-block: 25px 20px;
+  }
+}
+
+.bruxism__tch-content-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__tch-content-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.bruxism__tch-content-text {
+  margin-top: 14px;
+}
+
+.bruxism__tch-content-text + p {
+  margin-top: 24px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__tch-content-text + p {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__tch-content + .bruxism__tch-content {
+  margin-top: 38px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__tch-content + .bruxism__tch-content {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__tch-content-list {
+  margin-top: 27px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__tch-content-list {
+    margin-top: 15px;
+  }
+}
+
+.bruxism__tch-content-item {
+  padding-left: 1em;
+  position: relative;
+}
+
+.bruxism__tch-content-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+/* 放置すると
+---------------------------------------------------------- */
+.bruxism__leave {
+  padding-block: 70px 40px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__leave {
+    padding-block: 20px 20px;
+  }
+}
+
+.bruxism__leave-table {
+  margin-top: 27px;
+  margin-bottom: 47px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__leave-table {
+    margin-bottom: 20px;
+  }
+}
+
+.general-show.bruxism__leave-table table tr th:nth-child(1),
+.general-show.bruxism__leave-table table tr td:nth-child(1) {
+  width: 4%;
+  font-weight: bold;
+}
+@media screen and (max-width: 834px) {
+  .general-show.bruxism__leave-table table tr th:nth-child(1),
+  .general-show.bruxism__leave-table table tr td:nth-child(1) {
+    width: 21%;
+  }
+}
+
+.general-show.bruxism__leave-table table tr th,
+.general-show.bruxism__leave-table table tr td {
+  padding: 18px 10px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.bruxism__leave-table table tr th,
+  .general-show.bruxism__leave-table table tr td {
+    padding: 18px 0.6944444444vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.bruxism__leave-table table tr th,
+  .general-show.bruxism__leave-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+.bruxism__leave-catch {
+  margin: 0 auto;
+  width: 82.25%;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.9368421053;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__leave-catch {
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}
+
+/* アプローチ
+---------------------------------------------------------- */
+.bruxism__approach {
+  padding-block: 113px 40px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach {
+    padding-block: 50px 20px;
+  }
+}
+
+.bruxism__approach-list {
+  margin-top: 86px;
+  counter-reset: number;
+  display: grid;
+  gap: 26px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-list {
+    margin-top: 40px;
+  }
+}
+
+.bruxism__approach-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.bruxism__approach-item-ttl {
+  margin-bottom: 10px;
+  text-indent: -1em;
+  padding-left: 1em;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-item-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.bruxism__approach-item-ttl::before {
+  counter-increment: number;
+  content: "" counter(number) ".";
+}
+
+.bruxism__approach-item-text.c-txt__03 {
+  line-height: 1.6666666667;
+}
+
+.bruxism__approach-sub-ttl {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3888888889;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-sub-ttl {
+    font-size: 1.6rem;
+  }
+}
+
+.bruxism__approach-sub-ttl--17 {
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-sub-ttl--17 {
+    font-size: 1.6rem;
+  }
+}
+
+.bruxism__approach-sub-list + p {
+  margin-top: 25px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-sub-list + p {
+    margin-top: 20px;
+  }
+}
+
+.bruxism__approach-sub-item {
+  padding-left: 1.5em;
+  position: relative;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-sub-item {
+    padding-left: 1em;
+  }
+}
+
+.bruxism__approach-sub-item.c-txt__03 {
+  line-height: 1.6666666667;
+}
+
+.bruxism__approach-sub-item.c-txt__03 + .bruxism__approach-sub-item.c-txt__03 {
+  margin-top: 0;
+}
+
+.bruxism__approach-sub-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.bruxism__approach-content {
+  margin-top: 45px;
+  padding: 20px 28px 24px;
+  background-color: #faf4e2;
+  border-radius: 8px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-content {
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+}
+
+.bruxism__approach-content-ttl {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3888888889;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__approach-content-ttl {
+    font-size: 1.6rem;
+  }
+}
+
+.bruxism__approach-table {
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.general-show.bruxism__approach-table table tr th:nth-child(1),
+.general-show.bruxism__approach-table table tr td:nth-child(1) {
+  width: 37.5%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__approach-table table tr th:nth-child(1),
+  .general-show.bruxism__approach-table table tr td:nth-child(1) {
+    width: 22%;
+  }
+}
+
+.general-show.bruxism__approach-table table tr th:nth-child(2),
+.general-show.bruxism__approach-table table tr td:nth-child(2) {
+  width: 27%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__approach-table table tr th:nth-child(2),
+  .general-show.bruxism__approach-table table tr td:nth-child(2) {
+    width: 39%;
+  }
+}
+
+.general-show.bruxism__approach-table table tr th:nth-child(3),
+.general-show.bruxism__approach-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__approach-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__approach-table table tr th,
+.general-show.bruxism__approach-table table tr td {
+  padding: 18px 10px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.bruxism__approach-table table tr th,
+  .general-show.bruxism__approach-table table tr td {
+    padding: 18px 0.6944444444vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.bruxism__approach-table table tr th,
+  .general-show.bruxism__approach-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+/* 治療の流れ
+---------------------------------------------------------- */
+.bruxism__flow {
+  z-index: 1;
+  padding-block: 78px 40px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__flow {
+    padding-block: 50px 20px;
+  }
+}
+
+.bruxism__flow .flow-step__item {
+  padding-right: 55px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__flow .flow-step__item {
+    padding-right: 15px;
+  }
+}
+
+.bruxism__flow .flow-step__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.bruxism__flow .flow-step__item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.44;
+}
+
+/* 料金案内
+---------------------------------------------------------- */
+.bruxism__price {
+  padding-block: 33px 58px;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__price {
+    padding-block: 0 50px;
+  }
+}
+
+.bruxism__price-table {
+  margin-top: 30px;
+  margin-bottom: 26px;
+}
+
+.general-show.bruxism__price-table table tr th:nth-child(1),
+.general-show.bruxism__price-table table tr td:nth-child(1) {
+  width: 52%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__price-table table tr th:nth-child(1),
+  .general-show.bruxism__price-table table tr td:nth-child(1) {
+    width: 35%;
+  }
+}
+
+.general-show.bruxism__price-table table tr th:nth-child(2),
+.general-show.bruxism__price-table table tr td:nth-child(2) {
+  width: 22%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.bruxism__price-table table tr th:nth-child(2),
+  .general-show.bruxism__price-table table tr td:nth-child(2) {
+    width: 26%;
+  }
+}
+
+.general-show.bruxism__price-table table tr th:nth-child(3),
+.general-show.bruxism__price-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.bruxism__price-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.bruxism__price-table table tr th,
+.general-show.bruxism__price-table table tr td {
+  padding: 18px 10px 19px 46px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.bruxism__price-table table tr th,
+  .general-show.bruxism__price-table table tr td {
+    padding: 18px 0.6944444444vw 19px 3.1944444444vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.bruxism__price-table table tr th,
+  .general-show.bruxism__price-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+.bruxism__price-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #858585;
+}
+@media screen and (max-width: 834px) {
+  .bruxism__price-text {
+    font-size: 1.2rem;
+  }
+}
+
+.sec-preventive.tmd__preventive {
+  padding-bottom: 28px;
+}
+
+.tmd .sec-mv__ttl .c-ft--en {
+  top: 55%;
+}
+
+.tmd__preventive-catch {
+  margin-bottom: 22px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.6736842105;
+}
+@media screen and (max-width: 834px) {
+  .tmd__preventive-catch {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+.tmd .c-txt__03 + .c-txt__03 {
+  margin-top: 25px;
+}
+
+/* tmd__worries
+---------------------------------------------------------- */
+.tmd__worries {
+  padding-block: 55px 70px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__worries {
+    padding-block: 50px;
+  }
+}
+
+.tmd__worries .c-worries__content {
+  width: 96%;
+}
+
+.tmd__worries .preventive-check .check-list.c-worries__list {
+  padding-left: 4%;
+  column-gap: 20px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__worries .preventive-check .check-list.c-worries__list {
+    padding-left: 0;
+  }
+}
+
+.tmd__worries-text {
+  margin-top: 35px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.9368421053;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .tmd__worries-text {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+  }
+}
+
+/* 顎関節症とは
+---------------------------------------------------------- */
+.tmd__about {
+  padding-block: 0 40px;
+}
+
+.tmd__about-content-ttl {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .tmd__about-content-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.tmd__about-content-text {
+  margin-top: 14px;
+}
+
+.tmd__about-content-text + p {
+  margin-top: 24px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__about-content-text + p {
+    margin-top: 20px;
+  }
+}
+
+.tmd__about-content + .tmd__about-content {
+  margin-top: 48px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__about-content + .tmd__about-content {
+    margin-top: 20px;
+  }
+}
+
+.tmd__about-content-list {
+  margin-top: 27px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__about-content-list {
+    margin-top: 20px;
+  }
+}
+
+.tmd__about-content-item {
+  padding-left: 1em;
+  position: relative;
+}
+
+.tmd__about-content-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+/* 4つの症状タイプ
+---------------------------------------------------------- */
+.tmd__type {
+  padding-block: 50px 40px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__type {
+    padding-block: 0 20px;
+  }
+}
+
+.tmd__type-table {
+  margin-top: 40px;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__type-table {
+    margin-top: 20px;
+  }
+}
+
+.general-show.tmd__type-table table tr th:nth-child(1),
+.general-show.tmd__type-table table tr td:nth-child(1) {
+  width: 11%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__type-table table tr th:nth-child(1),
+  .general-show.tmd__type-table table tr td:nth-child(1) {
+    width: 15%;
+  }
+}
+
+.general-show.tmd__type-table table tr th:nth-child(2),
+.general-show.tmd__type-table table tr td:nth-child(2) {
+  width: 15%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__type-table table tr th:nth-child(2),
+  .general-show.tmd__type-table table tr td:nth-child(2) {
+    width: 33%;
+  }
+}
+
+.general-show.tmd__type-table table tr th:nth-child(3),
+.general-show.tmd__type-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.tmd__type-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.tmd__type-table table tr th,
+.general-show.tmd__type-table table tr td {
+  padding: 18px 10px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.tmd__type-table table tr th,
+  .general-show.tmd__type-table table tr td {
+    padding: 18px 0.6944444444vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.tmd__type-table table tr th,
+  .general-show.tmd__type-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+/* 放置すると
+---------------------------------------------------------- */
+.tmd__leave {
+  padding-block: 40px 40px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__leave {
+    padding-block: 20px 20px;
+  }
+}
+
+.tmd__leave-table {
+  margin-top: 40px;
+  margin-bottom: 47px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__leave-table {
+    margin-bottom: 20px;
+  }
+}
+
+.general-show.tmd__leave-table table tr th:nth-child(1),
+.general-show.tmd__leave-table table tr td:nth-child(1) {
+  width: 6.5%;
+  font-weight: bold;
+}
+@media screen and (max-width: 834px) {
+  .general-show.tmd__leave-table table tr th:nth-child(1),
+  .general-show.tmd__leave-table table tr td:nth-child(1) {
+    width: 21%;
+  }
+}
+
+.general-show.tmd__leave-table table tr th,
+.general-show.tmd__leave-table table tr td {
+  padding: 18px 10px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.tmd__leave-table table tr th,
+  .general-show.tmd__leave-table table tr td {
+    padding: 18px 0.6944444444vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.tmd__leave-table table tr th,
+  .general-show.tmd__leave-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+.tmd__leave-catch {
+  margin: 0 auto;
+  width: 82.25%;
+  font-size: 1.9rem;
+  font-weight: 500;
+  line-height: 1.9368421053;
+  text-align: center;
+}
+@media screen and (max-width: 834px) {
+  .tmd__leave-catch {
+    width: 100%;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+}
+
+/* できること
+---------------------------------------------------------- */
+.tmd__approach {
+  padding-block: 72px 40px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach {
+    padding-block: 40px 20px;
+  }
+}
+
+.tmd__approach-list {
+  margin-top: 65px;
+  counter-reset: number;
+  display: grid;
+  gap: 26px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach-list {
+    margin-top: 40px;
+  }
+}
+
+.tmd__approach-item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.tmd__approach-item-ttl {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.44;
+  color: #00a5b1;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach-item-ttl {
+    font-size: 1.8rem;
+  }
+}
+
+.tmd__approach-item-ttl::before {
+  counter-increment: number;
+  content: "" counter(number) ".";
+}
+
+.tmd__approach-item-text.c-txt__03 {
+  line-height: 1.6666666667;
+}
+
+.tmd__approach-sub-list {
+  margin-top: 23px;
+}
+
+.tmd__approach-sub-item {
+  padding-left: 1.5em;
+  position: relative;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach-sub-item {
+    padding-left: 1em;
+  }
+}
+
+.tmd__approach-sub-item.c-txt__03 {
+  line-height: 1.6666666667;
+}
+
+.tmd__approach-sub-item.c-txt__03 + .tmd__approach-sub-item.c-txt__03 {
+  margin-top: 0;
+}
+
+.tmd__approach-sub-item::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.tmd__approach-content {
+  margin-top: 28px;
+  padding: 20px 28px 24px;
+  background-color: #faf4e2;
+  border-radius: 8px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach-content {
+    margin-top: 20px;
+    padding: 15px 20px;
+  }
+}
+
+.tmd__approach-content-ttl {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3888888889;
+}
+@media screen and (max-width: 834px) {
+  .tmd__approach-content-ttl {
+    font-size: 1.6rem;
+  }
+}
+
+.tmd__approach-table {
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.general-show.tmd__approach-table table tr th:nth-child(1),
+.general-show.tmd__approach-table table tr td:nth-child(1) {
+  width: 24.5%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__approach-table table tr th:nth-child(1),
+  .general-show.tmd__approach-table table tr td:nth-child(1) {
+    width: 22%;
+  }
+}
+
+.general-show.tmd__approach-table table tr th:nth-child(2),
+.general-show.tmd__approach-table table tr td:nth-child(2) {
+  width: 27%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__approach-table table tr th:nth-child(2),
+  .general-show.tmd__approach-table table tr td:nth-child(2) {
+    width: 33%;
+  }
+}
+
+.general-show.tmd__approach-table table tr th:nth-child(3),
+.general-show.tmd__approach-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.tmd__approach-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.tmd__approach-table table tr th,
+.general-show.tmd__approach-table table tr td {
+  padding: 18px 10px 19px 42px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.tmd__approach-table table tr th,
+  .general-show.tmd__approach-table table tr td {
+    padding: 18px 0.6944444444vw 19px 2.9166666667vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.tmd__approach-table table tr th,
+  .general-show.tmd__approach-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+/* 治療の流れ
+---------------------------------------------------------- */
+.tmd__flow {
+  z-index: 1;
+}
+
+.tmd__flow .flow-step__item {
+  padding-right: 55px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__flow .flow-step__item {
+    padding-right: 15px;
+  }
+}
+
+.tmd__flow .flow-step__item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.tmd__flow .flow-step__item p {
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.44;
+}
+
+/* よくあるご質問
+---------------------------------------------------------- */
+.tmd__fqa {
+  padding-top: 30px;
+}
+
+/* 料金案内
+---------------------------------------------------------- */
+.tmd__price {
+  padding-block: 83px 56px;
+}
+@media screen and (max-width: 834px) {
+  .tmd__price {
+    padding-block: 40px 20px;
+  }
+}
+
+.tmd__price-table {
+  margin-top: 30px;
+  margin-bottom: 4px;
+}
+
+.general-show.tmd__price-table table tr th:nth-child(1),
+.general-show.tmd__price-table table tr td:nth-child(1) {
+  width: 52%;
+  font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__price-table table tr th:nth-child(1),
+  .general-show.tmd__price-table table tr td:nth-child(1) {
+    width: 35%;
+  }
+}
+
+.general-show.tmd__price-table table tr th:nth-child(2),
+.general-show.tmd__price-table table tr td:nth-child(2) {
+  width: 22%;
+}
+@media screen and (max-width: 1200px) {
+  .general-show.tmd__price-table table tr th:nth-child(2),
+  .general-show.tmd__price-table table tr td:nth-child(2) {
+    width: 23%;
+  }
+}
+
+.general-show.tmd__price-table table tr th:nth-child(3),
+.general-show.tmd__price-table table tr td:nth-child(3) {
+  color: #4c4948;
+}
+
+.general-show.tmd__price-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.tmd__price-table table tr th,
+.general-show.tmd__price-table table tr td {
+  padding: 18px 10px 19px 46px;
+}
+@media screen and (max-width: 1400px) {
+  .general-show.tmd__price-table table tr th,
+  .general-show.tmd__price-table table tr td {
+    padding: 18px 0.6944444444vw 19px 3.1944444444vw;
+  }
+}
+@media screen and (max-width: 834px) {
+  .general-show.tmd__price-table table tr th,
+  .general-show.tmd__price-table table tr td {
+    padding: 6px 7px;
+  }
+}
+
+.tmd__price-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #858585;
+}
+@media screen and (max-width: 834px) {
+  .tmd__price-text {
+    font-size: 1.2rem;
+  }
+}
+
+.sec-entry.cta {
+  padding-block: 40px 50px;
+}
+
+.sec-entry.cta .entry-block {
+  margin-bottom: 17px;
+}
+
+.sec-entry.cta .entry-list__item {
+  width: 340px;
+}
+
+.sec-entry.cta .entry-list__item a {
+  height: 85px;
+}
+
+.cta .entry-list__item .btn-line.c-btn__03 {
+  background: #68b82b;
+}
+
+.cta .entry-list__item .btn-line.c-btn__03::before {
+  width: 48px;
+  height: 46px;
+  left: 25px;
+  background: url(../img/access/icon-line.svg) center no-repeat;
+}
+@media screen and (max-width: 834px) {
+  .cta .entry-list__item .btn-line.c-btn__03::before {
+    width: 36px;
+    height: 36px;
+    left: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
