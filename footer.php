@@ -46,12 +46,12 @@
               <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>maternity">マタニティ診療</a>
               </li>
               <!-- <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>visit">訪問診療</a></li> -->
-              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>botox">歯科でボトックス治療</a>
+              <!-- <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>botox">歯科でボトックス治療</a>
+              </li> -->
+              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>tmd">顎関節症の治療</a>
               </li>
               <li class="footer-nav__list-item"><a
                   href=" <?php echo esc_url(home_url('/')); ?>bruxism">歯ぎしり・食いしばりの治療</a>
-              </li>
-              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>tmd">顎関節症の治療</a>
               </li>
 
             </ul>
@@ -103,11 +103,11 @@
 <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/setting.js"></script>
 <script>
-window.addEventListener('DOMContentLoaded', function() {
-  if ($('.js-scrollHint'.length > 0)) {
-    new ScrollHint('.js-scrollHint');
-  }
-});
+  window.addEventListener('DOMContentLoaded', function() {
+    if ($('.js-scrollHint'.length > 0)) {
+      new ScrollHint('.js-scrollHint');
+    }
+  });
 </script>
 </body>
 

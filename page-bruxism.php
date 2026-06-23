@@ -5,7 +5,7 @@
   <section class="sec-mv">
     <div class="sec-mv__ct">
       <h1 class="sec-mv__ttl">
-        <span class="c-ft--en">BRUXISM & BOTOX</span>
+        <span class="c-ft--en">BRUXISM</span>
         <span class="c-ft--jp">歯ぎしり・<br class="sp">食いしばりの治療</span>
       </h1>
     </div>

@@ -32,6 +32,9 @@
             <li class="sitemap-list__menu-item"><a href="/implant/">インプラント</a></li>
             <li class="sitemap-list__menu-item"><a href="/denture/">入れ歯（義歯）</a></li>
             <li class="sitemap-list__menu-item"><a href="/maternity/">マタニティ診療</a></li>
+            <li class="sitemap-list__menu-item"><a href="/tmd/">顎関節症の治療</a></li>
+            <li class="sitemap-list__menu-item"><a href="/bruxism/">歯ぎしり・食いしばりの治療</a></li>
+            <li class="sitemap-list__menu-item"><a href="/botox/">歯科でボトックス治療</a></li>
             <!-- <li class="sitemap-list__menu-item"><a href="/visit/">訪問診療</a></li> -->
           </ul>
         </li>
