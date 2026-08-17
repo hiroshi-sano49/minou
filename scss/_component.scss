@@ -609,9 +609,9 @@ Component
 
 .c-worries__text {
   margin-top: 10px;
-  @include font-size(15);
+  @include font-size(20);
   font-weight: 500;
-  line-height: calc(40 / 15);
+  line-height: calc(40 / 20);
   text-align: center;
   @include mq() {
     line-height: 1.5;
@@ -636,6 +636,12 @@ Component
 
 .preventive-check--periodontal-ttl.c-worries__list-title span {
   width: 414px;
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #9395d7;
+  background-color: #fff;
+  border-radius: 100px;
   @include mq() {
     width: 100%;
     max-width: 300px;
@@ -654,4 +660,89 @@ Component
 
 .c-worries__list-item--w100 {
   width: 100%;
+}
+
+/* ----------------------------------------------------------
+// こんなときはご相談ください
+// ---------------------------------------------------------- */
+.preventive-check.c-consultation {
+  background-color: #eaedf7;
+}
+
+.preventive-check--periodontal-ttl.c-consultation__title span {
+  width: 414px;
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #9395d7;
+  background-color: #fff;
+  border-radius: 100px;
+  @include mq() {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ----------------------------------------------------------
+// メニュー
+// ---------------------------------------------------------- */
+.c-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px 35px;
+  margin-bottom: 30px;
+  @include mq() {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  &__item {
+    border-bottom: 1px solid #d3d3d3;
+    @include flex(0, start, wrap);
+    padding: 21px 21px 29px;
+    @include mq() {
+      align-items: center;
+      padding: 15px 0;
+    }
+    &-ceramic {
+      display: block;
+      padding: 0 0 19px 0;
+      .pediatric-menu__ct {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  &__img {
+    width: 100px;
+    @include mq() {
+      width: 60px;
+    }
+  }
+  &__ct {
+    width: calc(100% - 100px);
+    padding: 0 0 0 34px;
+    @include mq() {
+      width: calc(100% - 60px);
+      padding: 0 0 0 15px;
+    }
+    &-ttl {
+      display: block;
+      @include font-size(20);
+      font-weight: 500;
+      color: #00a5b1;
+      margin-bottom: 10px;
+      @include mq() {
+        @include font-size(18);
+        margin-bottom: 5px;
+      }
+      span {
+        display: block;
+        @include font-size(17);
+        line-height: 1;
+        @include mq() {
+          @include font-size(15);
+        }
+      }
+    }
+  }
 }

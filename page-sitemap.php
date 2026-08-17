@@ -22,7 +22,8 @@
         <li class="sitemap-list__item js-scrollin">
           <h2 class="sitemap-list__ttl">院内案内</h2>
           <ul class="sitemap-list__menu">
-            <li class="sitemap-list__menu-item"><a href="/general/">一般歯科・根管治療</a></li>
+            <li class="sitemap-list__menu-item"><a href="/general/">一般歯科</a></li>
+            <li class="sitemap-list__menu-item"><a href="/root-canal/">根管治療</a></li>
             <li class="sitemap-list__menu-item"><a href="/periodontal/">歯周病治療</a></li>
             <li class="sitemap-list__menu-item"><a href="/preventive/">予防・メンテナンス</a></li>
             <li class="sitemap-list__menu-item"><a href="/pediatric/">小児歯科</a></li>

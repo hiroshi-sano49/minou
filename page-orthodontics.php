@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
-<main id="page-orthodontics" class="wrapper">
+<main id="page-orthodontics" class="wrapper orthodontics">
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <h1 class="sec-mv__ttl sec-mv__ttl--medical">
         <span class="c-ft--en">medical services</span>
         <span class="c-ft--jp">成人矯正</span>
       </h1>
-      <p class="sec-mv__desc">歯並びやかみ合わせを整え、<br class="sp">機能面と見た目の両立を目指す治療です。</p>
     </div>
   </section>
   <div class="breadcrumb">
@@ -17,351 +16,409 @@
   <section class="sec-preventive sec-preventive--03">
     <div class="inner">
       <div class="preventive-block mbpc-45 js-scrollin">
-        <h2 class="preventive-block__ttl mbpc-35">成人矯正について</h2>
         <div class="preventive-block__thumb mbpc-25">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-01.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-01.jpg" alt="成人矯正について">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-01.webp"
+              type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-01.jpg"
+              alt="「歯並びを整えたい。でも装置が目立つのは嫌」その両方に応えるのが、当院の矯正治療です。">
           </picture>
         </div>
-        <h3 class="preventive-block__desc">お顔の印象を大きく変え<br class="sp">多くのメリットも期待できる治療です</h3>
-        <p class="c-txt__03"> 歯並びはそのかたの印象を大きく左右します。矯正治療で気になる歯並びを整えることで、自分に自信が持てるようになったというかたも少なくありません。 さらに、歯みがきがやりやすくなってむし歯や歯周病のリスクが低減するといったメリットも期待できます。 当院では、負担の少ないマウスピース矯正で、患者さんの歯並びのお悩みにお応えしております。どうぞお気軽ご相談ください。 </p>
-      </div>
-      <div class="preventive-check preventive-check--periodontal js-scrollin">
-        <h4 class="preventive-check--periodontal-ttl">
-          <span>このような場合はご相談ください</span>
-        </h4>
-        <ul class="check-list check-list--periodontal">
-          <li class="check-list__item">歯並びで悩んでいる</li>
-          <li class="check-list__item">歯みがきがやりづらい</li>
-          <li class="check-list__item">周りに気づかれずに矯正したい</li>
-          <li class="check-list__item">人前で口を開けて笑えない</li>
-          <li class="check-list__item">矯正治療の痛みが心配</li>
-          <li class="check-list__item">噛み合わせがズレている</li>
-        </ul>
-      </div>
-      <ul class="preventive-list">
-        <li class="preventive-list__item">
-          <h2 class="c-ttl__03 mbpc-20 js-scrollin">
-            <span class="c-ft--jp">当院の成人矯正<span>（マウスピース矯正はどこも同じではありません）</span></span>
-            <span class="c-ft--en">Features</span>
-          </h2>
-          <p class="c-txt__03 js-scrollin">ただ歯を並べるだけではない、長期安定性を追求した嚙み合わせ治療です。</p>
-          <ul class="preventive-list__step preventive-list__step--02">
-            <li class="preventive-list__step-item js-scrollin">
-              <h3 class="preventive-list__step-ttl">見た目だけではなく審美性・機能性を実現</h3>
-              <p class="c-txt__04 mh">当院では、長期的な全身の健康を考えて、見た目だけではなく、ご自身の歯を長く使っていただけるような噛み合わせなどの機能性を実現するために、歯1本からお口全体、全身の骨格までアプローチしています。他院では真似できないハイクオリティなレベルの矯正治療を行っています。</p>
-            </li>
-            <li class="preventive-list__step-item js-scrollin">
-              <h3 class="preventive-list__step-ttl">矯正治療を対応する専任歯科医師</h3>
-              <p class="c-txt__04 mh">満足度の高いマウスピース矯正を提供するためには、患者さんのお口の状態やご要望に沿って歯並びを整えていくことが大切です。治療を担当する歯科医師には、確かな知識と経験が求められます。当院では、「インビザライン・ダイヤモンドプロバイダー」認定を受けた歯科医師が治療を担当いたします。どうぞ安心してご相談いただければと思います。</p>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="sec-provider">
-    <div class="provider-bg js-scrollin">
-      <div class="inner">
-        <div class="provider-flex">
-          <div class="provider-flex__ct">
-            <h3 class="provider-flex__ttl">インビザライン ダイヤモンドプロバイダーとは？</h3>
-            <p class="c-txt__04">インビザラインによる治療を行う歯科医師は、年間の症例数によってランクが設定され、ダイヤモンドプロバイダーに認定されるのは、年間150症例以上の治療経験を持つ歯科医師のみです。この認定を受けている歯科医師は、インビザライン治療を行う歯科医師全体の1.6％に過ぎません。</p>
-          </div>
-          <div class="provider-flex__img">
-            <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-02.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-02.jpg" alt="インビザライン ダイヤモンドプロバイダーとは？">
-            </picture>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="inner">
-      <ul class="provider-list">
-        <li class="provider-list__item">
-          <h4 class="c-ttl__04 js-scrollin">全顎的な噛み合わせを考えた複合治療</h4>
-          <p class="c-txt__04 js-scrollin">当院では、インプラント、審美治療、口腔外科、歯周病、根管治療などそれぞれの専門分野に精通している歯科医師が在籍しています。矯正治療のみに特化している歯科医院や、一般的な歯科治療を中心に行っている歯科医院では対応が難しい症例もお任せください。</p>
-          <ul class="provider-list__option js-scrollin">
-            <li class="provider-list__option-item">インプラント × 矯正治療</li>
-            <li class="provider-list__option-item">審美治療 × 矯正治療</li>
-            <li class="provider-list__option-item">口腔外科 × 矯正治療</li>
-          </ul>
-        </li>
-        <li class="provider-list__item">
-          <h4 class="c-ttl__04 js-scrollin">精密な検査データで治療をシミュレーション</h4>
-          <p class="c-txt__04 js-scrollin">一人ひとりの患者さんに合った矯正治療を提供するため、当院では頭部専用のセファロレントゲンや、口腔内スキャナー（iTero）、必要に応じて歯科用CTといった先端機器を活用して、精密な検査データを収集します。さらに、精度の高いデータをもとに治療のシミュレーションを繰り返して、綿密な治療計画を作製いたします。</p>
-        </li>
-        <li class="provider-list__item">
-          <h4 class="c-ttl__04 js-scrollin">担当ドクター、担当歯科衛生士、担当コンシェルジュによる一人ひとりにあわせた適切な対応</h4>
-          <p class="c-txt__04 js-scrollin">初診のご相談から治療終了まで担当ドクターと専任のカウンセラーが継続して診療にあたります。個室のカウンセリングルームで患者さん一人ひとりのお悩みに向き合います。「治療期間」「費用」「抜歯の有無」「治療後の歯並び」などどんなことでもお気軽にご相談ください。また、治療後は担当の歯科衛生士が徹底した口腔内の管理を行います。</p>
-        </li>
-      </ul>
-      <div class="provider-box">
-        <h4 class="provider-box__ttl js-scrollin">さまざまな疑問にお答えする無料相談を実施</h4>
-        <p class="c-txt__04 js-scrollin">歯並びのことで悩んでいる、矯正治療を検討しているというかたは、当院の無料相談をご利用ください。経験豊富な歯科医師やスタッフが、さまざまな疑問や質問にわかりやすく、丁寧にお応えします。ご希望される場合は、その日に精密検査のご予約も可能です。</p>
-        <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279/reserve/select-frame?web-menu-id=48886" target="_blank" class="c-btn__03 js-scrollin"><span>無料相談を予約する</span></a>
-      </div>
-    </div>
-  </section>
-  <section class="sec-oral sec-oral--03">
-    <div class="inner">
-      <div class="oral-flex oral-flex--02">
-        <div class="oral-flex__ct js-scrollin">
-          <h3 class="c-ttl__03 mbpc-37 js-scrollin js-scrollin">
-            <span class="c-ft--jp">当院のマウスピース矯正（インビザライン）</span>
-            <span class="c-ft--en">mouthpiece</span>
-          </h3>
-          <!-- <h4 class="oral-flex__ttl js-scrollin">成人矯正の始まりのおおよそ18歳〜（2期治療）</h4> -->
-          <p class="c-txt__03 js-scrollin"> 成人の矯正治療には、世界各国で多くの患者さんの矯正治療に用いられているマウスピース矯正「インビザライン」を取り入れています。 マウスピース型の矯正装置は透明な樹脂製なので目立ちにくく、痛みや違和感が少ないのが特徴です。食事や歯みがきの際は、患者さん自身で装置を取り外しできます。 </p>
-        </div>
-        <div class="oral-flex__img js-scrollin">
-          <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-03.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-03.jpg" alt="">
-          </picture>
-        </div>
-      </div>
-      <div class="oral-box js-scrollin">
-        <h5 class="oral-box__ttl js-scrollin">マウスピース型矯正装置（インビザライン）は薬機法の対象外です</h5>
-        <p class="c-txt__02 js-scrollin"> 01. 未承認医療機器であること：インビザライン®は薬機法上対象外の医療機器です。医療機器としての矯正装置に該当しないため薬機法上の承認を得ていません。マウスピースに使用される材料そのものは薬事承認されておりますので、安全にご使用いただけます。<br>
-          <br> 02. 国内の承認医薬機器等の有無：マウスピース型矯正装置はインビザライン®の他にも様々な種類があります。その中には、条件を満たして薬事承認されているマウスピース型矯正装置も国内でいくつか存在しています。<br>
-          <br> 03. 諸外国における安全性等に係る情報：1998年にFDA（米国食品医薬品局）から医療機器として認証され、販売認可を受けています。これまで1,500万人以上の患者さんに使用されておりますが、重篤な副作用の報告はありません。<br>
-          <br> 04. 入手経路等：インビザライン®は、米国アライン・テクノロジー社の製品です。当院はインビザラインを用いた治療システムを、アライン・テクノロジー社のグループ会社である「アライン・テクノロジー・ジャパン株式会社」より入手しています。<br>
-          <br> 05. 医薬品副作用被害救済制度について：万が一重篤な副作用が出た場合は、国の医薬品副作用被害救済制度の対象外となります。
+        <h2 class="preventive-block__ttl">「歯並びを整えたい。でも装置が目立つのは嫌」<br>その両方に応えるのが、当院の矯正治療です。</h2>
+        <p class="c-txt__03">ヨクシオ歯科
+          箕面萱野の矯正治療は、インビザライン社が年間150症例以上の治療実績を持つ歯科医師にのみ認定する「ダイヤモンドプロバイダー」の歯科医師が担当します。口腔内スキャナーiTeroによる精密なデジタル診断で、治療前に歯の動きをシミュレーションで確認してからスタートできます。
         </p>
       </div>
     </div>
   </section>
-  <section class="sec-plan">
+
+  <section class="orthodontics__worries">
     <div class="inner">
-      <h2 class="c-ttl__03 mbpc-37 js-scrollin">
-        <span class="c-ft--jp">歯並びの状態やご要望に合わせて選べる3タイプの治療プラン</span>
-        <span class="c-ft--en">Plan</span>
-      </h2>
-      <ul class="plan-list">
-        <li class="plan-list__item js-scrollin">
-          <div class="plan-list__img">
-            <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-04.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-04.jpg" alt="インビザラインコンプリヘンシブ">
-            </picture>
-          </div>
-          <h3 class="plan-list__ttl"> インビザラインコンプリヘンシブ <span><span>あらゆる症例に対応</span></span>
-          </h3>
-        </li>
-        <li class="plan-list__item js-scrollin">
-          <div class="plan-list__img">
-            <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-05.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-05.jpg" alt="インビザラインモデレート">
-            </picture>
-          </div>
-          <h3 class="plan-list__ttl"> インビザラインモデレート <span><span>軽症例～中等症例に対応</span></span>
-          </h3>
-        </li>
-        <li class="plan-list__item js-scrollin">
-          <div class="plan-list__img">
-            <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-06.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-06.jpg" alt="インビザラインライト">
-            </picture>
-          </div>
-          <h3 class="plan-list__ttl"> インビザラインライト <span><span>軽症例・前歯のみなど部分矯正に対応</span></span>
-          </h3>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="sec-merit">
-    <div class="inner">
-      <h2 class="c-ttl__03 mbpc-29 js-scrollin">
-        <span class="c-ft--jp">マウスピース矯正のメリット</span>
-        <span class="c-ft--en">merit</span>
-      </h2>
-      <ul class="merit-list">
-        <li class="merit-list__item js-scrollin">
-          <h3 class="merit-list__ttl">装置が透明で目立ちにくい</h3>
-          <p class="c-txt__03">マウスピースは透明のプラスチック製なので、装着していても周りの人に気づかれる心配はほとんどありません。</p>
-        </li>
-        <li class="merit-list__item js-scrollin">
-          <h3 class="merit-list__ttl">取り外し可能で衛生的</h3>
-          <p class="c-txt__03">食事や歯みがきの時は取り外すことができるので、普段通りに食事を楽しめ、歯みがきもしっかり行えます。</p>
-        </li>
-        <li class="merit-list__item js-scrollin">
-          <h3 class="merit-list__ttl">痛みが少ない</h3>
-          <p class="c-txt__03">ワイヤー矯正に比べて、歯にかかる力が弱く、段階的に歯を動かしていくため、痛みが少ないと言われています。</p>
-        </li>
-        <li class="merit-list__item js-scrollin">
-          <h3 class="merit-list__ttl">金属アレルギーの心配がない</h3>
-          <p class="c-txt__03">金属を一切使用しないため、金属アレルギーの方でも安心して治療を受けていただけます。</p>
-        </li>
-        <li class="merit-list__item js-scrollin">
-          <h3 class="merit-list__ttl">通院回数が少ない</h3>
-          <p class="c-txt__03">1.5～3ヶ月に1回の通院で済むため、忙しい方でも無理なく治療を続けられます。</p>
-        </li>
-      </ul>
-      <div class="merit-note js-scrollin">
-        <h3 class="merit-note__ttl">マウスピース矯正のデメリット</h3>
-        <ul class="merit-note__list">
-          <li class="merit-note__list-item">装着時間を守らないと効果が出ない（1日20時間以上の装着が必要）</li>
-          <li class="merit-note__list-item">適応できない症例がある（重度の不正咬合など）</li>
-          <li class="merit-note__list-item">自己管理が必要（紛失や破損のリスク）</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="sec-oral sec-oral--04">
-    <div class="inner">
-      <div class="oral-flex oral-flex--02">
-        <div class="oral-flex__ct-01 js-scrollin">
-          <h3 class="c-ttl__03 mbpc-21 js-scrollin">
-            <span class="c-ft--jp">ワイヤー矯正（表側矯正）</span>
-            <span class="c-ft--en">wire</span>
-          </h3>
-          <p class="c-txt__03 mbpc-26 mbsp-15 js-scrollin"> 歯の表面にブラケットと呼ばれる装置を装着し、そこにワイヤーを通して歯を動かす、最も一般的な矯正治療法です。 歴史が長く、多くの症例に対応できる信頼性の高い治療法です。 当院では、目立ちにくい審美ブラケットやホワイトワイヤーもご用意しております。 </p>
-          <h4 class="c-ttl__05 js-scrollin">ワイヤー矯正のメリット</h4>
-          <div class="oral-flex__box oral-flex__box--green js-scrollin">
-            <ul class="check-list">
-              <li class="check-list__item">ほぼ全ての症例に対応可能</li>
-              <li class="check-list__item">取り外しの手間がない</li>
-              <li class="check-list__item">細かい調整が可能</li>
-            </ul>
-          </div>
+      <div class="preventive-check js-scrollin orthodontics__worries-wrapper c-worries">
+        <h3 class="c-worries__title">こんなお悩みはありませんか？</h3>
+        <div class="c-worries__content">
+          <h4 class="preventive-check--periodontal-ttl c-worries__list-title">
+            <span>見た目のお悩み</span>
+          </h4>
+          <ul class="check-list c-worries__list">
+            <li class="check-list__item c-worries__list-item">歯並びのガタつき・八重歯・出っ歯・すきっ歯が気になる</li>
+            <li class="check-list__item c-worries__list-item">人前で口を開けて笑うことにためらいがある</li>
+            <li class="check-list__item c-worries__list-item">矯正はしたいが、ワイヤー装置が目立つのは避けたい</li>
+            <li class="check-list__item c-worries__list-item">接客業・営業職で、見た目に配慮しながら矯正したい</li>
+            <li class="check-list__item c-worries__list-item">結婚式・就職活動までに歯並びを整えたい</li>
+          </ul>
+        </div>
+        <div class="c-worries__content">
+          <h4 class="preventive-check--periodontal-ttl c-worries__list-title">
+            <span>機能・健康のお悩み</span>
+          </h4>
+          <ul class="check-list c-worries__list">
+            <li class="check-list__item c-worries__list-item">噛み合わせがずれている気がする、特定の歯だけよく当たる</li>
+            <li class="check-list__item c-worries__list-item">歯磨きがしづらく、むし歯や歯周病を繰り返す</li>
+            <li class="check-list__item c-worries__list-item">食べ物をうまく噛み切れていない気がする</li>
+            <li class="check-list__item c-worries__list-item">顎が疲れる・顎関節の音が気になる</li>
+            <li class="check-list__item c-worries__list-item">発音・滑舌が気になる</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="sec-flow-page sec-flow-page--03">
+
+  <section class="orthodontics__attention">
     <div class="inner">
-      <h2 class="c-ttl__03 mbpc-26 js-scrollin">
-        <span class="c-ft--jp">矯正治療の流れ</span>
-        <span class="c-ft--en">FLOW</span>
+      <div class="orthodontics__attention-wrapper">
+        <div class="orthodontics__attention-item-img js-scrollin">
+          <picture>
+            <source
+              srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/periodontal/img-attention-01.webp"
+              type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/periodontal/img-attention-01.png"
+              alt="歯周病とは──痛みなく進行する「沈黙の感染症」">
+          </picture>
+        </div>
+        <div class="orthodontics__attention-content js-scrollin">
+          <h2 class="orthodontics__attention-content-ttl">歯並びの乱れは「見た目だけの問題」ではありません</h2>
+          <p class="c-txt__04 orthodontics__attention-content-txt">
+            歯並びが乱れていると、歯ブラシの毛先が届かない場所が増え、むし歯・歯周病のリスクが高まります。また、噛む力が特定の歯に集中することで歯の摩耗・破折・詰め物の脱離を招いたり、顎関節への負担や咀嚼効率の低下につながったりすることもあります。<br>矯正治療は、見た目の改善と同時に「磨きやすく、噛みやすく、長持ちするお口」をつくる健康投資です。特に大人の矯正は、歯周病・被せ物・インプラントなど、お口全体の状況と関連づけて計画することが重要になります。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="orthodontics__features">
+    <div class="inner">
+      <h2 class="c-ttl__03 js-scrollin">
+        <span class="c-ft--jp">当院の矯正治療 ── 4つの強み</span>
+        <span class="c-ft--en">Features</span>
+      </h2>
+      <ul class="orthodontics__features-list">
+        <li class="orthodontics__features-item orthodontics__features-item--has-img js-scrollin">
+          <div class="inner orthodontics__features-inner">
+            <div class="orthodontics__features-body">
+              <div class="orthodontics__features-head">
+                <span class="orthodontics__features-number">01</span>
+                <h3 class="orthodontics__features-ttl">インビザライン・ダイヤモンドプロバイダー認定の歯科医師が担当</h3>
+              </div>
+              <p class="c-txt__04 orthodontics__features-txt">
+                マウスピース矯正は「どの医院で受けても同じ」ではありません。装置の設計（治療計画）を立てる歯科医師の経験値が、仕上がりを大きく左右します。当院の矯正は、年間150症例以上の実績を持つ歯科医師のみに与えられる「ダイヤモンドプロバイダー」認定の歯科医師が担当します。この認定を受けているのは、インビザライン治療に携わる歯科医師のうち約1.6%とされています。
+              </p>
+            </div>
+            <div class="orthodontics__features-img">
+              <picture>
+                <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-02.webp"
+                  type="image/webp">
+                <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-02.jpg"
+                  alt="インビザライン・ダイヤモンドプロバイダー認定の歯科医師が担当">
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="orthodontics__features-item js-scrollin">
+          <div class="inner orthodontics__features-inner">
+            <div class="orthodontics__features-head">
+              <span class="orthodontics__features-number">02</span>
+              <h3 class="orthodontics__features-ttl">治療前に「ゴール」をシミュレーションで確認できる</h3>
+            </div>
+            <p class="c-txt__04 orthodontics__features-txt">
+              口腔内スキャナーiTeroでお口を精密にスキャンし、歯がどのように動いていくかをコンピューター上でシミュレーション（クリンチェック）します。治療後の歯並びのイメージをご自身の目で確認し、納得してからスタートできるため、「思っていた仕上がりと違う」というギャップを防ぎやすくなります。型取り材を使わないため、嘔吐反射が苦手な方にも好評です。
+            </p>
+          </div>
+        </li>
+        <li class="orthodontics__features-item js-scrollin">
+          <div class="inner orthodontics__features-inner">
+            <div class="orthodontics__features-head">
+              <span class="orthodontics__features-number">03</span>
+              <h3 class="orthodontics__features-ttl">全顎的な視点 ──「歯を並べる」で終わらせない</h3>
+            </div>
+            <p class="c-txt__04 orthodontics__features-txt">
+              当院では、歯1本の位置からお口全体の噛み合わせ、骨格のバランスまで含めて診断します。歯並びだけを整えても、噛み合わせに無理があれば長期的に安定しません。歯科用CT・セファロ（頭部X線規格写真）を含む精密検査に基づき、機能と審美を両立する治療計画を立てます。
+            </p>
+          </div>
+        </li>
+        <li class="orthodontics__features-item js-scrollin">
+          <div class="inner orthodontics__features-inner">
+            <div class="orthodontics__features-head">
+              <span class="orthodontics__features-number">04</span>
+              <h3 class="orthodontics__features-ttl">矯正の前後に必要な治療まで、院内で一貫対応</h3>
+            </div>
+            <p class="c-txt__04 orthodontics__features-txt">
+              大人の矯正では、むし歯・歯周病の治療、被せ物のやり直し、部分矯正（MTM）との組み合わせなど、矯正以外の処置が必要になることが多くあります。インプラント・審美治療・歯周病・根管治療の各分野に対応する当院なら、転院することなく一貫した治療が受けられます。
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec-oral sec-oral--03 orthodontics__mouthpiece">
+    <div class="inner">
+      <div class="oral-flex oral-flex--02">
+        <div class="oral-flex__ct js-scrollin">
+          <h2 class="c-ttl__03 js-scrollin">
+            <span class="c-ft--jp">取り扱う矯正方法</span>
+            <span class="c-ft--en">mouthpiece</span>
+          </h2>
+          <h3 class="orthodontics__mouthpiece-ttl js-scrollin">マウスピース矯正（インビザライン）</h3>
+          <p class="c-txt__03 orthodontics__mouthpiece-lead js-scrollin">透明なマウスピース（アライナー）を1〜2週間ごとに交換しながら、歯を計画的に動かします。
+          </p>
+          <ul class="orthodontics__mouthpiece-checks js-scrollin">
+            <li class="orthodontics__mouthpiece-checks-item c-txt__04">装置が目立たず、矯正中と気づかれにくい</li>
+            <li class="orthodontics__mouthpiece-checks-item c-txt__04">取り外せるため、食事・歯磨きがいつも通りにできる</li>
+            <li class="orthodontics__mouthpiece-checks-item c-txt__04">金属を使わないため、金属アレルギーの心配がない</li>
+            <li class="orthodontics__mouthpiece-checks-item c-txt__04">通院間隔を比較的長く取れる場合が多い</li>
+          </ul>
+        </div>
+        <div class="oral-flex__img js-scrollin">
+          <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/orthodontics/img-03.webp"
+              type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/orthodontics/img-03.jpg"
+              alt="マウスピース矯正（インビザライン）">
+          </picture>
+        </div>
+      </div>
+      <p class="orthodontics__mouthpiece-note js-scrollin">
+        症例の範囲に応じて、ライト（部分的・軽度）／モデレート（中等度）／フル（全体的）のパッケージをご用意しています。
+      </p>
+
+      <div class="orthodontics__mouthpiece-item js-scrollin">
+        <h3 class="orthodontics__mouthpiece-ttl">ワイヤー矯正</h3>
+        <p class="c-txt__03">
+          歯の表面に装置を付け、ワイヤーの力で歯を動かす、実績の長い方法です。マウスピース矯正では難しい複雑な歯の移動にも対応でき、細かな調整が可能です。
+        </p>
+      </div>
+      <div class="orthodontics__mouthpiece-item js-scrollin">
+        <h3 class="orthodontics__mouthpiece-ttl">部分矯正（MTM）</h3>
+        <p class="c-txt__03">
+          「前歯のガタつきだけ」「倒れた歯を起こしたい」など、限られた範囲の歯だけを動かす矯正です。被せ物やインプラントの前処置として行うこともあります。全体矯正より期間・費用を抑えられる場合がありますが、適応には条件があります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="orthodontics__flow">
+    <div class="inner">
+      <h2 class="c-ttl__03 js-scrollin">
+        <span class="c-ft--jp">治療の流れ</span>
+        <span class="c-ft--en">Flow</span>
       </h2>
       <ol class="flow-step c-txt__02">
         <li class="flow-step__item js-scrollin">
-          <h3 class="flow-step__ttl">無料カウンセリング：60分</h3>
-          <p>歯並びのお悩みやご希望を詳しくお伺いします。治療の流れや費用、期間などについても丁寧にご説明いたします。 無理な勧誘は一切いたしませんので、ご安心ください。</p>
+          <h3 class="flow-step__ttl">初診・ご相談（30〜60分）</h3>
+          <p>お悩み・ご希望・ライフスタイルを伺い、口腔内の確認のうえ、治療の方向性と費用感をお伝えします</p>
         </li>
         <li class="flow-step__item js-scrollin delay01">
-          <h3 class="flow-step__ttl">精密検査：30〜60分</h3>
-          <p>レントゲン撮影、口腔内写真撮影、歯型採取など、診断に必要な検査を行います。 当院では、被ばく量の少ないデジタルレントゲンや、不快感の少ない口腔内スキャナーを使用しています。</p>
+          <h3 class="flow-step__ttl">精密検査</h3>
+          <p>iTeroスキャン・歯科用CT・セファロ・パノラマレントゲン・口腔内写真など、複数のデジタル機器で骨格から歯周組織まで総合的に診査します</p>
         </li>
         <li class="flow-step__item js-scrollin delay02">
-          <h3 class="flow-step__ttl">診断・治療計画の説明：30〜60分</h3>
-          <p>検査結果に基づき、詳細な治療計画をご提案します。 シミュレーションソフトを使って、治療後の歯並びのイメージをご覧いただくことも可能です。 治療内容や費用にご納得いただけましたら、治療を開始します。</p>
+          <h3 class="flow-step__ttl">診断・治療計画のご説明</h3>
+          <p>シミュレーションで治療後の歯並びを確認いただき、期間・総額・注意点をご納得いただいてから開始します</p>
         </li>
         <li class="flow-step__item js-scrollin delay03">
-          <h3 class="flow-step__ttl">治療開始（装置装着）：期間は個人差あり</h3>
-          <p>マウスピースやブラケットなどの矯正装置を装着し、治療をスタートします。 装置の取り扱い方法や、歯みがきの指導も行います。</p>
+          <h3 class="flow-step__ttl">治療開始</h3>
+          <p>装置の使い方・お手入れ・歯磨きの方法を丁寧にお伝えします</p>
         </li>
         <li class="flow-step__item js-scrollin delay04">
-          <h3 class="flow-step__ttl">通院・調整：1.5〜3ヶ月に1回</h3>
-          <p>定期的に通院していただき、歯の動きのチェックや装置の調整を行います。 マウスピース矯正の場合は、新しいマウスピースをお渡しします。</p>
+          <h3 class="flow-step__ttl">通院・調整（1.5〜3ヶ月に1回程度）</h3>
+          <p>歯の動きを確認し、計画とのズレがあれば修正します</p>
         </li>
         <li class="flow-step__item js-scrollin delay05">
-          <h3 class="flow-step__ttl">保定期間（2年程度）</h3>
-          <p>歯並びが整ったら装置を外しますが、歯は元の位置に戻ろうとする性質があります。 そのため、リテーナー（保定装置）を装着して、歯並びを安定させます。</p>
+          <h3 class="flow-step__ttl">保定（約2年）</h3>
+          <p>動かした歯が元に戻ろうとする「後戻り」を防ぐため、リテーナー（保定装置）で歯並びを安定させます</p>
         </li>
       </ol>
     </div>
   </section>
-  <section class="sec-price">
+
+  <section class="orthodontics__price">
     <div class="inner">
       <h2 class="c-ttl__03 js-scrollin">
         <span class="c-ft--jp">料金表（税込）</span>
-        <span class="c-ft--en">PRICE</span>
+        <span class="c-ft--en">Price</span>
       </h2>
-      <div class="general-show general-show--02 general-show--03 js-scrollin">
-        <table>
-          <tr>
-            <th>治療メニュー</th>
-            <th>費用</th>
-          </tr>
-          <tr>
-            <td>相談料</td>
-            <td>無料</td>
-          </tr>
-          <tr>
-            <td>精密検査・診断料</td>
-            <td>33,000円</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <th class="green">マウスピース矯正（インビザライン）</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td>インビザライン・コンプリヘンシブ（全体矯正）</td>
-            <td>877,800円</td>
-          </tr>
-          <tr>
-            <td>インビザライン・モデレート（中等度）</td>
-            <td>767,800円</td>
-          </tr>
-          <tr>
-            <td>インビザライン・ライト（軽度・部分）</td>
-            <td>547,800円</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <th class="green">ワイヤー矯正</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td>表側矯正（メタルブラケット）</td>
-            <td>770,000円～</td>
-          </tr>
-          <tr>
-            <td>表側矯正（審美ブラケット）</td>
-            <td>880,000円～</td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <th class="green">その他</th>
-            <th></th>
-          </tr>
-          <tr>
-            <td>調整料（通院ごと）</td>
-            <td>5,500円</td>
-          </tr>
-          <tr>
-            <td>保定装置料（リテーナー）</td>
-            <td>33,000円～</td>
-          </tr>
-        </table>
-        <div class="general-show__note c-al--r"> ※症例の難易度や治療期間によって費用が異なる場合があります。 </div>
-      </div>
+      <ul class="orthodontics__price-list">
+        <li class="orthodontics__price-item js-scrollin">
+          <h3 class="orthodontics__price-ttl">検査・診断</h3>
+          <div class="general-show orthodontics__price-table">
+            <table>
+              <tr>
+                <th>メニュー</th>
+                <th>費用</th>
+              </tr>
+              <tr>
+                <td>矯正データ収集・診断料</td>
+                <td>55,000円</td>
+              </tr>
+              <tr>
+                <td>追加診断料（無料相談に来られた方）</td>
+                <td>7,700円</td>
+              </tr>
+              <tr>
+                <td>顎機能検査（術前下顎運動検査）</td>
+                <td>37,000円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="orthodontics__price-item js-scrollin">
+          <h3 class="orthodontics__price-ttl">マウスピース矯正（インビザライン）</h3>
+          <div class="general-show orthodontics__price-table">
+            <table>
+              <tr>
+                <th>パッケージ</th>
+                <th>上下顎</th>
+                <th>片顎</th>
+              </tr>
+              <tr>
+                <td>インビザライン フル（全体的な矯正）</td>
+                <td>1,045,000円</td>
+                <td>715,000円</td>
+              </tr>
+              <tr>
+                <td>インビザライン モデレート（中等度）</td>
+                <td>550,000円</td>
+                <td>440,000円</td>
+              </tr>
+              <tr>
+                <td>インビザライン ライト（部分的・軽度）</td>
+                <td>330,000円</td>
+                <td>220,000円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="orthodontics__price-item js-scrollin">
+          <h3 class="orthodontics__price-ttl">ワイヤー矯正・部分矯正</h3>
+          <div class="general-show orthodontics__price-table">
+            <table>
+              <tr>
+                <th>メニュー</th>
+                <th>費用</th>
+              </tr>
+              <tr>
+                <td>成人矯正（2期治療・全体）</td>
+                <td>1,045,000円</td>
+              </tr>
+              <tr>
+                <td>成人矯正（片顎）</td>
+                <td>522,500円</td>
+              </tr>
+              <tr>
+                <td>MTM（1歯の挺出・アップライト）</td>
+                <td>121,000円</td>
+              </tr>
+              <tr>
+                <td>MTM（前歯の部分矯正）</td>
+                <td>242,000円</td>
+              </tr>
+              <tr>
+                <td>MTM（複数歯の部分矯正）</td>
+                <td>363,000円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+        <li class="orthodontics__price-item js-scrollin">
+          <h3 class="orthodontics__price-ttl">その他の費用</h3>
+          <div class="general-show orthodontics__price-table">
+            <table>
+              <tr>
+                <th>メニュー</th>
+                <th>費用</th>
+              </tr>
+              <tr>
+                <td>調整料</td>
+                <td>3,300円</td>
+              </tr>
+              <tr>
+                <td>リテーナー（保定装置・片顎）</td>
+                <td>22,000円</td>
+              </tr>
+              <tr>
+                <td>追加アライナー</td>
+                <td>22,000円</td>
+              </tr>
+              <tr>
+                <td>アライナー紛失時（1シート）</td>
+                <td>4,000円</td>
+              </tr>
+              <tr>
+                <td>矯正用ミニインプラント（アンカースクリュー）</td>
+                <td>37,000円</td>
+              </tr>
+              <tr>
+                <td>矯正に伴う抜歯（1本）</td>
+                <td>6,050円</td>
+              </tr>
+              <tr>
+                <td>オーソパルス（光加速矯正装置）</td>
+                <td>187,000円</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+      <p class="c-txt__02 orthodontics__price-txt js-scrollin">
+        ※料金は参考価格です。症例の難易度・抜歯の要否・治療期間により前後します。検査後に総額のお見積りをお渡しします。
+      </p>
+      <p class="c-txt__02 orthodontics__price-txt js-scrollin">
+        ※矯正治療は原則として自由診療（保険適用外）です。噛み合わせの改善を目的とする治療は医療費控除の対象となる場合があります。
+      </p>
     </div>
   </section>
-  <section class="sec-fqa-page">
+
+  <section class="orthodontics__faq">
     <div class="inner">
       <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">よくあるご質問（成人矯正）</span>
+        <span class="c-ft--jp">よくあるご質問</span>
         <span class="c-ft--en">FAQ</span>
       </h2>
       <ul class="fqa-list c-txt__02">
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>矯正治療は何歳までできますか？</span></h3>
-          <p class="fqa-list__answer">歯と歯ぐきの健康状態が良ければ、年齢制限はありません。 60代、70代で矯正治療を始められる方もいらっしゃいます。 ただし、歯周病などが進行している場合は、先にそちらの治療が必要になることがあります。</p>
+          <h3 class="fqa-list__question"><span>大人になってからでも矯正できますか？</span></h3>
+          <p class="fqa-list__answer">
+            できます。歯と歯ぐきが健康であれば、矯正治療に年齢の上限はありません。実際に40代・50代で始める方も増えています。ただし歯周病がある場合は、先に歯周病治療で土台を整えてから行います。</p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>治療期間はどのくらいかかりますか？</span></h3>
-          <p class="fqa-list__answer">歯並びの状態や治療方法によって異なりますが、全体矯正の場合、平均して2年～3年程度かかります。 部分矯正の場合は、数ヶ月～1年程度で終わることもあります。 初診相談の際に、おおよその期間をお伝えすることができます。</p>
+          <h3 class="fqa-list__question"><span>痛みはありますか？</span></h3>
+          <p class="fqa-list__answer">
+            歯が動き始める際に、締め付けられるような違和感・痛みを覚えることがありますが、多くは数日で慣れます。マウスピース矯正は段階的に力をかけるため、ワイヤー矯正より痛みが少ない傾向があるといわれています。</p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>抜歯は必ず必要ですか？</span></h3>
-          <p class="fqa-list__answer">必ずしも抜歯が必要なわけではありません。 当院では、可能な限り非抜歯での治療を目指していますが、あごの大きさと歯の大きさのバランスが悪く、歯を並べるスペースが著しく不足している場合などは、抜歯が必要になることもあります。 精密検査の結果をもとに、抜歯の必要性について慎重に判断し、ご説明いたします。</p>
+          <h3 class="fqa-list__question"><span>マウスピースは1日どのくらい着けるのですか？</span></h3>
+          <p class="fqa-list__answer">食事と歯磨きのとき以外、1日20〜22時間の装着が基本です。装着時間が不足すると計画通りに歯が動かず、治療期間が延びる原因になります。</p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>支払いにクレジットカードやデンタルローンは使えますか？</span></h3>
-          <p class="fqa-list__answer">はい、ご利用いただけます。 各種クレジットカード、デンタルローン（分割払い）に対応しております。 患者さんのライフスタイルに合わせたお支払い方法をお選びいただけますので、お気軽にご相談ください。</p>
+          <h3 class="fqa-list__question"><span>抜歯は必要ですか？</span></h3>
+          <p class="fqa-list__answer">
+            症例によります。歯を並べるスペースが大きく不足している場合には抜歯をご提案することがありますが、診断時に抜歯・非抜歯それぞれの計画とメリット・デメリットをご説明し、ご相談のうえで決定します。</p>
+        </li>
+        <li class="fqa-list__item js-scrollin">
+          <h3 class="fqa-list__question"><span>治療期間はどのくらいですか？</span></h3>
+          <p class="fqa-list__answer">
+            部分的な矯正で数ヶ月〜、全体的な矯正で1年半〜3年程度が目安です。その後、保定期間（約2年）が続きます。シミュレーション時に、あなたの症例での見通しをお伝えします。</p>
+        </li>
+        <li class="fqa-list__item js-scrollin">
+          <h3 class="fqa-list__question"><span>矯正中にむし歯になったらどうなりますか？</span></h3>
+          <p class="fqa-list__answer">
+            当院は矯正専門医院ではなく総合歯科ですので、矯正中のむし歯治療も院内でそのまま対応できます。マウスピース矯正は装置を外して治療できる点も利点です。
+          </p>
         </li>
       </ul>
+      <div class="faq-attention js-scrollin">
+        <p class="faq-attention__ttl">リスク・副作用・注意事項</p>
+        <ul class="faq-attention__list">
+          <li class="c-txt__02 faq-attention__item">歯の移動に伴い、一時的な痛み・違和感・発音のしづらさが生じることがあります</li>
+          <li class="c-txt__02 faq-attention__item">装着時間・交換スケジュールが守られない場合、治療期間の延長や計画変更が必要になることがあります</li>
+          <li class="c-txt__02 faq-attention__item">
+            治療中は装置の周囲に汚れがたまりやすく、むし歯・歯周病・歯の根の吸収（歯根吸収）・歯ぐきの退縮などのリスクがあります。定期的なクリーニングを併用します</li>
+          <li class="c-txt__02 faq-attention__item">ごくまれに、歯が計画通りに動かず、追加のアライナーやワイヤーによる補正が必要になることがあります</li>
+          <li class="c-txt__02 faq-attention__item">保定装置を指示通り使用しない場合、後戻りが生じることがあります</li>
+          <li class="c-txt__02 faq-attention__item">矯正治療は自由診療であり、健康保険は適用されません</li>
+        </ul>
+      </div>
     </div>
   </section>
 

@@ -1,79 +1,388 @@
 @use "vars" as *;
 
-.p-ceramic {
-  .preventive-block {
-    .c-txt__03 {
-      margin-bottom: 42px;
-    }
+/* ----------------------------------------------------------
+// まず知ってほしい「銀歯・金属」の3つのリスク
+// ---------------------------------------------------------- */
+.ceramic__risk {
+  padding-block: 61px 40px;
+  @include mq() {
+    padding-block: 0 20px;
   }
+}
 
-  .preventive-check {
-    margin-bottom: 30px;
+.ceramic__risk .c-ttl__03 {
+  margin-bottom: 15px;
+  @include mq() {
+    margin-bottom: 20px;
   }
+}
 
-  .check-list--ceramic {
+.ceramic__risk-list {
+  margin-top: 25px;
+  @include mq() {
+    margin-top: 10px;
+  }
+}
+
+.ceramic__risk-list-item {
+  padding-block: 20px;
+  padding-left: 6px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.ceramic__risk-list-item-ttl {
+  @include font-size(18);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.ceramic__risk-list-item-text {
+  margin-top: 15px;
+}
+
+.ceramic__worries-wrapper {
+  margin-top: 80px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 当院の審美治療 ── 4つのこだわり
+// ---------------------------------------------------------- */
+.ceramic__features {
+  margin-top: 52px;
+  padding-bottom: 78px;
+}
+
+.ceramic__features .c-ttl__03 .c-ft--en {
+  right: unset;
+  left: 88px;
+  @include mq() {
+    left: unset;
+    right: -10px;
+  }
+}
+
+.ceramic__features .c-ttl__03 {
+  margin-bottom: 15px;
+}
+
+.ceramic__features .oral-flex {
+  position: relative;
+}
+
+.ceramic__features .oral-flex--02 .c-ttl__03 {
+  margin-right: 0;
+}
+
+.ceramic__features .oral-flex.oral-flex--02 .oral-flex__img {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 32% !important;
+  margin-top: -14px !important;
+  @media screen and (max-width: 1000px) {
+    top: 105px;
+  }
+  @include mq() {
+    position: unset;
+    padding-top: 0;
+    width: 100% !important;
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+}
+
+.ceramic__features .oral-flex__img img {
+  aspect-ratio: 387/254;
+}
+
+.ceramic__features .oral-flex--02 .oral-flex__ct {
+  width: 100% !important;
+  @include mq() {
+    width: 100% !important;
+  }
+}
+
+.ceramic__features-item {
+  padding-block: 25px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.ceramic__features-item:first-child {
+  width: 64.5%;
+  @include mq() {
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 23px;
-    @include mq(lg) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @include mq(md) {
-      grid-template-columns: repeat(1, 1fr);
-    }
   }
-  .sec-menu--02 {
-    .pediatric-menu {
-      margin-bottom: 20px;
-    }
+}
+
+.ceramic__features-number {
+  flex-shrink: 0;
+  @include font-size(68);
+  line-height: 1;
+  font-weight: bold;
+  font-family: $font-en;
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mq(xl) {
+    @include font-size(50);
   }
-
-  .sec-merit--03 {
-    .c-txt__04 {
-      margin-bottom: 17px;
-    }
-
-    .preventive-list__option-item {
-      padding: 39px 32px 30px;
-      .c-txt__04 {
-        margin-bottom: 0;
-      }
-    }
+  @include mq() {
+    @include font-size(40);
   }
+}
 
-  .sec-gumpeeling--04 {
-    margin-bottom: 40px;
-    .c-txt__03 {
-      margin-bottom: 17px;
-    }
-    .c-txt__05 {
-      font-size: 13px;
-    }
+.ceramic__features-body {
+  width: 91%;
+  @include mq() {
+    width: 80%;
   }
+}
 
-  .sec-price {
-    table {
-      tr {
-        .green {
-          color: #00a5b1;
-          font-weight: 500;
-        }
-      }
-      .border-none{
-        border-bottom: none !important;
-      }
-    }
-
-    &-text {
-      font-size: 14px;
-      text-align: right;
-    }
+.ceramic__features-item:first-child .ceramic__features-body {
+  width: 86%;
+  @include mq() {
+    width: 80%;
   }
+}
 
-  .preventive-list__option-icon {
-    width: 92px;
-     @include mq(md) {
-      width: 82px;
-    }
+.ceramic__features-ttl {
+  @include font-size(20);
+  font-weight: bold;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+}
+
+.ceramic__features-txt {
+  margin-top: 20px;
+  @include mq() {
+    margin-top: 10px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 取り扱い素材の特徴と選び方
+// ---------------------------------------------------------- */
+.ceramic__menu {
+  padding-block: 76px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.ceramic__menu .c-ttl__03 {
+  margin-bottom: 0px;
+}
+
+.ceramic__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 5px;
+  @include mq() {
+    display: grid;
+  }
+}
+
+.ceramic__menu-item {
+  padding-block: 20px;
+  width: 48%;
+  border-bottom: 1px solid #d3d3d3;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.ceramic__menu-item:nth-child(n + 3) {
+  width: 32%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.ceramic__menu-item-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+}
+
+.ceramic__menu-item-text {
+  margin-top: 13px;
+  min-height: 78px;
+  @include mq() {
+    min-height: unset;
+  }
+}
+
+.ceramic__menu-item-note {
+  margin-top: 21px;
+  padding: 11px 25px 18px;
+  @include font-size(18);
+  font-weight: 500;
+  line-height: calc(28.8 / 18);
+  background-color: #fff2ed;
+  border-radius: 10px;
+  @include mq() {
+    padding: 10px 20px 15px;
+    @include font-size(16);
+  }
+}
+
+.ceramic__menu-white {
+  margin-top: 66px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.ceramic__menu-white-ttl.c-ttl__04 {
+  margin-bottom: 15px;
+}
+
+.ceramic__menu-white-list {
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 37px;
+  @include mq() {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.ceramic__menu-white-item {
+  padding: 38px 28px 29px;
+  background-color: #eaedf7;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.ceramic__menu-white-item-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  text-align: center;
+}
+
+.ceramic__menu-white-item-text {
+  margin-top: 14px;
+}
+
+.ceramic__menu-white-note {
+  margin-top: 24px;
+  @include font-size(13);
+  font-weight: 400;
+  line-height: calc(23.8 / 13);
+}
+
+/* ----------------------------------------------------------
+// 料金表（税込）
+// ---------------------------------------------------------- */
+.ceramic__price {
+  padding-block: 76px 40px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.ceramic__price .c-ttl__03 {
+  margin-bottom: 56px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.ceramic__price-list {
+  margin-bottom: 9px;
+  display: grid;
+  gap: 19px;
+}
+
+.ceramic__price-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.ceramic__price-table {
+  margin-top: 27px;
+  margin-bottom: 4px;
+}
+
+.general-show.ceramic__price-table table tr th:nth-child(1),
+.general-show.ceramic__price-table table tr td:nth-child(1) {
+  width: 30%;
+  @include mq(xl) {
+    width: 58%;
+  }
+}
+.general-show.ceramic__price-table table tr th:nth-child(2),
+.general-show.ceramic__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.general-show.ceramic__price-table table tr th,
+.general-show.ceramic__price-table table tr td {
+  padding-inline: 49px 55px;
+  @include mq(xxl) {
+    padding-inline: calc(49 / 1440 * 100vw) calc(55 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.ceramic__price-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ（セラミック治療）
+// ---------------------------------------------------------- */
+.ceramic__flow {
+  padding-block: 90px 40px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.ceramic__flow .c-ttl__03 {
+  margin-bottom: 22px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.ceramic__faq {
+  padding-block: 78px 67px;
+  @include mq() {
+    padding-block: 20px 40px;
+  }
+}
+
+.ceramic__faq .c-ttl__03 {
+  margin-bottom: 40px;
+  @include mq() {
+    margin-bottom: 20px;
   }
 }

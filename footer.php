@@ -7,6 +7,24 @@
       <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/common/img-line.png" alt="LINE予約">
     </a>
   </div>
+
+  <div class="footer-flow">
+    <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank"
+      class="footer-flow_01"><strong>初診予約はこちら</strong>
+      <p>24時間受付</p>
+    </a>
+    <!-- <a href="tel:05058404618" target="_blank" class="footer-flow_02">
+      <span>ご予約・お問い合わせはこちら</span><strong>
+        <div class="footer-flow_02--small">TEL.</div> 050-5840-4618
+      </strong>
+      <p>受付時間　9:30〜13:00／14:30〜18:30</p>
+    </a> -->
+    <a href="tel:05058404618" class="footer-flow_02 footer-flow_02-sp">
+      <img src="<?php echo get_template_directory_uri(); ?>/img/index/phone-call.svg" alt="">
+      電話をかける
+    </a>
+  </div>
+
   <div class="inner">
     <div class="footer-flex">
       <div class="footer-ct">
@@ -26,7 +44,9 @@
           <span class="footer-nav__item-label">院内案内</span>
           <div class="footer-nav__flex">
             <ul class="footer-nav__list">
-              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>general">一般歯科・根管治療</a>
+              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>general">一般歯科</a>
+              </li>
+              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>root-canal">根管治療</a>
               </li>
               <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>periodontal">歯周病治療</a>
               </li>
@@ -103,11 +123,11 @@
 <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/setting.js"></script>
 <script>
-  window.addEventListener('DOMContentLoaded', function() {
-    if ($('.js-scrollHint'.length > 0)) {
-      new ScrollHint('.js-scrollHint');
-    }
-  });
+window.addEventListener('DOMContentLoaded', function() {
+  if ($('.js-scrollHint'.length > 0)) {
+    new ScrollHint('.js-scrollHint');
+  }
+});
 </script>
 </body>
 

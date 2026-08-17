@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 
-<main id="page-pediatric-ortho" class="wrapper">
+<main id="page-pediatric-ortho" class="wrapper pediatric-ortho">
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <h1 class="sec-mv__ttl sec-mv__ttl--medical">
         <span class="c-ft--en">medical services</span>
         <span class="c-ft--jp">小児矯正</span>
       </h1>
-      <p class="sec-mv__desc">お子様の成長を利用して、<br class="sp">無理なくきれいな歯並びへ。</p>
     </div>
   </section>
   <div class="breadcrumb">
@@ -16,212 +15,324 @@
   </div>
   <section class="sec-preventive sec-preventive--02">
     <div class="inner">
-      <div class="preventive-block mbpc-116 js-scrollin">
+      <div class="preventive-block js-scrollin">
         <div class="preventive-block__thumb">
           <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-01.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-01.jpg" alt="子どもの矯正（小児矯正）とは？">
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-01.webp"
+              type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-01.jpg"
+              alt="あごが成長する「今」しかできない矯正があります。">
           </picture>
         </div>
-        <h2 class="preventive-block__ttl">子どもの矯正（小児矯正）とは？</h2>
-        <p class="c-txt__03"> 小児矯正は、大人の矯正とは異なり、お子様の「成長する力」を利用して行う治療です。 あごの骨の成長をコントロールすることで、永久歯がきれいに並ぶためのスペースを確保し、抜歯のリスクを減らすことができます。 また、歯並びだけでなく、口呼吸や舌の癖などの根本的な原因にもアプローチし、お口周りの健全な発育を促します。 </p>
-      </div>
-      <ul class="preventive-list">
-        <li class="preventive-list__item mbpc-87">
-          <h2 class="c-ttl__03 mbpc-41 js-scrollin">
-            <span class="c-ft--jp">予防歯科のメリット</span>
-            <span class="c-ft--en">merit</span>
-          </h2>
-          <ul class="check-list check-list--02 js-scrollin">
-            <li class="check-list__item">将来、抜歯矯正になる抑えることを目的とします</li>
-            <li class="check-list__item">あごのバランスを整え、顔貌のバランスに配慮した治療</li>
-            <li class="check-list__item">口呼吸や指しゃぶりなどの悪習癖の改善を目指します</li>
-            <li class="check-list__item">笑顔に自信が持てるようにサポート</li>
-          </ul>
-        </li>
-        <li class="preventive-list__item mbpc-104">
-          <h2 class="c-ttl__03 js-scrollin">
-            <span class="c-ft--jp">治療の時期と段階（1期治療・2期治療）</span>
-            <span class="c-ft--en">STEP</span>
-          </h2>
-          <ul class="preventive-list__step">
-            <li class="preventive-list__step-item js-scrollin">
-              <h3 class="preventive-list__step-ttl">
-                <span><span>第1期治療（骨格矯正）</span></span> 3歳〜12歳頃（乳歯と永久歯の混合期）
-              </h3>
-              <p class="c-txt__04 mh">あごの骨を広げて、永久歯が生え揃うためのスペースを作ります。 取り外し可能な装置や、マウスピース型の装置を使用することが多いです。 この時期に土台を整えることで、第2期治療が不要になったり、簡単になったりします。</p>
-              <p class="preventive-list__step-note">主な装置：床矯正装置、プレオルソ、ムーシールドなど</p>
-            </li>
-            <li class="preventive-list__step-item js-scrollin">
-              <h3 class="preventive-list__step-ttl">
-                <span><span>第2期治療（歯列矯正）</span></span> 12歳頃〜（永久歯が生え揃った後）
-              </h3>
-              <p class="c-txt__04 mh">大人の矯正と同じように、ワイヤーやマウスピースを使って、歯を一本一本動かして歯並びと噛み合わせを仕上げます。 第1期治療で土台ができていると、抜歯をせずに治療できる可能性が高まります。</p>
-              <p class="preventive-list__step-note">主な装置：ワイヤー矯正、インビザラインなど</p>
-            </li>
-          </ul>
-        </li>
-        <li class="preventive-list__item">
-          <h2 class="c-ttl__03 mbpc-44 js-scrollin">
-            <span class="c-ft--jp">当院で取り扱っている主な矯正装置</span>
-            <span class="c-ft--en">menu</span>
-          </h2>
-          <ul class="menu-posts">
-            <li class="menu-posts__item js-scrollin">
-              <div class="menu-posts__img">
-                <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-03.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-03.jpg" alt="プレオルソ（マウスピース型矯正装置）">
-                </picture>
-              </div>
-              <div class="menu-posts__ct">
-                <h3 class="menu-posts__ttl">プレオルソ（マウスピース型矯正装置）</h3>
-                <p class="c-txt__04">柔らかい素材でできたマウスピース型の装置です。 日中1時間と就寝時に装着します。 歯並びを治すだけでなく、口呼吸を鼻呼吸に改善したり、舌の正しい位置を覚えるトレーニング効果もあります。</p>
-                <div class="menu-posts__btn">3歳〜10歳頃におすすめ</div>
-              </div>
-            </li>
-            <li class="menu-posts__item js-scrollin">
-              <div class="menu-posts__img">
-                <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-04.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-04.jpg" alt="床矯正（しょうきょうせい）装置">
-                </picture>
-              </div>
-              <div class="menu-posts__ct">
-                <h3 class="menu-posts__ttl">床矯正（しょうきょうせい）装置</h3>
-                <p class="c-txt__04">入れ歯のような形をした取り外し可能な装置です。 ネジを回して装置を少しずつ広げることで、あごの骨を拡大し、歯が並ぶスペースを作ります。 食事や歯磨きの時は外せるので、衛生的です。</p>
-                <div class="menu-posts__btn">低学年〜中学年におすすめ</div>
-              </div>
-            </li>
-            <li class="menu-posts__item js-scrollin">
-              <div class="menu-posts__img">
-                <picture>
-                  <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-05.webp" type="image/webp">
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-05.jpg" alt="インビザライン・ファースト">
-                </picture>
-              </div>
-              <div class="menu-posts__ct">
-                <h3 class="menu-posts__ttl">インビザライン・ファースト</h3>
-                <p class="c-txt__04">透明で目立ちにくいマウスピース矯正「インビザライン」の子ども版です。 乳歯と永久歯が混在している時期から使用でき、あごの拡大と歯並びの整列を同時に行うことができます。</p>
-                <div class="menu-posts__btn">6歳〜12歳頃におすすめ</div>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="sec-oral sec-oral--02">
-    <div class="inner">
-      <div class="oral-flex oral-flex--02">
-        <div class="oral-flex__ct js-scrollin">
-          <h2 class="c-ttl__03 mbpc-21 js-scrollin">
-            <span class="c-ft--jp">MFT（口腔筋機能療法）について</span>
-            <span class="c-ft--en">MFT</span>
-          </h2>
-          <h3 class="oral-flex__ttl">お口周りの筋肉をトレーニング</h3>
-          <p class="c-txt__03"> 歯並びが悪くなる原因の一つに、舌の癖や口呼吸、飲み込み方の異常など、お口周りの筋肉のバランスの崩れがあります。 MFT（Oral Myofunctional Therapy）は、舌や唇、頬などの筋肉をトレーニングし、正しく機能させることで、歯並びの悪化を防ぎ、矯正治療の効果を高め、後戻りを防ぐ療法です。 当院では、専任のスタッフが楽しくトレーニングを指導します。 </p>
-        </div>
-        <div class="oral-flex__img js-scrollin">
-          <picture>
-            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/preventive/img-dummy.webp" type="image/webp">
-            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/preventive/img-dummy.jpg" alt="MFT（口腔筋機能療法）について">
-          </picture>
-        </div>
+        <h2 class="preventive-block__ttl">あごが成長する「今」しかできない矯正があります。</h2>
+        <p class="c-txt__03">小児矯正は、大人の矯正のように「並んだ歯を動かす」のではなく、お子様の成長する力を利用して「歯がきれいに並ぶための土台（あご）」を育てる治療です。ヨクシオ歯科
+          箕面萱野では、プレオルソ・床矯正・インビザラインファーストなど複数の装置を取り扱い、お子様の発達段階と性格に合わせた無理のない矯正をご提案します。</p>
       </div>
     </div>
   </section>
-  <section class="sec-flow-page sec-flow-page--03">
+
+  <section class="pediatric-ortho__worries">
     <div class="inner">
-      <h2 class="c-ttl__03 mbpc-32 js-scrollin">
-        <span class="c-ft--jp">小児矯正の流れ</span>
-        <span class="c-ft--en">FLOW</span>
+      <div class="preventive-check js-scrollin pediatric-ortho__worries-wrapper c-worries">
+        <h3 class="c-worries__title">こんなサインはありませんか？</h3>
+        <div class="c-worries__content">
+          <h4 class="preventive-check--periodontal-ttl c-worries__list-title">
+            <span>歯並びのサイン</span>
+          </h4>
+          <ul class="check-list c-worries__list">
+            <li class="check-list__item c-worries__list-item">前歯がガタガタ・重なって生えてきた</li>
+            <li class="check-list__item c-worries__list-item">受け口（下の歯が前に出ている）</li>
+            <li class="check-list__item c-worries__list-item">出っ歯が気になる</li>
+            <li class="check-list__item c-worries__list-item">前歯の間にすき間がある、逆にすき間が全くない</li>
+            <li class="check-list__item c-worries__list-item">下の前歯が上の前歯に深く隠れる（噛み合わせが深い）</li>
+          </ul>
+        </div>
+        <div class="c-worries__content">
+          <h4 class="preventive-check--periodontal-ttl c-worries__list-title">
+            <span>癖・機能のサイン</span>
+          </h4>
+          <ul class="check-list c-worries__list">
+            <li class="check-list__item c-worries__list-item">口呼吸をしている、いつも口がポカンと開いている</li>
+            <li class="check-list__item c-worries__list-item">指しゃぶり・爪噛み・唇を噛む癖がある</li>
+            <li class="check-list__item c-worries__list-item">飲み込むときに舌が前に出る</li>
+            <li class="check-list__item c-worries__list-item">食べるのが遅い・よく噛まない</li>
+            <li class="check-list__item c-worries__list-item">発音がはっきりしない、いびきをかく</li>
+          </ul>
+        </div>
+      </div>
+      <p class="c-txt__03 pediatric-ortho__worries-text js-scrollin">
+        歯並びの乱れの多くは、遺伝だけでなく「口呼吸」「舌の位置」「飲み込み方の癖」といった機能面の問題が関わっています。<span>装置で歯を動かすだけでなく、原因である癖にアプローチできることが、小児期の矯正最大の利点です</span>。
+      </p>
+    </div>
+  </section>
+
+  <section class="pediatric-ortho__trouble">
+    <div class="inner">
+      <h2 class="c-ttl__03 pediatric-ortho__trouble-ttl js-scrollin">
+        <span class="c-ft--jp">歯並びの問題を「様子見」し続けると</span>
+        <span class="c-ft--en">trouble</span>
       </h2>
-      <ol class="flow-step c-txt__02">
-        <li class="flow-step__item js-scrollin">
-          <h3 class="flow-step__ttl">無料相談</h3>
-          <p>歯並びのお悩みやご希望をお伺いし、治療の概要や時期、費用の目安についてご説明します。</p>
+      <div class="general-show pediatric-ortho__trouble-table js-scrollin">
+        <table>
+          <tr>
+            <td>むし歯・歯周病リスクの増加</td>
+            <td>重なった歯は磨き残しの温床になります</td>
+          </tr>
+          <tr>
+            <td>あご・顔立ちの発育への影響</td>
+            <td>偏った噛み合わせは、あごの成長バランス・顔貌の左右差に影響することがあります</td>
+          </tr>
+          <tr>
+            <td>将来の抜歯矯正の可能性</td>
+            <td>あごが小さいまま永久歯が生えそろうと、スペース不足を解消するために健康な歯を抜く矯正が必要になる場合があります。成長期にあごを広げておくことで、<span>抜歯のリスクを減らせる可能性があります</span>
+            </td>
+          </tr>
+          <tr>
+            <td>費用・期間の増大</td>
+            <td>大人になってからの全体矯正は、小児期の1期治療より費用も期間もかかるのが一般的です</td>
+          </tr>
+        </table>
+        <p class="c-txt__04 pediatric-ortho__trouble-text">
+          ただし、すべてのお子様に早期の矯正が必要なわけではありません。「今は経過観察が最適」という判断も含めて、専門的な目で定期的に見守ることが大切です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pediatric-ortho__step">
+    <div class="inner">
+      <h2 class="c-ttl__03 pediatric-ortho__step-ttl js-scrollin">
+        <span class="c-ft--jp">治療の時期と段階</span>
+        <span class="c-ft--en">step</span>
+      </h2>
+      <ol class="pediatric-ortho__step-list">
+        <li class="pediatric-ortho__step-item js-scrollin">
+          <div class="pediatric-ortho__step-item-head">
+            <span class="pediatric-ortho__step-item-number">01</span>
+            <h3 class="pediatric-ortho__step-item-ttl">第1期治療（骨格へのアプローチ）｜目安：3歳〜12歳頃</h3>
+          </div>
+          <div class="pediatric-ortho__step-item-content">
+            <p class="c-txt__02 pediatric-ortho__step-item-text">
+              乳歯と永久歯が混在する時期に、あごの骨の成長をコントロールし、永久歯が並ぶスペースを確保します。取り外し式装置・マウスピース型装置が中心で、お子様の負担を抑えながら進められます。この時期に土台を整えることで、2期治療が不要になる、または短く簡単になる可能性があります。
+            </p>
+          </div>
         </li>
-        <li class="flow-step__item js-scrollin delay01">
-          <h3 class="flow-step__ttl">精密検査</h3>
-          <p>レントゲン撮影、口腔内写真撮影、歯型取りなどを行い、詳細なデータを集めます。</p>
-        </li>
-        <li class="flow-step__item js-scrollin delay02">
-          <h3 class="flow-step__ttl">診断・治療計画の説明</h3>
-          <p>検査結果に基づき、最適な治療方法、期間、費用について詳しくご説明します。</p>
-        </li>
-        <li class="flow-step__item js-scrollin delay03">
-          <h3 class="flow-step__ttl">治療開始</h3>
-          <p>装置を装着し、治療をスタートします。定期的に通院していただき、調整や経過観察を行います。</p>
-        </li>
-        <li class="flow-step__item js-scrollin delay04">
-          <h3 class="flow-step__ttl">保定・観察</h3>
-          <p>歯並びが整ったら、後戻りを防ぐための装置（保定装置）を使用し、経過を見守ります。</p>
+        <li class="pediatric-ortho__step-item js-scrollin">
+          <div class="pediatric-ortho__step-item-head">
+            <span class="pediatric-ortho__step-item-number">02</span>
+            <h3 class="pediatric-ortho__step-item-ttl">第2期治療（歯並びの仕上げ）｜目安：12歳頃〜</h3>
+          </div>
+          <div class="pediatric-ortho__step-item-content">
+            <p class="c-txt__02 pediatric-ortho__step-item-text">
+              永久歯が生えそろった後、ワイヤーやマウスピースで歯を1本ずつ動かして仕上げます。1期治療で土台ができていれば、非抜歯で治療できる可能性が高まります（2期治療の料金は<a
+                href="<?php echo home_url('medical/orthodontics/'); ?>">「成人矯正」</a>ページ参照）。
+            </p>
+          </div>
         </li>
       </ol>
     </div>
   </section>
-  <section class="sec-price">
+
+  <section class="pediatric-ortho__menu">
     <div class="inner">
-      <h2 class="c-ttl__03 js-scrollin">
+      <h2 class="c-ttl__03 pediatric-ortho__menu-ttl js-scrollin">
+        <span class="c-ft--jp">当院で取り扱う主な装置</span>
+        <span class="c-ft--en">menu</span>
+      </h2>
+      <ul class="pediatric-ortho__menu-list">
+        <li class="pediatric-ortho__menu-item js-scrollin">
+          <div class="pediatric-ortho__menu-item-img">
+            <picture>
+              <source
+                srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-menu-01.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-menu-01.png"
+                alt="プレオルソ（マウスピース型機能矯正装置）">
+            </picture>
+          </div>
+          <div class="pediatric-ortho__menu-item-content">
+            <h3 class="pediatric-ortho__menu-item-ttl">プレオルソ（マウスピース型機能矯正装置）</h3>
+            <p class="c-txt__04 pediatric-ortho__menu-item-text">
+              柔らかいシリコン素材のマウスピース型装置です。日中1時間と就寝時に装着します。歯並びへのアプローチと同時に、口呼吸から鼻呼吸への改善、舌の正しい位置のトレーニング効果が期待できる「機能矯正装置」です。取り外し式なので学校に着けていく必要がなく、始めやすいのが特長です。
+            </p>
+            <div class="pediatric-ortho__menu-item-age">目安年齢：3歳〜10歳頃</div>
+          </div>
+        </li>
+        <li class="pediatric-ortho__menu-item js-scrollin">
+          <div class="pediatric-ortho__menu-item-img">
+            <picture>
+              <source
+                srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-menu-02.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-menu-02.png"
+                alt="床矯正装置 / 目安年齢：小学校低学年〜中学年">
+            </picture>
+          </div>
+          <div class="pediatric-ortho__menu-item-content">
+            <h3 class="pediatric-ortho__menu-item-ttl">床矯正装置 / 目安年齢：小学校低学年〜中学年</h3>
+            <p class="c-txt__04 pediatric-ortho__menu-item-text">
+              入れ歯のような形の取り外し式装置で、ネジを少しずつ回してあごの骨をゆっくり広げ、歯が並ぶスペースをつくります。食事・歯磨きのときは外せるため衛生的です。
+            </p>
+            <div class="pediatric-ortho__menu-item-age">目安年齢：小学校低学年〜中学年</div>
+          </div>
+        </li>
+        <li class="pediatric-ortho__menu-item js-scrollin">
+          <div class="pediatric-ortho__menu-item-img">
+            <picture>
+              <source
+                srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-menu-03.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-menu-03.png"
+                alt="インビザライン・ファースト">
+            </picture>
+          </div>
+          <div class="pediatric-ortho__menu-item-content">
+            <h3 class="pediatric-ortho__menu-item-ttl">インビザライン・ファースト</h3>
+            <p class="c-txt__04 pediatric-ortho__menu-item-text">
+              透明なマウスピース矯正「インビザライン」の混合歯列期（子ども）専用プログラムです。歯並びの改善とあごの幅の拡大を同時に進められる症例があり、目立たず、取り外しできるため学校生活への影響がほとんどありません。口腔内スキャナーiTeroで型取りするため、粘土の型取りが苦手なお子様にも負担が少なく済みます。
+            </p>
+          </div>
+        </li>
+        <li class="pediatric-ortho__menu-item js-scrollin">
+          <div class="pediatric-ortho__menu-item-img">
+            <picture>
+              <source
+                srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/pediatric/ortho/img-menu-04.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/pediatric/ortho/img-menu-04.png"
+                alt="ワイヤー矯正（小児）">
+            </picture>
+          </div>
+          <div class="pediatric-ortho__menu-item-content">
+            <h3 class="pediatric-ortho__menu-item-ttl">ワイヤー矯正（小児）</h3>
+            <p class="c-txt__04 pediatric-ortho__menu-item-text">
+              症例によっては、部分的なワイヤー装置で歯の位置を整えることもあります。装置の選択は、検査結果とお子様の適応を見て総合的にご提案します。
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="pediatric-ortho__flow">
+    <div class="inner">
+      <h2 class="c-ttl__03 pediatric-ortho__flow-ttl js-scrollin">
+        <span class="c-ft--jp">治療の流れ</span>
+        <span class="c-ft--en">flow</span>
+      </h2>
+      <ol class="flow-step c-txt__02">
+        <li class="flow-step__item js-scrollin">
+          <h3 class="flow-step__ttl">ご相談</h3>
+          <p>歯並び・癖・発育のご心配ごとを伺い、口腔内を確認のうえ、考えられる選択肢と費用の目安をご説明します</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay01">
+          <h3 class="flow-step__ttl">精密検査</h3>
+          <p>レントゲン（パノラマ・セファロ）・口腔内写真・iTeroスキャン等で、歯・あご・骨格の発育状態を評価します</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay02">
+          <h3 class="flow-step__ttl">診断・治療計画のご説明</h3>
+          <p>開始時期・装置・期間・総額を丁寧にご説明します。「今すぐ始めない」提案も含め、お子様にとって最適なタイミングを一緒に決めます</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay03">
+          <h3 class="flow-step__ttl">治療開始</h3>
+          <p>装置の使い方をお子様と練習し、ご家庭での装着をサポートします。装着時間の記録シートなどで習慣化を支援します</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay04">
+          <h3 class="flow-step__ttl">定期通院（1〜2ヶ月ごと）</h3>
+          <p>歯の動き・あごの成長・装置の適合をチェックします</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay05">
+          <h3 class="flow-step__ttl">保定・経過観察</h3>
+          <p>整った歯並びを維持しながら、永久歯への生え変わり完了まで見守ります。必要に応じて2期治療へ移行します</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="pediatric-ortho__price">
+    <div class="inner">
+      <h2 class="c-ttl__03 pediatric-ortho__price-ttl js-scrollin">
         <span class="c-ft--jp">料金表（税込）</span>
         <span class="c-ft--en">PRICE</span>
       </h2>
-      <div class="general-show general-show--02 js-scrollin">
+      <div class="general-show pediatric-ortho__price-table js-scrollin">
         <table>
           <tr>
-            <th>治療メニュー</th>
+            <th>メニュー</th>
             <th>費用</th>
           </tr>
           <tr>
-            <td>矯正相談</td>
-            <td><strong>無料</strong></td>
+            <td>矯正データ収集・診断料</td>
+            <td>55,000円</td>
           </tr>
           <tr>
-            <td>精密検査・診断料</td>
-            <td>33,000円</td>
-          </tr>
-          <tr>
-            <td>第1期治療（小児矯正）</td>
-            <td>330,000円〜</td>
-          </tr>
-          <tr>
-            <td>プレオルソ</td>
-            <td>55,000円〜</td>
+            <td>プレオルソ（マウスピース型機能矯正装置）</td>
+            <td>165,000円</td>
           </tr>
           <tr>
             <td>インビザライン・ファースト</td>
-            <td>440,000円〜</td>
+            <td>495,000円</td>
           </tr>
           <tr>
-            <td>調整料（通院ごと）</td>
-            <td>3,300円〜5,500円</td>
+            <td>小児矯正（ワイヤー）</td>
+            <td>545,000円</td>
+          </tr>
+          <tr>
+            <td>調整料</td>
+            <td>3,300円</td>
+          </tr>
+          <tr>
+            <td>リテーナー（保定装置・片顎）</td>
+            <td>22,000円</td>
           </tr>
         </table>
-        <div class="general-show__note c-al--r"> ※費用は症例や装置の種類によって異なります。詳しくはお見積りいたします。 </div>
+        <p class="c-txt__02 pediatric-ortho__price-txt">※料金は参考価格です。症例・装置の組み合わせにより異なります。検査後に総額の見通しをご説明します。</p>
+        <p class="c-txt__02 pediatric-ortho__price-txt">
+          ※小児矯正は自由診療（保険適用外）です。発育や噛み合わせの改善を目的とする小児の矯正治療は、医療費控除の対象となる場合があります。</p>
+        <p class="c-txt__02 pediatric-ortho__price-txt">※2期治療（永久歯列の仕上げ矯正）へ移行する場合の費用は「成人矯正」ページをご参照ください。</p>
       </div>
     </div>
   </section>
-  <section class="sec-fqa-page">
+
+  <section class="pediatric-ortho__fqa">
     <div class="inner">
-      <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">よくあるご質問（小児矯正）</span>
+      <h2 class="c-ttl__03 pediatric-ortho__fqa-ttl js-scrollin">
+        <span class="c-ft--jp">よくあるご質問</span>
         <span class="c-ft--en">FAQ</span>
       </h2>
       <ul class="fqa-list c-txt__02">
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>矯正の相談は何歳くらいから行けばいいですか？</span></h3>
-          <p class="fqa-list__answer">気になった時が相談のタイミングですが、一般的には前歯が生え変わり始める6〜7歳頃にご相談に来られる方が多いです。受け口や交叉咬合などは、3歳頃からの早期治療が有効な場合もあります。</p>
+          <h3 class="fqa-list__question"><span>何歳ごろ相談するのがベストですか？</span></h3>
+          <p class="fqa-list__answer">
+            「気になったとき」がご相談のタイミングです。受け口は3〜4歳頃から対応を検討することがあり、多くの歯並びの問題は6〜8歳頃（前歯の生え変わり期）が判断の目安になります。すぐに治療しない場合でも、成長を定期的にチェックしながら最適な開始時期を見極められることが早期相談の価値です。
+          </p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>治療期間はどのくらいかかりますか？</span></h3>
-          <p class="fqa-list__answer">第1期治療は、永久歯が生え揃うまでの数年間（1〜3年程度）かかることが一般的です。その後、経過観察を行い、必要であれば第2期治療へ移行します。</p>
+          <h3 class="fqa-list__question"><span>子どもが装置を嫌がったら続けられますか？</span></h3>
+          <p class="fqa-list__answer">
+            装着練習の段階から少しずつ慣らしていきます。取り外し式装置は「痛みが少なく始めやすい」一方、装着時間の自己管理が結果を左右します。ご家庭と二人三脚で習慣化をサポートしますのでご安心ください。</p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>痛みはありますか？</span></h3>
-          <p class="fqa-list__answer">装置をつけた直後や調整後は、歯が浮くような違和感や痛みを感じることがありますが、数日で慣れることがほとんどです。お子様は大人よりも骨が柔らかいため、痛みを感じにくい傾向にあります。</p>
+          <h3 class="fqa-list__question"><span>1期治療をすれば、2期治療は必要なくなりますか？</span></h3>
+          <p class="fqa-list__answer">
+            必ずとは言えません。1期治療で土台を整えた結果、2期治療が不要になるお子様もいれば、仕上げの2期治療を短期間行うお子様もいます。診断時に見通しを正直にお伝えします。</p>
+        </li>
+        <li class="fqa-list__item js-scrollin">
+          <h3 class="fqa-list__question"><span>学校や習い事に影響しませんか？</span></h3>
+          <p class="fqa-list__answer">
+            プレオルソやインビザラインファーストは、日中の装着が基本的に自宅時間で完結するか取り外しが可能なため、学校生活への影響はほとんどありません。</p>
         </li>
       </ul>
+      <div class="faq-attention js-scrollin">
+        <p class="faq-attention__ttl">リスク・副作用・注意事項</p>
+        <ul class="faq-attention__list">
+          <li class="c-txt__02 faq-attention__item">装着時間が不足すると、計画した効果が得られないことがあります。治療の成否にはご家庭の協力が不可欠です</li>
+          <li class="c-txt__02 faq-attention__item">装置の装着当初、一時的な違和感・痛み・発音のしづらさが出ることがあります</li>
+          <li class="c-txt__02 faq-attention__item">あごの成長には個人差があり、成長の経過によって治療計画を見直す場合があります</li>
+          <li class="c-txt__02 faq-attention__item">矯正装置の使用中はむし歯リスクが高まることがあるため、定期的なチェック・クリーニングを併用します</li>
+          <li class="c-txt__02 faq-attention__item">1期治療後、永久歯の生え方によっては2期治療が必要になる場合があります</li>
+        </ul>
+      </div>
     </div>
   </section>
 

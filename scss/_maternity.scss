@@ -1,0 +1,77 @@
+@use "vars" as *;
+
+/* ----------------------------------------------------------
+// 妊娠中にお口のトラブルが増える理由
+// ---------------------------------------------------------- */
+.maternity__about {
+  padding-block: 15px 40px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.maternity__about-ttl {
+  margin-bottom: 14px;
+}
+
+.maternity__about-table {
+  margin-bottom: 25px;
+}
+
+.general-show.maternity__about-table table tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.general-show.maternity__about-table table tr td:nth-child(1) {
+  width: 9.6%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 29%;
+  }
+}
+
+.general-show.maternity__about-table table tr td {
+  padding: 25px 20px 25px 42px;
+  @include mq(xxl) {
+    padding: 25px calc(20 / 1440 * 100vw) 25px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+.general-show.maternity__about-table table tr td:nth-child(2) {
+  padding-inline: 20px 5px;
+  @include mq(xxl) {
+    padding-inline: calc(20 / 1440 * 100vw) calc(5 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 当院のマタニティ診療の特徴
+// ---------------------------------------------------------- */
+.maternity__features {
+  padding-block: 115px 88px;
+  @include mq() {
+    padding-block: 40px 40px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 診療内容
+// ---------------------------------------------------------- */
+.maternity__menu .c-txt__03 + .oral-flex__ttl {
+  margin-top: 44px;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.maternity__fqa {
+  padding-block: 115px 88px;
+  @include mq() {
+    padding-block: 40px;
+  }
+}

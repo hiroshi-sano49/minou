@@ -1,0 +1,424 @@
+@use "vars" as *;
+
+.sec-preventive.root-canal__preventive {
+  padding-bottom: 35px;
+  @include mq() {
+    padding-bottom: 0;
+  }
+}
+
+.sec-preventive.root-canal__preventive .preventive-block {
+  margin-bottom: 10px;
+  @include mq() {
+    margin-bottom: 30px;
+  }
+}
+
+/* ----------------------------------------------------------
+// こんなお悩みはありませんか？
+// ---------------------------------------------------------- */
+.root-canal__worries .c-worries__content {
+  width: 85%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.root-canal__worries .preventive-check .check-list.c-worries__list {
+  gap: 15px 30px;
+}
+
+/* ----------------------------------------------------------
+// 根管治療とは何か ── 歯を抜かずに残すための最終手段
+// ---------------------------------------------------------- */
+.root-canal__information {
+  margin-top: 81px;
+  padding-block: 50px 60px;
+  background-color: #ebeff2;
+  @include mq() {
+    margin-top: 50px;
+    padding-block: 40px;
+  }
+}
+
+.root-canal__information .c-ttl__03 {
+  margin-bottom: 21px;
+}
+
+.root-canal__information-txt span {
+  font-weight: bold;
+  color: #da0303;
+}
+
+.root-canal__information-catch {
+  margin-block: 45px 15px;
+  @include font-size(20);
+  font-weight: bold;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 根管治療が再発する3つの理由
+// ---------------------------------------------------------- */
+.root-canal__risk {
+  padding-block: 103px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.root-canal__risk .c-ttl__03 {
+  margin-bottom: 15px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.root-canal__risk-list {
+  margin-top: 25px;
+}
+
+.root-canal__risk-list-item {
+  padding-block: 20px;
+  padding-left: 6px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.root-canal__risk-list-item-ttl {
+  @include font-size(18);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.root-canal__risk-list-item-text {
+  margin-top: 15px;
+}
+
+/* ----------------------------------------------------------
+// 保険の根管治療と精密根管治療
+// ---------------------------------------------------------- */
+.root-canal__trouble {
+  padding-block: 103px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.root-canal__trouble .c-ttl__03 {
+  margin-bottom: 32px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.root-canal__trouble-catch {
+  @include font-size(20);
+  font-weight: bold;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.root-canal__trouble-text {
+  margin-top: 18px;
+}
+
+.root-canal__trouble-table {
+  margin-top: 32px;
+  margin-bottom: 4px;
+}
+
+.root-canal__trouble-table table {
+  margin-bottom: 20px;
+}
+
+.general-show.root-canal__trouble-table table tr th:nth-child(1),
+.general-show.root-canal__trouble-table table tr td:nth-child(1) {
+  width: 20.8%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 25%;
+  }
+}
+.general-show.root-canal__trouble-table table tr th:nth-child(2),
+.general-show.root-canal__trouble-table table tr td:nth-child(2) {
+  width: 27%;
+  @include mq(xl) {
+    width: 41%;
+  }
+}
+.general-show.root-canal__trouble-table table tr td:nth-child(2) {
+  @include font-size(16);
+  @include mq() {
+    @include font-size(13);
+  }
+}
+
+.general-show.root-canal__trouble-table table tr th:nth-child(3),
+.general-show.root-canal__trouble-table table tr td:nth-child(3) {
+  color: #00a5b1;
+}
+
+.root-canal__trouble-table-txt {
+  @include font-size(13);
+  font-weight: 400;
+  line-height: calc(23.8 / 13);
+}
+
+/* ----------------------------------------------------------
+// 当院の精密根管治療 ── 4つの精密な要素
+// ---------------------------------------------------------- */
+.root-canal__features {
+  padding-block: 108px 86px;
+  @include mq() {
+    padding-block: 20px 40px;
+  }
+}
+
+.root-canal__features .c-ttl__03 {
+  margin-bottom: 42px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.root-canal__features-list {
+  display: grid;
+  gap: 28px;
+}
+
+.root-canal__features-item {
+  padding: 21px 46px 37px 36px;
+  background-color: #eaedf7;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.root-canal__features-item-head {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.root-canal__features-item-number {
+  width: 63px;
+  height: 63px;
+  background: linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background: -webkit-linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  border-radius: 50%;
+  @include flex(center, center);
+  @include font-size(31);
+  font-weight: 700;
+  font-family: $font-en;
+  color: #fff;
+  font-weight: 700;
+  flex-shrink: 0;
+  @include mq {
+    @include font-size(25);
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.root-canal__features-item-ttl {
+  @include font-size(26);
+  font-weight: bold;
+  line-height: calc(38.8 / 26);
+  color: #4c4948;
+  @include mq() {
+    @include font-size(20);
+  }
+}
+
+.root-canal__features-item-content {
+  margin-top: 25px;
+  padding: 21px 28px 26px 44px;
+  background-color: #fff;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.root-canal__features-item-text {
+  font-weight: 400;
+}
+
+/* ----------------------------------------------------------
+// 
+// ---------------------------------------------------------- */
+.root-canal__about {
+  padding-block: 134px 138px;
+  background: url(../img/root-canal/bg_root_canal_about_01.jpg) no-repeat center
+    center / cover;
+  @include mq() {
+    padding-block: 40px;
+  }
+}
+
+.root-canal__about .inner {
+  max-width: calc(1200px + 12%);
+}
+
+.root-canal__about-list {
+  padding-right: 27px;
+  display: grid;
+  gap: 35px;
+  @include mq() {
+    padding-right: initial;
+    gap: 20px;
+  }
+}
+
+.root-canal__about-item {
+  padding: 45px 40px 30px 70px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 19px;
+  backdrop-filter: blur(20px);
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.root-canal__about-item-ttl {
+  @include font-size(26);
+  font-weight: bold;
+  line-height: calc(28.8 / 26);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(20);
+  }
+}
+
+.root-canal__about-item-text {
+  margin-top: 29px;
+  font-weight: 400;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.root-canal__about-item-text span {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ
+// ---------------------------------------------------------- */
+.root-canal__flow {
+  padding-block: 120px 30px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 料金表（税込）
+// ---------------------------------------------------------- */
+.root-canal__price {
+  padding-block: 84px 50px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.root-canal__price .c-ttl__03 {
+  margin-bottom: 55px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.root-canal__price-list {
+  margin-bottom: 9px;
+  display: grid;
+  gap: 26px;
+}
+
+.root-canal__price-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.root-canal__price-table {
+  margin-top: 27px;
+  margin-bottom: 20px;
+}
+
+.general-show.root-canal__price-table table tr th:nth-child(1),
+.general-show.root-canal__price-table table tr td:nth-child(1) {
+  width: 40%;
+  @include mq(xl) {
+    width: 44%;
+  }
+}
+.general-show.root-canal__price-table table tr th:nth-child(2),
+.general-show.root-canal__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.general-show.root-canal__price-table table tr th,
+.general-show.root-canal__price-table table tr td {
+  padding-inline: 49px 55px;
+  @include mq(xxl) {
+    padding-inline: calc(49 / 1440 * 100vw) calc(55 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.root-canal__price-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.root-canal__faq {
+  padding-block: 72px 30px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 最後に
+// ---------------------------------------------------------- */
+.root-canal__end {
+  padding-block: 33px 74px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.root-canal__end-catch {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(61.8 / 30);
+  text-align: center;
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(26);
+  }
+}
+
+.root-canal__end-txt {
+  margin-top: 9px;
+  line-height: calc(29.8 / 16);
+  text-align: center;
+}

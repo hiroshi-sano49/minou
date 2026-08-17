@@ -1,371 +1,896 @@
 @use "vars" as *;
 
-.sec-provider{
-	padding-bottom: 83px;
-	@include mq(){
-		padding-bottom: 50px;
-	}
+.sec-provider {
+  padding-bottom: 83px;
+  @include mq() {
+    padding-bottom: 50px;
+  }
 }
 
-.provider-bg{
-	padding: 33px 0;
-	background:  linear-gradient(90deg, #F4F4F4 0%, #F0E7F3 30.29%, #D3D9EA 59.62%, #D6E8EB 87.5%);
-	margin-bottom: 49px;
-	@include mq(){
-		padding: 50px 0;
-		margin-bottom: 35px;
-	}
+.provider-bg {
+  padding: 33px 0;
+  background: linear-gradient(
+    90deg,
+    #f4f4f4 0%,
+    #f0e7f3 30.29%,
+    #d3d9ea 59.62%,
+    #d6e8eb 87.5%
+  );
+  margin-bottom: 49px;
+  @include mq() {
+    padding: 50px 0;
+    margin-bottom: 35px;
+  }
 }
 
-.provider-flex{
-	@include flex(between,start,wrap);
-	@include mq(){
-		flex-wrap: wrap-reverse;
-	}
-	&__ct{
-		width: 67%;
-		padding-top: 20px;
-		@include mq(){
-			width: 100%;
-			padding-top: 0;
-		}
-	}
-	&__ttl{
-		font-weight: 500;
-		padding-bottom: 15px;
-		margin-bottom: 20px;
-		border-bottom: 1px solid #fff;
-		@include font-size(30);
-		@include mq(){
-			padding-bottom: 10px;
-			margin-bottom: 15px;
-			@include font-size(24);
-		}
-	}
-	&__img{
-		width: 25.7%;
-		overflow: hidden;
-		border-radius: 10px;
-		@include mq(){
-			max-width: 450px;
-			width: 100%;
-			margin-bottom: 15px;
-		}
-		img{
-			width: 100%;
-		}
-	}
+.provider-flex {
+  @include flex(between, start, wrap);
+  @include mq() {
+    flex-wrap: wrap-reverse;
+  }
+  &__ct {
+    width: 67%;
+    padding-top: 20px;
+    @include mq() {
+      width: 100%;
+      padding-top: 0;
+    }
+  }
+  &__ttl {
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    @include font-size(30);
+    @include mq() {
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      @include font-size(24);
+    }
+  }
+  &__img {
+    width: 25.7%;
+    overflow: hidden;
+    border-radius: 10px;
+    @include mq() {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
 
-.provider-list{
-	margin-bottom: 66px;
-	@include mq(){
-		margin-bottom: 50px;
-	}
-	&__item{
-		&:not(:last-child){
-			margin-bottom: 43px;
-			@include mq(){
-				margin-bottom: 35px;
-			}
-		}
-	}
-	&__option{
-		margin-top: 23px;
-		@include flex(0,0,wrap);
-		gap: 10px 15px;
-		@include mq(){
-			gap: 10px;
-		}
-		&-item{
-			display: inline-block;
-			background: #FBEEEF;
-			border-radius: 8px;
-			padding: 12px 22.5px;
-			color: #00A5B1;
-			font-weight: bold;
-			@include font-size(19);
-			@include mq(){
-				border-radius: 5px;
-				padding: 10px 12px;
-				@include font-size(16);
-			}
-		}
-	}
+.provider-list {
+  margin-bottom: 66px;
+  @include mq() {
+    margin-bottom: 50px;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 43px;
+      @include mq() {
+        margin-bottom: 35px;
+      }
+    }
+  }
+  &__option {
+    margin-top: 23px;
+    @include flex(0, 0, wrap);
+    gap: 10px 15px;
+    @include mq() {
+      gap: 10px;
+    }
+    &-item {
+      display: inline-block;
+      background: #fbeeef;
+      border-radius: 8px;
+      padding: 12px 22.5px;
+      color: #00a5b1;
+      font-weight: bold;
+      @include font-size(19);
+      @include mq() {
+        border-radius: 5px;
+        padding: 10px 12px;
+        @include font-size(16);
+      }
+    }
+  }
 }
 
-.provider-box{
-	background: url('../img/orthodontics/bg-01.jpg') center no-repeat;
-	background-size: cover;
-	border-radius: 19px;
-	position: relative;
-	z-index: 2;
-	padding: 50px 58px 41px;
-	color: #fff;
-	overflow: hidden;
-	@include mq(){
-		padding: 50px 20px;
-		border-radius: 10px;
-	}
-	@include p-before(100%,100%){
-		background: rgba(#000,0.4);
-		top: 0;
-		left: 0;
-		z-index: -1;
-	}
-	&__ttl{
-		font-weight: 500;
-		text-align: center;
-		margin-bottom: 32px;
-		@include font-size(30);
-		@include mq(){
-			margin-bottom: 15px;
-			@include font-size(24);
-		}
-	}
-	.c-txt__04{
-		font-weight: bold;
-	}
-	.c-btn__03{
-		max-width: 384px;
-		margin: 33px auto 0;
-		height: 80px;
-		&::before{
-			left: 49px;
-			@include mq(){
-				left: 10px;
-			}
-		}
-		@include mq(){
-			max-width: 300px;
-			height: 70px;
-			margin-top: 20px;
-			padding-right: 10px;
-		}
-	}
+.provider-box {
+  background: url("../img/orthodontics/bg-01.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 19px;
+  position: relative;
+  z-index: 2;
+  padding: 50px 58px 41px;
+  color: #fff;
+  overflow: hidden;
+  @include mq() {
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+  @include p-before(100%, 100%) {
+    background: rgba(#000, 0.4);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__ttl {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 32px;
+    @include font-size(30);
+    @include mq() {
+      margin-bottom: 15px;
+      @include font-size(24);
+    }
+  }
+  .c-txt__04 {
+    font-weight: bold;
+  }
+  .c-btn__03 {
+    max-width: 384px;
+    margin: 33px auto 0;
+    height: 80px;
+    &::before {
+      left: 49px;
+      @include mq() {
+        left: 10px;
+      }
+    }
+    @include mq() {
+      max-width: 300px;
+      height: 70px;
+      margin-top: 20px;
+      padding-right: 10px;
+    }
+  }
 }
 
-.oral-box{
-	margin-top: 40px;
-	background: #fff;
-	border-radius: 19px;
-	padding: 24px 40px 38px;
-	@include mq(){
-		border-radius: 10px;
-		margin-top: 25px;
-		padding: 25px 15px;
-	}
-	&__ttl{
-		margin-bottom: 20px;
-		color: #00A5B1;
-		font-weight: 500;
-		@include font-size(17);
-		@include mq(){
-			margin-bottom: 15px;
-			@include font-size(16);
-		}
-	}
-	.c-txt__02{
-		line-height: 1.7;
-		@include mq(){
-			line-height: 1.5;
-		}
-	}
+.oral-box {
+  margin-top: 40px;
+  background: #fff;
+  border-radius: 19px;
+  padding: 24px 40px 38px;
+  @include mq() {
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 25px 15px;
+  }
+  &__ttl {
+    margin-bottom: 20px;
+    color: #00a5b1;
+    font-weight: 500;
+    @include font-size(17);
+    @include mq() {
+      margin-bottom: 15px;
+      @include font-size(16);
+    }
+  }
+  .c-txt__02 {
+    line-height: 1.7;
+    @include mq() {
+      line-height: 1.5;
+    }
+  }
 }
 
-.sec-plan{
-	padding: 112px 0 31px;
-	@include mq(){
-		padding: 50px 0 20px;
-	}
+.sec-plan {
+  padding: 112px 0 31px;
+  @include mq() {
+    padding: 50px 0 20px;
+  }
 }
 
-.plan-list{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 44px;
-	@include mq(xl){
-		gap: 35px 20px;
-		grid-template-columns: 1fr 1fr;
-	}
-	@include mq(){
-		grid-template-columns: 1fr;
-	}
-	&__item{
-	}
-	&__img{
-		margin-bottom: 24px;
-		@include aspect-ratio(371px,174px);
-		@include mq(){
-			margin-bottom: 15px;
-		}
-	}
-	&__ttl{
-		text-align: center;
-		font-weight: 500;
-		line-height: 1.3;
-		@include font-size(24);
-		@include mq(xl){
-			@include font-size(20);
-		}
-		>span{
-			margin-top: 14px;
-			display: block;
-			@include mq(){
-				margin-top: 10px;
-			}
-			span{
-				min-width: 295px;
-				border-radius: 10px;
-				background: linear-gradient(90deg, #F4F4F4 0%, #F0E7F3 30.29%, #D3D9EA 59.62%, #D6E8EB 87.5%);
-				padding: 8px 16px;
-				display: inline-block;
-				@include font-size(18);
-				@include mq(xl){
-					@include font-size(16);
-				}
-			}
-		}
-	}
+.plan-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 44px;
+  @include mq(xl) {
+    gap: 35px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mq() {
+    grid-template-columns: 1fr;
+  }
+  &__item {
+  }
+  &__img {
+    margin-bottom: 24px;
+    @include aspect-ratio(371px, 174px);
+    @include mq() {
+      margin-bottom: 15px;
+    }
+  }
+  &__ttl {
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.3;
+    @include font-size(24);
+    @include mq(xl) {
+      @include font-size(20);
+    }
+    > span {
+      margin-top: 14px;
+      display: block;
+      @include mq() {
+        margin-top: 10px;
+      }
+      span {
+        min-width: 295px;
+        border-radius: 10px;
+        background: linear-gradient(
+          90deg,
+          #f4f4f4 0%,
+          #f0e7f3 30.29%,
+          #d3d9ea 59.62%,
+          #d6e8eb 87.5%
+        );
+        padding: 8px 16px;
+        display: inline-block;
+        @include font-size(18);
+        @include mq(xl) {
+          @include font-size(16);
+        }
+      }
+    }
+  }
 }
 
-.sec-merit{
-	padding: 60px 0 91px;
-	@include mq(){
-		padding: 50px 0;
-	}
-	&--02{
-		@include mq(md-min){
-			padding: 95px 0 102px;
-			.preventive-list__option-item {
-				padding: 39px 33px 29px;
-			}
-		}
-	}
+.sec-merit {
+  padding: 60px 0 91px;
+  @include mq() {
+    padding: 50px 0;
+  }
+  &--02 {
+    @include mq(md-min) {
+      padding: 95px 0 102px;
+      .preventive-list__option-item {
+        padding: 39px 33px 29px;
+      }
+    }
+  }
 }
 
-.merit-list{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 17px 41px;
-	padding: 0 10px;
-	margin-bottom: 31px;
-	@include mq(xl){
-		padding: 0;
-	}
-	@include mq(){
-		grid-template-columns: 1fr;
-		gap: 20px 0;
-	}
-	&__item{
-		padding-left: 34px;
-		padding-bottom: 25px;
-		border-bottom: 1px solid #D3D3D3;
-		@include mq(){
-			padding-left: 30px;
-			padding-bottom: 15px;
-		}
-	}
-	&__ttl{
-		margin-bottom: 12px;
-		position: relative;
-		font-weight: 500;
-		color: #00A5B1;
-		@include font-size(20);
-		@include mq(){
-			@include font-size(18);
-		}
-		@include p-before(23px,23px){
-			background: url('../img/index/icon-check.png') center no-repeat;
-			background-size: contain;
-			left: -35px;
-			top: 3px;
-			transition: all 0.3s;
-			@include mq(){
-				width: 20px;
-				height: 20px;
-				left: -30px;
-			}
-		}
-	}
+.merit-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px 41px;
+  padding: 0 10px;
+  margin-bottom: 31px;
+  @include mq(xl) {
+    padding: 0;
+  }
+  @include mq() {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  &__item {
+    padding-left: 34px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d3d3d3;
+    @include mq() {
+      padding-left: 30px;
+      padding-bottom: 15px;
+    }
+  }
+  &__ttl {
+    margin-bottom: 12px;
+    position: relative;
+    font-weight: 500;
+    color: #00a5b1;
+    @include font-size(20);
+    @include mq() {
+      @include font-size(18);
+    }
+    @include p-before(23px, 23px) {
+      background: url("../img/index/icon-check.png") center no-repeat;
+      background-size: contain;
+      left: -35px;
+      top: 3px;
+      transition: all 0.3s;
+      @include mq() {
+        width: 20px;
+        height: 20px;
+        left: -30px;
+      }
+    }
+  }
 }
 
-.merit-note{
-	background: #FAFAFA;
-	border-radius: 19px;
-	padding: 29px 69px;
-	@include flex(0,center,wrap);
-	@include mq(xl){
-		padding: 20px;
-	}
-	@include mq(){
-		border-radius: 10px;
-		padding: 25px 15px;
-	}
-	&__ttl{
-		width: 39%;
-		padding-right: 10px;
-		padding-left: 39px;
-		font-weight: 500;
-		position: relative;
-		@include font-size(23);
-		@include mq(){
-			width: 100%;
-			padding-left: 30px;
-			padding-right: 0;
-			margin-bottom: 15px;
-			padding-bottom: 12px;
-			border-bottom: 1px solid #C0C0C0;
-			@include font-size(20);
-		}
-		@include p-before(27px,24px){
-			background: url('../img/orthodontics/icon-note.png') center no-repeat;
-			background-size: contain;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			@include mq(){
-				width: 22px;
-				height: 20px;
-			}
-		}
-	}
-	&__list{
-		width: 61%;
-		padding-left: 37px;
-		border-left: 1px solid #C0C0C0;
-		@include mq(xl){
-			padding-left: 20px;
-		}
-		@include mq(){
-			padding-left: 0;
-			border-left: 0;
-			width: 100%;
-		}
-		&-item{
-			color: #EA3535;
-			padding-left: 13px;
-			position: relative;
-			font-weight: 500;
-			@include font-size(16);
-			@include mq(){
-				@include font-size(14);
-			}
-			@include p-before(3px,3px){
-				border-radius: 10px;
-				left: 0;
-				top: 10px;
-				background: #EA3535;
-				@include mq(){
-					top: 8px;
-				}
-			}
-			&:not(:last-child){
-				margin-bottom: 11px;
-				@include mq(){
-					margin-bottom: 6px;
-				}
-			}
-		}
-	}
+.merit-note {
+  background: #fafafa;
+  border-radius: 19px;
+  padding: 29px 69px;
+  @include flex(0, center, wrap);
+  @include mq(xl) {
+    padding: 20px;
+  }
+  @include mq() {
+    border-radius: 10px;
+    padding: 25px 15px;
+  }
+  &__ttl {
+    width: 39%;
+    padding-right: 10px;
+    padding-left: 39px;
+    font-weight: 500;
+    position: relative;
+    @include font-size(23);
+    @include mq() {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 0;
+      margin-bottom: 15px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #c0c0c0;
+      @include font-size(20);
+    }
+    @include p-before(27px, 24px) {
+      background: url("../img/orthodontics/icon-note.png") center no-repeat;
+      background-size: contain;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      @include mq() {
+        width: 22px;
+        height: 20px;
+      }
+    }
+  }
+  &__list {
+    width: 61%;
+    padding-left: 37px;
+    border-left: 1px solid #c0c0c0;
+    @include mq(xl) {
+      padding-left: 20px;
+    }
+    @include mq() {
+      padding-left: 0;
+      border-left: 0;
+      width: 100%;
+    }
+    &-item {
+      color: #ea3535;
+      padding-left: 13px;
+      position: relative;
+      font-weight: 500;
+      @include font-size(16);
+      @include mq() {
+        @include font-size(14);
+      }
+      @include p-before(3px, 3px) {
+        border-radius: 10px;
+        left: 0;
+        top: 10px;
+        background: #ea3535;
+        @include mq() {
+          top: 8px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 11px;
+        @include mq() {
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+
+/* ----------------------------------------------------------
+// こんなお悩みはありませんか？
+// ---------------------------------------------------------- */
+.orthodontics .c-worries .c-worries__content {
+  padding-top: 32px;
+  width: 92%;
+}
+
+/* ----------------------------------------------------------
+// 歯並びの乱れは「見た目だけの問題」ではありません
+// ---------------------------------------------------------- */
+.orthodontics__attention {
+  margin-top: 124px;
+  padding-block: 43px 49px;
+  background-color: #ebeff2;
+  @include mq() {
+    margin-top: 70px;
+    padding-block: 40px 20px;
+  }
+}
+
+.orthodontics__attention-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include mq() {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.orthodontics__attention-item-img {
+  width: 31%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.orthodontics__attention-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/285;
+  border-radius: 19px;
+}
+
+.orthodontics__attention-content {
+  margin-top: 22px;
+  width: 64.2%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.orthodontics__attention-content-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(46.8 / 30);
+  @include mq() {
+    @include font-size(16);
+  }
+}
+
+.orthodontics__attention-content-txt {
+  margin-top: 19px;
+  line-height: calc(30.8 / 16);
+}
+
+/* ----------------------------------------------------------
+// 当院の矯正治療 ── 4つの強み
+// ---------------------------------------------------------- */
+.orthodontics__features {
+  padding-block: 160px 71px;
+  overflow: hidden;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.orthodontics__features .c-ttl__03 {
+  margin-bottom: 58px;
+  @include mq() {
+    margin-bottom: 40px;
+  }
+}
+
+.orthodontics__features-list {
+  margin-bottom: 0;
+}
+
+.orthodontics__features-item {
+  position: relative;
+  z-index: 0;
+  padding-block: 43px 62px;
+  @include mq(xl) {
+    padding-block: 35px;
+  }
+  @include mq() {
+    padding-block: 28px;
+  }
+}
+
+.orthodontics__features-item:first-child {
+  padding-block: 46px 41px;
+  @include mq(xl) {
+    padding-block: 35px;
+  }
+  @include mq() {
+    padding-block: 28px;
+  }
+}
+
+.orthodontics__features-item:nth-child(odd)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  background: #faf4e2;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.orthodontics__features-item:nth-child(even) {
+  background: #fff;
+}
+
+.orthodontics__features-inner {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.orthodontics__features-item--has-img .orthodontics__features-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 62px;
+  @include mq(xl) {
+    gap: 24px;
+  }
+  @include mq() {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+}
+
+.orthodontics__features-body {
+  width: 68%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.orthodontics__features-img {
+  width: 25.5%;
+  flex-shrink: 0;
+  overflow: hidden;
+  @include mq(xl) {
+    width: 32%;
+  }
+  @include mq() {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.orthodontics__features-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 308/203;
+  border-radius: 19px;
+}
+
+.orthodontics__features-head {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-bottom: 12px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid #cecece;
+  @include mq() {
+    gap: 12px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.orthodontics__features-item:nth-child(odd) .orthodontics__features-head {
+  border-bottom-color: #fff;
+}
+
+.orthodontics__features-number {
+  flex-shrink: 0;
+  @include font-size(68);
+  line-height: 1;
+  font-weight: bold;
+  font-family: $font-en;
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mq(xl) {
+    @include font-size(50);
+  }
+  @include mq() {
+    @include font-size(40);
+  }
+}
+
+.orthodontics__features-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(48.8 / 30);
+  @include mq(xl) {
+    @include font-size(20);
+  }
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.orthodontics__features-txt {
+  line-height: calc(25 / 16);
+}
+
+/* ----------------------------------------------------------
+// 取り扱う矯正方法
+// ---------------------------------------------------------- */
+.orthodontics__mouthpiece {
+  padding-bottom: 38px;
+}
+
+.orthodontics__mouthpiece .oral-flex.oral-flex--02 .oral-flex__img {
+  width: 28% !important;
+  margin-top: -28px !important;
+  @include mq() {
+    padding-top: 0;
+    width: 100% !important;
+    max-width: 450px;
+    margin: 0 auto 20px;
+  }
+}
+
+.orthodontics__mouthpiece .c-ttl__03 {
+  margin-bottom: 23px;
+}
+
+.orthodontics__mouthpiece .c-ttl__03 .c-ft--en {
+  right: -77px;
+  @include mq() {
+    right: -10px;
+  }
+}
+
+.orthodontics__mouthpiece .oral-flex__img img {
+  aspect-ratio: 332/282;
+}
+
+.orthodontics__mouthpiece .oral-flex--02 .oral-flex__ct {
+  width: 69.5% !important;
+  @include mq() {
+    width: 100% !important;
+  }
+}
+
+.orthodontics__mouthpiece-ttl {
+  @include font-size(20);
+  font-weight: bold;
+  color: #00a5b1;
+  margin-bottom: 6px;
+  @include mq() {
+    margin-bottom: 10px;
+    @include font-size(18);
+  }
+}
+
+.orthodontics__mouthpiece-lead {
+  margin-bottom: 18px;
+  @include mq() {
+    margin-bottom: 15px;
+  }
+}
+
+.orthodontics__mouthpiece-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px 20px;
+  background: #fff;
+  border-radius: 19px;
+  padding: 14px 15px 19px;
+  @include mq(xl) {
+    padding: 20px 15px;
+    gap: 12px 15px;
+  }
+  @include mq() {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    padding: 18px 15px;
+    gap: 10px;
+  }
+}
+
+.orthodontics__mouthpiece-checks-item {
+  padding-left: 32px;
+  position: relative;
+  font-weight: 500;
+}
+
+.orthodontics__mouthpiece-checks-item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+  background: url("../img/index/icon-check.png") center no-repeat;
+  background-size: contain;
+  @include mq() {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.orthodontics__mouthpiece-note {
+  margin-bottom: 16px;
+  @include font-size(18);
+  font-weight: bold;
+  line-height: calc(61.8 / 18);
+  @include mq() {
+    margin-top: 30px;
+    line-height: 1.5;
+  }
+}
+
+.orthodontics__mouthpiece-item {
+  padding: 35px 0;
+  border-top: 1px solid #cecece;
+  @include mq() {
+    padding: 20px 0;
+  }
+}
+
+.orthodontics__mouthpiece-item-txt {
+  line-height: calc(23.8 / 15);
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ
+// ---------------------------------------------------------- */
+.orthodontics__flow {
+  padding-block: 118px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.orthodontics__flow .c-ttl__03 {
+  margin-bottom: 26px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 料金表（税込）
+// ---------------------------------------------------------- */
+.orthodontics__price {
+  padding-block: 106px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.orthodontics__price .c-ttl__03 {
+  margin-bottom: 55px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.orthodontics__price-list {
+  margin-bottom: 25px;
+  display: grid;
+  gap: 30px;
+  @include mq() {
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+}
+
+.orthodontics__price-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.orthodontics__price-table {
+  margin-top: 19px;
+  margin-bottom: 4px;
+}
+
+.general-show.orthodontics__price-table table tr th:nth-child(1),
+.general-show.orthodontics__price-table table tr td:nth-child(1) {
+  width: 30%;
+  @include mq(xl) {
+    width: 73%;
+  }
+}
+.general-show.orthodontics__price-table table tr th:nth-child(2),
+.general-show.orthodontics__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  th:nth-child(1),
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  td:nth-child(1) {
+  width: 55%;
+  @include mq(xxl) {
+    width: 42%;
+  }
+}
+
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  th:nth-child(2),
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  td:nth-child(2) {
+  width: 29.5%;
+  padding-inline: 10px;
+  @include mq(xxl) {
+    width: 34.5%;
+    padding-inline: calc(10 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  th:nth-child(3),
+.orthodontics__price-item:nth-child(2)
+  .general-show.orthodontics__price-table
+  table
+  tr
+  td:nth-child(3) {
+  color: #4c4948;
+  text-align: right;
+  padding-inline: 10px 55px;
+  @include mq(xxl) {
+    padding-inline: calc(10 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.general-show.orthodontics__price-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.orthodontics__price-table table tr th,
+.general-show.orthodontics__price-table table tr td {
+  padding-inline: 49px 55px;
+  @include mq(xxl) {
+    padding-inline: calc(49 / 1440 * 100vw) calc(55 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.orthodontics__price-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.orthodontics__faq {
+  padding-block: 115px 149px;
+  @include mq() {
+    padding-block: 40px;
+  }
 }

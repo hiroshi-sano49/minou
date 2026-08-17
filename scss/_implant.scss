@@ -1,0 +1,535 @@
+@use "vars" as *;
+
+/* ----------------------------------------------------------
+// こんなお悩みはありませんか
+// ---------------------------------------------------------- */
+.implant .c-consultation {
+  padding: 21px 39px 35px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.implant .check-list--implant {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px 28px;
+}
+
+/* ----------------------------------------------------------
+// インプラントとはどんな治療か
+// ---------------------------------------------------------- */
+.implant__about {
+  padding-block: 63px 40px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.implant__about-ttl {
+  margin-bottom: 24px;
+}
+
+.implant__about-subttl {
+  @include font-size(20);
+  font-weight: bold;
+  line-height: calc(28.8 / 20);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.implant__about-txt {
+  margin-top: 17px;
+  @include mq() {
+    margin-top: 10px;
+  }
+}
+
+.implant__about-list {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 37px;
+  @include mq() {
+    grid-template-columns: 1fr;
+  }
+}
+
+.implant__about-item {
+  padding: 21px 29px 21px 28px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #faf4e2;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.implant__about-item-img {
+  margin-top: 24px;
+  width: 20%;
+  @include mq() {
+    margin-top: 10px;
+  }
+}
+
+.implant__about-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.implant__about-item-content {
+  width: 72%;
+}
+
+.implant__about-item-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 18);
+}
+
+.implant__about-item-txt {
+  margin-top: 10px;
+}
+
+.implant__about-item:nth-child(3) {
+  padding: 45px 13px 21px 17px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.implant__about-item:nth-child(3) .implant__about-item-img {
+  margin-top: 9px;
+  width: 25%;
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+.implant__about-item:nth-child(3) .implant__about-item-content {
+  width: 68%;
+}
+
+/* ----------------------------------------------------------
+// 歯を失ったまま放置すると起こること
+// ---------------------------------------------------------- */
+.implant__trouble {
+  padding-block: 69px 40px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.implant__trouble .c-ttl__03 {
+  margin-bottom: 23px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.implant__trouble-table {
+  margin-top: 29px;
+  margin-bottom: 25px;
+  @include mq() {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.implant__trouble-table table {
+  margin-bottom: 30px;
+  @include mq() {
+    margin-bottom: 15px;
+  }
+}
+
+.general-show.implant__trouble-table table tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.general-show.implant__trouble-table table tr td:nth-child(1) {
+  width: 8.7%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 29%;
+  }
+}
+
+.general-show.implant__trouble-table table tr td {
+  padding: 23px 0px 23px 42px;
+  @include mq(xxl) {
+    padding: 18px calc(20 / 1440 * 100vw) 19px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* ----------------------------------------------------------
+// インプラント・入れ歯・ブリッジの正直な比較
+// ---------------------------------------------------------- */
+.implant__comparison {
+  padding-block: 104px 61px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.implant__comparison-ttl {
+  margin-bottom: 23px;
+}
+
+.implant__comparison-table {
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+.implant__comparison-table table {
+  margin-bottom: 18px;
+}
+
+.general-show.implant__comparison-table table tr th:nth-child(1),
+.general-show.implant__comparison-table table tr td:nth-child(1) {
+  width: 19.5%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 21%;
+  }
+}
+.general-show.implant__comparison-table table tr th:nth-child(2),
+.general-show.implant__comparison-table table tr td:nth-child(2) {
+  width: 25%;
+  @include mq(xl) {
+    width: 23%;
+  }
+}
+
+.general-show.implant__comparison-table table tr th:nth-child(3),
+.general-show.implant__comparison-table table tr td:nth-child(3) {
+  width: 25%;
+  color: #4c4948;
+}
+
+.general-show.implant__comparison-table table tr th:nth-child(4),
+.general-show.implant__comparison-table table tr td:nth-child(4) {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+.general-show.implant__comparison-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.implant__comparison-table table tr td:nth-child(2),
+.general-show.implant__comparison-table table tr td:nth-child(3) {
+  @include font-size(16);
+  @include mq() {
+    @include font-size(13);
+  }
+}
+
+.general-show.implant__comparison-table table tr th,
+.general-show.implant__comparison-table table tr td {
+  padding-inline: 33px 5px;
+  @include mq(xxl) {
+    padding-inline: calc(33 / 1440 * 100vw) calc(5 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 当院のインプラント治療 ── 5つの特徴
+// ---------------------------------------------------------- */
+.implant__point {
+  padding-block: 86px 40px;
+  background: linear-gradient(180deg, #ffebe4 0%, #fff2ee 100%);
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.implant__point-ttl {
+  margin-bottom: 42px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.implant__point-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 36px;
+  margin-bottom: 48px;
+  @include mq(tb) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mq {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto 50px;
+  }
+}
+
+.implant__point-item {
+  width: 100%;
+  max-width: 375px;
+  background: url("../img/implant/bg-implant-item.png") center no-repeat;
+  background-size: 100% 100%;
+  padding: 12px 21px 24px;
+  position: relative;
+  min-height: 502px;
+  overflow: hidden;
+  @include font-size(14);
+  @include mq(xl) {
+    min-height: auto;
+  }
+}
+
+.implant__point-item-number {
+  @include font-size(43);
+  font-weight: 700;
+  font-family: $font-en;
+  line-height: 1;
+  background: linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background: -webkit-linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  @include mq(xl) {
+    @include font-size(40);
+  }
+}
+
+.implant__point-item-catch {
+  padding-left: 84px;
+  @include font-size(25);
+  font-family: $font-en;
+  font-weight: 600;
+  line-height: 1.5;
+  background: linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background: -webkit-linear-gradient(360deg, #ee9394 0%, #bd92da 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include mq(md) {
+    padding-left: 100px;
+    margin-bottom: 25px;
+  }
+}
+
+.implant__point-item-content {
+  margin-top: 39px;
+}
+
+.implant__point-item-img {
+  margin: 0 auto;
+  width: 167px;
+}
+
+.implant__point-item:nth-child(2) .implant__point-item-img {
+  width: 140px;
+}
+.implant__point-item:nth-child(3) .implant__point-item-img {
+  width: 194px;
+}
+.implant__point-item:nth-child(4) .implant__point-item-img {
+  width: 213px;
+}
+.implant__point-item:nth-child(5) .implant__point-item-img {
+  width: 191px;
+}
+
+.implant__point-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.implant__point-item-content-ttl {
+  margin-top: 32px;
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  text-align: center;
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.implant__point-item:nth-child(2) .implant__point-item-content-ttl {
+  margin-top: 13px;
+}
+.implant__point-item:nth-child(3) .implant__point-item-content-ttl {
+  margin-top: 19px;
+}
+.implant__point-item:nth-child(4) .implant__point-item-content-ttl {
+  margin-top: 14px;
+}
+.implant__point-item:nth-child(5) .implant__point-item-content-ttl {
+  margin-top: 18px;
+}
+
+.implant__point-item-content-txt {
+  margin-top: 30px;
+}
+
+.implant__point-item:nth-child(2) .implant__point-item-content-txt {
+  margin-top: 14px;
+}
+.implant__point-item:nth-child(3) .implant__point-item-content-txt {
+  margin-top: 14px;
+}
+.implant__point-item:nth-child(4) .implant__point-item-content-txt {
+  margin-top: 18px;
+}
+.implant__point-item:nth-child(5) .implant__point-item-content-txt {
+  margin-top: 18px;
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ
+// ---------------------------------------------------------- */
+.implant__flow {
+  padding-block: 118px 40px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.implant__flow-ttl {
+  margin-bottom: 23px;
+}
+
+/* ----------------------------------------------------------
+// 料金表（税込）
+// ---------------------------------------------------------- */
+.implant__price {
+  padding-block: 81px 40px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.implant__price-ttl {
+  margin-bottom: 37px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.implant__price-list {
+  margin-top: 32px;
+  display: grid;
+  gap: 49px;
+  @include mq() {
+    gap: 20px;
+  }
+}
+
+.implant__price-item-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.implant__price-item-txt span {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+.implant__price-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.implant__price-table table {
+  margin-bottom: 32px;
+  @include mq() {
+    margin-bottom: 15px;
+  }
+}
+
+.general-show.implant__price-table table tr th:nth-child(1),
+.general-show.implant__price-table table tr td:nth-child(1) {
+  width: 40%;
+  @include mq(xl) {
+    width: 35%;
+  }
+}
+.general-show.implant__price-table table tr th:nth-child(2),
+.general-show.implant__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.general-show.implant__price-table table tr th,
+.general-show.implant__price-table table tr td {
+  padding-inline: 47px 60px;
+  @include mq(xxl) {
+    padding-inline: calc(47 / 1440 * 100vw) calc(60 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.tmd__price-table-sub-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.implant__faq {
+  padding-block: 38px 40px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 最後に
+// ---------------------------------------------------------- */
+.implant__end {
+  padding-block: 26px 74px;
+  @include mq() {
+    padding-block: 20px 40px;
+  }
+}
+
+.implant__end-catch {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(61.8 / 30);
+  text-align: center;
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(25);
+    line-height: 1.5;
+  }
+}
+
+.implant__end-txt {
+  margin-top: 9px;
+  line-height: calc(29.8 / 16);
+  text-align: center;
+}

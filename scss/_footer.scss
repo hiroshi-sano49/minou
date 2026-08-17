@@ -4,90 +4,90 @@
 Footer
 ==================================================== */
 
-.footer{
+.footer {
 	padding: 59px 0 63px;
-	background: #4C4948;
+	background: #4c4948;
 	color: #fff;
-	.inner{
+	.inner {
 		max-width: 1288px;
 		padding-right: 45px;
-		@include mq(xl){
+		@include mq(xl) {
 			padding-right: 15px;
 		}
 	}
-	&-flex{
-		@include flex(between,0,wrap);
+	&-flex {
+		@include flex(between, 0, wrap);
 		margin-bottom: 50px;
-		@include mq(){
+		@include mq() {
 			margin-bottom: 50px;
 		}
 	}
-	&-ct{
+	&-ct {
 		max-width: 400px;
-		@include mq(xl){
+		@include mq(xl) {
 			max-width: 350px;
 		}
-		@include mq(){
+		@include mq() {
 			width: 100%;
 			max-width: 100%;
 		}
 	}
-	&-logo{
+	&-logo {
 		display: block;
 		max-width: 350px;
 		width: 100%;
 		margin-bottom: 46px;
-		@include mq(xl){
+		@include mq(xl) {
 			max-width: 300px;
 			margin-bottom: 30px;
 		}
-		@include mq(){
+		@include mq() {
 			max-width: 350px;
 		}
-		img{
+		img {
 			width: 100%;
 		}
 	}
-	&-address{
+	&-address {
 		font-family: $font-Roboto;
 		color: #fff;
 		padding-left: 28px;
 		position: relative;
 		line-height: 1.8667;
 		@include font-size(12);
-		@include mq(){
+		@include mq() {
 			padding-left: 20px;
 			@include font-size(14);
 		}
-		@include p-before(15px,21px){
-			background: url('../img/common/icon-map-white.png') center no-repeat;
+		@include p-before(15px, 21px) {
+			background: url("../img/common/icon-map-white.png") center no-repeat;
 			background-size: contain;
 			left: 3px;
 			top: -1px;
-			@include mq(){
+			@include mq() {
 				width: 12px;
 				height: 18px;
 				top: 2px;
 			}
 		}
-		a{
+		a {
 			display: inline-block;
 			color: #fff;
 		}
 	}
-	&-nav{
+	&-nav {
 		margin-top: 8px;
 		padding-left: 41px;
-		border-left: 1px solid #BBBBBB;
+		border-left: 1px solid #bbbbbb;
 		max-width: 526px;
 		width: 100%;
-		@include flex(between,0,wrap);
-		@include mq(xl){
+		@include flex(between, 0, wrap);
+		@include mq(xl) {
 			max-width: 450px;
 			padding-left: 20px;
 		}
-		@include mq(){
-			border-top: 1px solid #BBBBBB;
+		@include mq() {
+			border-top: 1px solid #bbbbbb;
 			border-left: 0;
 			margin-top: 20px;
 			padding-top: 20px;
@@ -96,11 +96,11 @@ Footer
 			max-width: 100%;
 			gap: 20px 0;
 		}
-		&__item{
-			@include mq(){
+		&__item {
+			@include mq() {
 				width: 100%;
 			}
-			>span{
+			> span {
 				font-family: $font-Roboto;
 				color: #fff;
 				display: block;
@@ -109,33 +109,33 @@ Footer
 				@include font-size(15);
 			}
 		}
-		&__flex{
+		&__flex {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 27px;
-			@include mq(xl){
+			@include mq(xl) {
 				gap: 20px;
 			}
 		}
-		&__list{
-			&-item{
-				&:not(:last-child){
+		&__list {
+			&-item {
+				&:not(:last-child) {
 					margin-bottom: 4px;
 				}
-				a{
+				a {
 					display: block;
-					color: #C5C5C5;
+					color: #c5c5c5;
 					font-family: $font-Roboto;
 					font-weight: 500;
 					@include font-size(13);
-					@include mq(){
+					@include mq() {
 						@include font-size(14);
 					}
 				}
-				&--external{
-					a{
+				&--external {
+					a {
 						position: relative;
-						@include p-after(11px, 11px){
+						@include p-after(11px, 11px) {
 							background: url(../img/common/ico-external.png) no-repeat center/100%;
 							position: relative;
 							margin-left: 3px;
@@ -146,33 +146,33 @@ Footer
 			}
 		}
 	}
-	&-bottom{
+	&-bottom {
 		padding-right: 7px;
-		@include flex(between,0,wrap);
+		@include flex(between, 0, wrap);
 	}
-	&-privacy{
+	&-privacy {
 		@include flex();
 		gap: 26px;
-		@include mq(){
+		@include mq() {
 			width: 100%;
 			margin-bottom: 25px;
 		}
-		&__item{
-			a{
-				color: #C0C0C0;
+		&__item {
+			a {
+				color: #c0c0c0;
 				font-family: $font-Roboto;
 				@include font-size(13);
-				@include mq(){
+				@include mq() {
 					@include font-size(14);
 				}
 			}
 		}
 	}
-	&-copyright{
+	&-copyright {
 		color: #fff;
 		font-family: $font-Roboto;
 		@include font-size(13);
-		@include mq(){
+		@include mq() {
 			width: 100%;
 			@include font-size(14);
 		}
@@ -180,46 +180,107 @@ Footer
 }
 
 .l-footer-container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+	h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+		@media screen and (max-width: 600px) {
+			font-size: 22px;
+		}
+	}
 
-  h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    @media screen and (max-width: 600px) {
-      font-size: 22px;
-    }
-  }
+	nav {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+			@media screen and (max-width: 600px) {
+				grid-template-columns: repeat(1, 1fr);
+				gap: 12px;
+			}
 
-  nav {
-    ul {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      @media screen and (max-width: 600px) {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 12px;
-      }
-
-      li {
-        a {
-          font-size: 15px;
+			li {
+				a {
+					font-size: 15px;
 					font-weight: 500;
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          @media screen and (max-width: 600px) {
-            font-size: 13px;
-          }
-          span {
-            width: 20px;
-            height: 2px;
-            background-color: #fff;
-          }
-        }
-      }
-    }
-  }
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					@media screen and (max-width: 600px) {
+						font-size: 13px;
+					}
+					span {
+						width: 20px;
+						height: 2px;
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
+
+.footer-flow {
+	display: none;
+	@media screen and (max-width: 767px) {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		z-index: 9;
+		text-align: center;
+		padding: 0 6px 2px;
+		gap: 4px;
+	}
+
+	&_01 {
+		background: linear-gradient(90deg, #ee9394 0%, #bd92da 100%);
+		gap: 4px;
+		strong {
+			font-size: 16px;
+			font-weight: 700;
+		}
+		p {
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
+	&_02 {
+		background: #00a5b1;
+		span {
+			font-size: 11px;
+			font-weight: 500;
+		}
+		&--small {
+			font-size: 13px;
+			font-weight: 600;
+		}
+		strong {
+			display: flex;
+			align-items: end;
+			gap: 2px;
+			font-size: 19px;
+			font-weight: 600;
+			letter-spacing: .02em;
+		}
+		p {
+			font-size: 10px;
+			font-weight: 500;
+		}
+	}
+
+	&_01,
+	&_02 {
+		height: 62px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 8px;
+	}
 }

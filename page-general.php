@@ -1,211 +1,307 @@
 <?php get_header(); ?>
 
-<main id="page-general" class="wrapper">
+<main id="page-general" class="wrapper general">
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
-        <span class="c-ft--en">medical services</span>
+      <h1 class="sec-mv__ttl sec-mv__ttl--medical">
+        <span class="c-ft--en">general</span>
         <span class="c-ft--jp">一般歯科</span>
       </h1>
-      <p class="sec-mv__desc">痛みと不安に、こまやかに配慮。<br class="sp">できるだけ削らない・抜かない一般歯科。</p>
     </div>
   </section>
   <div class="breadcrumb">
     <div class="inner"><?php echo do_shortcode('[wpseo_breadcrumb]'); ?></div>
   </div>
-  <section class="sec-general">
+  <section class="sec-preventive">
+    <div class="inner">
+      <div class="preventive-block js-scrollin">
+        <div class="preventive-block__thumb">
+          <picture>
+            <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/img-01.webp"
+              type="image/webp">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/img-01.jpg"
+              alt="「痛くなってから」ではなく「痛くならないために」">
+          </picture>
+        </div>
+        <h2 class="preventive-block__ttl">「痛くなってから行く歯医者」から、「行くほど健康になる歯医者」へ。</h2>
+        <p class="c-txt__03">むし歯・詰め物のトラブル・親知らず・急な痛みまで、お口の身近な問題に幅広く対応するのが一般歯科です。ヨクシオ歯科
+          箕面萱野では、痛みに配慮した「できるだけ削らない・抜かない」治療と、治療後の再発を防ぐ予防ケアをセットでご提供します。小さなお子様からご年配の方まで、地域の皆様の「かかりつけ歯科」としてご利用ください。
+        </p>
+      </div>
+      <div class="preventive-check preventive-check--periodontal js-scrollin">
+        <h3 class="preventive-check--periodontal-ttl">
+          <span>こんなときはご相談ください</span>
+        </h3>
+        <ul class="check-list check-list--periodontal">
+          <li class="check-list__item">歯が痛い、冷たいもの・甘いものがしみる</li>
+          <li class="check-list__item">口臭が気になる</li>
+          <li class="check-list__item">詰め物・被せ物が取れた、欠けた</li>
+          <li class="check-list__item">親知らずが痛む・腫れる</li>
+          <li class="check-list__item">歯ぐきから血が出る、腫れている</li>
+          <li class="check-list__item">治療した歯がまた痛み出した</li>
+          <li class="check-list__item">噛むと痛い、疲れると奥歯が重く感じる</li>
+          <li class="check-list__item">何年も歯科医院に行っておらず、全体を診てほしい</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="general__information">
+    <div class="inner">
+      <h2 class="c-ttl__03 general__information-ttl js-scrollin">
+        <span class="c-ft--jp">むし歯は「自然に治らない」病気です ── 進行度と治療の関係</span>
+        <span class="c-ft--en">treatment</span>
+      </h2>
+      <p class="c-txt__03 general__information-txt js-scrollin">むし歯は、放置して良くなることのない進行性の病気です。そして、進行するほど治療の負担は大きくなります。</p>
+      <div class="general-show general__information-table js-scrollin">
+        <table>
+          <tr>
+            <th>進行度</th>
+            <th>状態</th>
+            <th>主な症状</th>
+            <th>治療の目安</th>
+          </tr>
+          <tr>
+            <td>CO〜C1<br class="sp">（初期）</td>
+            <td>表面のエナメル質が溶け始める</td>
+            <td>ほぼ無症状</td>
+            <td>削らずに経過観察＋フッ素等の予防強化で済む場合あり</td>
+          </tr>
+          <tr>
+            <td>C2<br class="sp">（中等度）</td>
+            <td>象牙質まで進行</td>
+            <td>冷たいものがしみる</td>
+            <td>むし歯を除去し、詰め物で修復</td>
+          </tr>
+          <tr>
+            <td>C3<br class="sp">（重度）</td>
+            <td>神経（歯髄）まで到達</td>
+            <td>ズキズキと強く痛む</td>
+            <td>根管治療＋被せ物。通院回数・費用が大きく増える</td>
+          </tr>
+          <tr>
+            <td>C4<br class="sp">（末期）</td>
+            <td>歯の大部分が崩壊</td>
+            <td>神経が死に、痛みを感じないことも</td>
+            <td>保存が難しい場合は抜歯し、失った歯の治療へ</td>
+          </tr>
+        </table>
+        <p class="c-txt__03 general__information-table-txt">
+          ポイントは、<span>「痛み」は当てにならない</span>ということです。初期のむし歯は痛まず、C4まで進むとむしろ痛みが消えることさえあります。「痛くないから大丈夫」ではなく、「痛くなる前に見つける」ことが、歯を守るいちばんの近道です。国内の調査では、定期的に歯科検診を受けている人は、受けていない人に比べて、将来失う歯の本数が大幅に少ないことが報告されています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="general__promise">
     <div class="inner">
       <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">一般歯科について</span>
-        <span class="c-ft--en">INFORMATION</span>
-      </h2>
-      <div class="general-infomation">
-        <div class="general-infomation__txt c-txt__03 js-scrollin">
-          <p> 一般歯科は、むし歯や歯周病をはじめとする「多くの方が経験するお口の悩み」に対応する診療です。 むし歯は身近な病気ですが、初期は症状が乏しいことも多く、放置すると悪化しやすいのが特徴です。 早期の治療ほど削る量を抑えられ、歯を長持ちさせやすくなります。 </p>
-        </div>
-        <div class="general-infomation__list general-infomation__listpadding js-scrollin">
-          <h3 class="general-infomation__list-ttl"> このような場合はご相談ください </h3>
-          <ul class="check-list">
-            <li class="check-list__item">歯が痛い、しみる</li>
-            <li class="check-list__item">詰め物／被せ物が取れた、欠けた</li>
-            <li class="check-list__item">歯ぐきから出血する／腫れている</li>
-            <li class="check-list__item">口臭が気になる</li>
-            <li class="check-list__item">治療した歯が痛い（再発が心配）</li>
-            <li class="check-list__item">噛むと痛い／疲れると奥歯が痛む</li>
-            <li class="check-list__item">他院で抜歯が必要と言われた</li>
-          </ul>
-        </div>
-      </div>
-      <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">当院の一般歯科が大切にしていること（3つの約束）</span>
+        <span class="c-ft--jp">当院の一般歯科 ── 3つのお約束</span>
         <span class="c-ft--en">promise</span>
       </h2>
       <ol class="general-promise c-txt__04">
         <li class="general-promise__item js-scrollin">
           <div class="general-promise__img">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-01.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-01.png" alt="治療の痛みに、こまやかに配慮">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-01.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-01.png"
+                alt="治療の痛みに、こまやかに配慮します">
             </picture>
           </div>
           <div class="general-promise__ct">
-            <h3 class="general-promise__ct-ttl">治療の痛みに、こまやかに配慮</h3>
-            <p> 歯科治療の痛みや恐怖感が理由で、受診を先延ばしにしてしまう方は少なくありません。当院では、できるだけ痛みを抑えるために以下の工夫を行います。 </p>
+            <h3 class="general-promise__ct-ttl">治療の痛みに、こまやかに配慮します</h3>
+            <p> 「歯医者の痛みが苦手」という理由で受診を先延ばしにしている方は、決して少なくありません。当院では麻酔の段階から痛みを抑える工夫を重ねています。 </p>
             <ul>
-              <li>歯科治療の痛みや恐怖感が理由で、表面麻酔：注射前のチクッとした痛みを軽減</li>
-              <li>電動麻酔：一定速度で注入し刺激を抑える</li>
-              <li>細い注射針：痛みを感じにくくする。当院では、できるだけ痛みを抑えるために以下の工夫を行います。</li>
+              <li><span>表面麻酔：</span>注射の前に歯ぐきへ塗る麻酔で、針を刺す瞬間のチクッとした痛みを軽減します</li>
+              <li><span>極細の注射針：</span>できるだけ細い針を使い、刺激を抑えます</li>
+              <li>
+                <span>電動麻酔器：</span>麻酔液を一定のゆっくりした速度で注入し、注入圧による痛みを抑えます。<br>それでも不安が強い方には、治療のペース配分から一緒に考えます。「怖い」と伝えていただくことは、まったく恥ずかしいことではありません。
+              </li>
             </ul>
           </div>
         </li>
         <li class="general-promise__item js-scrollin">
           <div class="general-promise__img">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-02.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-02.png" alt="できるだけ削らない・抜かない">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-02.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-02.png"
+                alt="できるだけ「削らない・抜かない」を追求します">
             </picture>
           </div>
           <div class="general-promise__ct">
-            <h3 class="general-promise__ct-ttl">できるだけ削らない・抜かない</h3>
-            <p> 歯は一度削ると元には戻りません。「必要なところを、必要な分だけ」治療し、歯を残せる可能性を常に検討します。 </p>
+            <h3 class="general-promise__ct-ttl">できるだけ「削らない・抜かない」を追求します</h3>
+            <p> 歯は削るほど、抜くほど、確実に寿命が縮みます。当院は「必要なところを、必要な分だけ」を原則に、歯を残す選択肢を最後まで検討します。 </p>
             <ul>
-              <li>5倍速コントラ：削り過ぎを防ぐ</li>
-              <li>カリエスチェッカー：むし歯だけを染め出す</li>
+              <li><span>5倍速コントラ：</span>ブレの少ない切削器具で、健康な歯質の削り過ぎを防ぎます</li>
+              <li><span>カリエスチェッカー：</span>むし歯に感染した部分だけを染め出し、取り残しと削り過ぎの両方を防ぎます</li>
+              <li><span>マイクロスコープ・歯科用CT：</span>精密な診断機器を必要に応じて活用し、「勘」に頼らない治療を行います</li>
             </ul>
           </div>
         </li>
         <li class="general-promise__item js-scrollin">
           <div class="general-promise__img">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-03.webp" type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-03.png" alt="再発リスクまで見据えた設計">
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/general/icon-03.webp"
+                type="image/webp">
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/general/icon-03.png"
+                alt="「治して終わり」にしません──再発予防までがセットです">
             </picture>
           </div>
           <div class="general-promise__ct">
-            <h3 class="general-promise__ct-ttl">再発リスクまで見据えた設計</h3>
-            <p> 見た目の自然さだけでなく、適合性の良さが"むし歯の再発リスク低減"につながるメタルフリー（白い詰め物・被せ物）もご提案します。 </p>
+            <h3 class="general-promise__ct-ttl">「治して終わり」にしません──再発予防までがセットです</h3>
+            <p>
+              歯科治療の多くは、実は「過去に治療した歯の再治療」です。この負の連鎖を断ち切るには、詰め物・被せ物の適合精度と、治療後のメンテナンスの両方が欠かせません。当院では適合精度の高い修復（症例によりメタルフリー素材のご提案を含む）と、担当歯科衛生士による定期メンテナンスで、「治療のやり直しが少ないお口」を目指します。
+            </p>
           </div>
         </li>
       </ol>
+    </div>
+  </section>
+
+  <section class="general__treatment">
+    <div class="inner">
       <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">一般歯科で対応できる<br class="sp">主な治療内容</span>
+        <span class="c-ft--jp">一般歯科の診療内容</span>
         <span class="c-ft--en">treatment</span>
       </h2>
       <ul class="general-treatment c-txt__04">
         <li class="general-treatment__item js-scrollin">
-          <h3 class="general-treatment__ttl">むし歯治療（初期〜重度）</h3>
-          <ul>
-            <li>初期：経過観察＋予防強化で対応できる場合あり</li>
-            <li>中等度：むし歯を除去し、詰め物で回復</li>
-            <li>重度：神経まで達した場合は根管治療が必要</li>
-          </ul>
+          <h3 class="general-treatment__ttl">むし歯治療</h3>
+          <p class="c-txt__04 general-treatment__txt">
+            初期むし歯の経過観察・レジン充填から、深いむし歯の修復まで対応します。神経の近くまで達したむし歯では、神経を残せる可能性（歯髄温存療法）も検討します。神経まで達している場合は根管治療が必要です（詳しくは<a
+              href="<?php echo home_url('/medical/root-canal/'); ?>">「根管治療」ページへ</a>）。
+          </p>
         </li>
         <li class="general-treatment__item js-scrollin">
           <h3 class="general-treatment__ttl">詰め物・被せ物のやり直し</h3>
-          <ul>
-            <li>取れた／欠けた：原因（再発・噛み合わせ等）を確認</li>
-            <li>違和感：噛み合わせ調整、適合確認、再製作検討</li>
-          </ul>
+          <p class="c-txt__04 general-treatment__txt">
+            「取れた」「欠けた」の背景には、二次むし歯・噛み合わせ・接着の劣化など必ず原因があります。原因を確認してから再治療することで、同じトラブルの繰り返しを防ぎます。白い素材への置き換えのご相談も可能です（<a
+              href="<?php echo home_url('/medical/ceramic/'); ?>">「セラミック・審美治療」ページへ</a>）。
+          </p>
         </li>
         <li class="general-treatment__item js-scrollin">
-          <h3 class="general-treatment__ttl">知覚過敏（しみる症状）</h3>
-          <ul>
-            <li>原因（歯ぐき下がり／亀裂／むし歯等）を切り分け</li>
-            <li>コーティング、生活習慣・ブラッシング指導</li>
-          </ul>
+          <h3 class="general-treatment__ttl">知覚過敏</h3>
+          <p class="c-txt__04 general-treatment__txt">
+            「むし歯じゃないのにしみる」場合、歯ぐきの下がり・歯の亀裂・歯ぎしりによる摩耗などが原因のことがあります。原因を切り分けたうえで、コーティング処置・生活習慣とブラッシングの改善指導などを行います。
+          </p>
         </li>
         <li class="general-treatment__item js-scrollin">
           <h3 class="general-treatment__ttl">歯の破折・欠け</h3>
-          <ul>
-            <li>範囲や神経の状態により最適な処置を選択</li>
-            <li>放置せず早めの相談を推奨</li>
-          </ul>
+          <p class="c-txt__04 general-treatment__txt">
+            欠けた範囲と神経の状態を確認し、レジン修復・被せ物など適した方法で回復します。転倒などで歯をぶつけた場合は、早めの受診をおすすめします。
+          </p>
+        </li>
+        <li class="general-treatment__item js-scrollin">
+          <h3 class="general-treatment__ttl">親知らずの相談・抜歯</h3>
+          <p class="c-txt__04 general-treatment__txt">
+            斜めに生えた親知らずは、手前の歯のむし歯・歯ぐきの腫れ・歯並びへの影響の原因になることがあります。CTで神経との位置関係を確認したうえで、抜歯の要否から一緒に判断します。「抜いたほうがいいのか知りたい」という相談だけでも構いません。
+          </p>
+        </li>
+        <li class="general-treatment__item js-scrollin">
+          <h3 class="general-treatment__ttl">急な痛み・外傷への応急対応</h3>
+          <p class="c-txt__04 general-treatment__txt">
+            強い痛み・腫れ・外傷時は、まず痛みと炎症を抑える処置を優先します。できる限り早く対応しますので、まずはお電話ください。
+          </p>
         </li>
       </ul>
-      <h2 class="c-ttl__03 js-scrollin">
-        <span class="c-ft--jp">根管治療について<br class="sp">（歯を残すための重要治療）</span>
-        <span class="c-ft--en">important</span>
+    </div>
+  </section>
+
+  <section class="general__flow">
+    <div class="inner">
+      <h2 class="c-ttl__03 mbpc-26 js-scrollin">
+        <span class="c-ft--jp">初診から治療完了までの流れ</span>
+        <span class="c-ft--en">FLOW</span>
       </h2>
-      <div class="general-infomation mbpc-66">
-        <div class="general-infomation__txt c-txt__03 js-scrollin">
-          <p> むし歯が進行して歯の根の部分がダメージを受けると、強い痛みが出たり、骨に悪影響が及んで歯を失うリスクが高まります。 根管治療は、根の中の感染源を除去し、炎症を鎮め、再感染を防ぐための繊細な治療です。 </p>
-        </div>
-        <div class="general-infomation__list js-scrollin">
-          <h3 class="general-infomation__list-ttl"> このような場合はご相談ください </h3>
-          <ul class="check-list">
-            <li class="check-list__item">治療を受けた歯が痛い</li>
-            <li class="check-list__item">むし歯が再発した</li>
-            <li class="check-list__item">噛むと痛い、疲れると奥が痛む</li>
-            <li class="check-list__item">歯ぐきが腫れている</li>
-            <li class="check-list__item">他院で抜歯が必要と言われた</li>
-          </ul>
-        </div>
-      </div>
-      <div class="general-show js-scrollin">
-        <h3 class="general-show__ttl">保険根管治療と精密根管治療の比較<br class="sp">（目安）</h3>
-        <table>
-          <tr>
-            <th>項目</th>
-            <th>保険診療</th>
-            <th>精密根管治療<br class="sp">（自費）</th>
-          </tr>
-          <tr>
-            <td>再治療率</td>
-            <td>80～90%以上</td>
-            <td>10～20%以下</td>
-          </tr>
-          <tr>
-            <td>通院回数</td>
-            <td>2～8回</td>
-            <td>1～3回</td>
-          </tr>
-          <tr>
-            <td>治療時間</td>
-            <td>15～20分程度</td>
-            <td>40～90分程度</td>
-          </tr>
-          <tr>
-            <td>視野</td>
-            <td>肉眼</td>
-            <td>マイクロスコープ</td>
-          </tr>
-          <tr>
-            <td>使用器具</td>
-            <td>制限あり</td>
-            <td>ニッケルチタンファイル等</td>
-          </tr>
-          <tr>
-            <td>薬剤</td>
-            <td>一般的な消毒薬</td>
-            <td>MTAセメント等</td>
-          </tr>
-          <tr>
-            <td>ラバーダム</td>
-            <td>使用しないことが多い</td>
-            <td>必ず使用（無菌的処置）</td>
-          </tr>
-        </table>
-        <div class="general-show__note c-al--r"> ※上記は一般的な目安であり、症例により異なります。 </div>
-      </div>
+      <ol class="flow-step c-txt__02">
+        <li class="flow-step__item js-scrollin">
+          <h3 class="flow-step__ttl">初診・カウンセリング</h3>
+          <p>問診票をもとに、症状・治療への不安・ご希望を伺います。痛みがある場合は応急処置を優先します</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay01">
+          <h3 class="flow-step__ttl">検査</h3>
+          <p>お口全体のチェック・レントゲン撮影を行い、必要に応じてCT・歯周検査を追加します</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay02">
+          <h3 class="flow-step__ttl">治療計画のご説明</h3>
+          <p>検査結果を写真や画像でわかりやすくお見せし、治療の選択肢・期間・費用をご説明します。治療を決めるのは患者様ご自身です</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay03">
+          <h3 class="flow-step__ttl">治療</h3>
+          <p>優先度の高い部位から、無理のないペースで段階的に進めます</p>
+        </li>
+        <li class="flow-step__item js-scrollin delay04">
+          <h3 class="flow-step__ttl">定期メンテナンス</h3>
+          <p>治療後は再発予防のステージへ。担当歯科衛生士が定期的にサポートします（<a
+              href="<?php echo home_url('/medical/preventive/'); ?>">「予防・メンテナンス」ページへ</a>）</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="general__price">
+    <div class="inner">
+      <h2 class="c-ttl__03 general__price-ttl js-scrollin">
+        <span class="c-ft--jp">料金について</span>
+        <span class="c-ft--en">price</span>
+      </h2>
+      <p class="c-txt__03 general__price-txt js-scrollin">
+        一般歯科の治療（むし歯治療・詰め物・被せ物・親知らずの抜歯・応急処置など）は、<span>原則として健康保険が適用されます</span>（1〜3割の自己負担）。<br>
+        見た目・耐久性・再発リスクの低減を重視される方には、自費診療の選択肢（セラミック・ゴールド等）もご提案しています。詳しい料金は「セラミック・審美治療」「根管治療」の各ページをご覧ください。いずれの場合も、治療開始前に費用の目安を必ずご説明します。
+      </p>
+    </div>
+  </section>
+
+  <section class="general__faq">
+    <div class="inner">
       <h2 class="c-ttl__03 js-scrollin">
         <span class="c-ft--jp">よくあるご質問（一般歯科）</span>
         <span class="c-ft--en">FAQ</span>
       </h2>
       <ul class="fqa-list fqa-list--other c-txt__02">
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>痛いのが苦手なのですが、配慮してもらえますか？</span></h3>
-          <p class="fqa-list__answer"><span>はい、もちろんです。当院では表面麻酔や極細の針、電動麻酔器を使用し、麻酔時の痛みを最小限に抑えています。また、治療中もお声がけをしながら進めますので、痛みを感じた際は遠慮なく合図をしてください。</span></p>
+          <h3 class="fqa-list__question"><span>何年も歯医者に行っていません。まとめて診てもらえますか？</span></h3>
+          <p class="fqa-list__answer">
+            <span>もちろんです。まずお口全体の検査を行い、優先順位をつけた治療計画をご提案します。受診いただいたこと自体が大切な一歩です。安心してお越しください。</span>
+          </p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>予約なしでも診てもらえますか？</span></h3>
-          <p class="fqa-list__answer"><span>基本的には予約制とさせていただいておりますが、急患（強い痛みがある、腫れている等）の場合は随時対応いたします。ご来院前にお電話いただけますと、比較的スムーズにご案内できる時間をお伝えできます。</span></p>
+          <h3 class="fqa-list__question"><span>痛いところだけ先に治してもらえますか？</span></h3>
+          <p class="fqa-list__answer">
+            <span>はい、痛みのある部位の処置を最優先します。そのうえで、他に隠れた問題がないか全体のチェックをおすすめしています。</span>
+          </p>
         </li>
         <li class="fqa-list__item js-scrollin">
-          <h3 class="fqa-list__question"><span>妊娠中でも治療は受けられますか？</span></h3>
-          <p class="fqa-list__answer"><span>はい、可能です。安定期（妊娠5～7ヶ月）の治療が最も望ましいですが、緊急時は他の時期でも応急処置を行います。母子手帳をお持ちいただき、問診時に妊娠中であることをお伝えください。</span></p>
+          <h3 class="fqa-list__question"><span>妊娠中ですが治療できますか？</span></h3>
+          <p class="fqa-list__answer">
+            <span>時期と体調に配慮しながら対応可能です。当院はマタニティ診療に対応していますので、詳しくは「マタニティ診療」ページをご覧ください。</span>
+          </p>
+        </li>
+        <li class="fqa-list__item js-scrollin">
+          <h3 class="fqa-list__question"><span>子ども連れでも大丈夫ですか？</span></h3>
+          <p class="fqa-list__answer">
+            <span>キッズルームを完備し、ベビーカーのまま入れるバリアフリー設計です。お子様の診療は「小児歯科」ページをご覧ください。</span>
+          </p>
+        </li>
+        <li class="fqa-list__item js-scrollin">
+          <h3 class="fqa-list__question"><span>銀歯ではなく白い詰め物にできますか？</span></h3>
+          <p class="fqa-list__answer">
+            <span>部位や大きさによっては保険適用の白い素材で対応できる場合があります。より適合精度・耐久性を求める場合は自費のセラミック等をご提案します。両方の違いを丁寧にご説明したうえでお選びいただけます。</span>
+          </p>
         </li>
       </ul>
+      <div class="faq-attention js-scrollin">
+        <p class="faq-attention__ttl">リスク・副作用・注意事項</p>
+        <ul class="faq-attention__list">
+          <li class="c-txt__02 faq-attention__item">麻酔後、数時間はしびれが残ります。誤って唇や頬を噛まないようご注意ください（特にお子様）</li>
+          <li class="c-txt__02 faq-attention__item">治療後、一時的にしみる症状・違和感が出ることがありますが、多くは徐々に落ち着きます。長く続く場合はご相談ください</li>
+          <li class="c-txt__02 faq-attention__item">詰め物・被せ物は、噛み合わせや歯ぎしり等の影響で破損・脱離することがあります。定期チェックをおすすめします</li>
+          <li class="c-txt__02 faq-attention__item">抜歯後は、腫れ・痛み・出血が数日続くことがあります。注意事項を書面でお渡しします</li>
+        </ul>
+      </div>
     </div>
   </section>
 

@@ -1,213 +1,806 @@
 @use "vars" as *;
 
 .sec-periodontal {
-	padding: 90px 0 83px;
-	@include mq(){
-		padding: 50px 0;
-	}
+  padding-block: 90px 76px;
+  @include mq() {
+    padding: 50px 0;
+  }
 }
 
-.preventive-check{
-	&--periodontal{
-		display: block !important;
-		@include mq(xl-min){
-			margin-bottom: 104px;
-			padding: 23px 9% 23px 9.9%;
-		}
-		&-ttl{
-			display: block;
-			text-align: center;
-			@include font-size(20);
-			font-weight: 500;
-			color: #9395D7;
-			margin-bottom: 29px;
-			@include mq(){
-				@include font-size(17);
-				margin-bottom:20px;
-			}
-			span{
-				display: inline-block;
-				background: white;
-				line-height: 1.3;
-				padding: 7px 57px;
-				border-radius: 40px;
-				@include mq(){
-					padding: 7px 7px 9px;
-				}
-
-			}
-		}
-	}
-	.check-list{
-		&--periodontal{
-			width: 100%;
-			@include mq(xl-min){
-				display: flex;
-				flex-wrap: wrap;
-				gap: 0;
-				.check-list__item{
-					margin-bottom: 15px;
-					&:nth-child(1),&:nth-child(4){
-						width: 27%;
-					}
-					&:nth-child(2),&:nth-child(5){
-						width: 30%;
-					}
-					&:nth-child(3),&:nth-child(6){
-						width: 43%;
-					}
-				}
-			}
-		}
-		&--maternity{
-			width: 100%;
-			@include mq(xl-min){
-				display: flex;
-				flex-wrap: wrap;
-				gap: 0;
-				.check-list__item{
-					margin-bottom: 15px;
-					&:nth-child(1),&:nth-child(4){
-						width: 27%;
-					}
-					&:nth-child(2),&:nth-child(5){
-						width: 40%;
-					}
-					&:nth-child(3),&:nth-child(6){
-						width: 33%;
-					}
-				}
-			}
-		}
-	}
+.preventive-check {
+  &--periodontal {
+    display: block !important;
+    @include mq(xl-min) {
+      // margin-bottom: 104px;
+      margin-bottom: 20px;
+      // padding: 23px 9% 23px 9.9%;
+      padding: 19px 12.5% 23px;
+    }
+    &-ttl {
+      display: block;
+      text-align: center;
+      @include font-size(20);
+      font-weight: 700;
+      // color: #9395d7;
+      margin-bottom: 29px;
+      @include mq() {
+        @include font-size(17);
+        margin-bottom: 20px;
+      }
+      span {
+        display: inline-block;
+        // background: white;
+        line-height: 1.3;
+        padding: 7px 57px;
+        // border-radius: 40px;
+        @include mq() {
+          padding: 7px 7px 9px;
+        }
+      }
+    }
+  }
+  .check-list {
+    &--periodontal {
+      width: 100%;
+      @include mq(xl-min) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        .check-list__item {
+          margin-bottom: 15px;
+          width: 47.5%;
+          &:nth-child(even) {
+            width: 50%;
+          }
+          &:nth-child(1),
+          &:nth-child(4) {
+            // width: 27%;
+          }
+          &:nth-child(2),
+          &:nth-child(5) {
+            // width: 30%;
+          }
+          &:nth-child(3),
+          &:nth-child(6) {
+            // width: 43%;
+          }
+        }
+      }
+    }
+    &--maternity {
+      width: 100%;
+      @include mq(xl-min) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px 20px;
+        .check-list__item {
+          margin-bottom: 15px;
+          &:nth-child(1),
+          &:nth-child(4) {
+            // width: 27%;
+          }
+          &:nth-child(2),
+          &:nth-child(5) {
+            // width: 40%;
+          }
+          &:nth-child(3),
+          &:nth-child(6) {
+            // width: 33%;
+          }
+        }
+      }
+    }
+  }
 }
 
-.preventive-list__option{
-	&--periodontal{
-		counter-reset: periodontal;
-		margin-bottom: 103px;
-		@include mq(){
-			margin-bottom: 50px;
-		}
-		.preventive-list__option{
-			&-item{
-				background: #FAF4E2;
-				position: relative;
-				@include mq(md-min){
-					padding-top: 23px;
-					padding-bottom: 24px;
-				}
-				&:before{
-					counter-increment: periodontal;
-					content: counter(periodontal, decimal-leading-zero);
-					@include font-size(68);
-					line-height: 1;
-					font-weight: bold;
-					font-family: $font-en;
-					background: #EE9394;
-					background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-					position: absolute;
-					top: 14px;
-					left: 19px;
-					@include mq(xl){
-						left: 10px;
-						top: 10px;
-						@include font-size(50);
-					}
-					@include mq(){
-						@include font-size(40);
-					}
-				}
-			}
-			&-icon{
-				width: 103px;
-				margin: 0 auto 11px;
-				@include mq(){
-					width: 88px;
-				}
-			}
-		}
-	}
+.preventive-list__option {
+  &--periodontal {
+    counter-reset: periodontal;
+    margin-bottom: 103px;
+    @include mq() {
+      margin-bottom: 50px;
+    }
+    .preventive-list__option {
+      &-item {
+        background: #faf4e2;
+        position: relative;
+        @include mq(md-min) {
+          padding-top: 23px;
+          padding-bottom: 24px;
+        }
+        &:before {
+          counter-increment: periodontal;
+          content: counter(periodontal, decimal-leading-zero);
+          @include font-size(68);
+          line-height: 1;
+          font-weight: bold;
+          font-family: $font-en;
+          background: #ee9394;
+          background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position: absolute;
+          top: 14px;
+          left: 19px;
+          @include mq(xl) {
+            left: 10px;
+            top: 10px;
+            @include font-size(50);
+          }
+          @include mq() {
+            @include font-size(40);
+          }
+        }
+      }
+      &-icon {
+        width: 103px;
+        margin: 0 auto 11px;
+        @include mq() {
+          width: 88px;
+        }
+      }
+    }
+  }
 }
-.periodontal-curative{
-	margin-bottom: 106px;
-	@include mq(){
-		margin-bottom: 50px;
-	}
-	dl{
-		background: #F3F3F3;
-		border-radius: 8px;
-		margin-bottom: 18px;
-		padding: 36px 54px 32px;
-		@include mq(){
-			padding: 20px 15px;
-		}
-		&:last-child{
-			margin-bottom: 0;
-		}
-		dt{
-			@include font-size(20);
-			line-height: 1.4;
-			font-weight: 500;
-			color: #00A5B1;
-			margin-bottom: 13px;
-			@include mq(){
-				@include font-size(18);
-				margin-bottom: 10px;
-			}
-		}
-		dd{
-			@include font-size(14);
-			line-height: 1.5;
-			@include mq(){
-				@include font-size(14);
-			}
-			p{
-				margin-bottom: 19px;
-				@include mq(){
-					margin-bottom: 15px;
-				}
-			}
-		}
-	}
-	&__note{
-		@include font-size(18);
-		font-weight: 500;
-		@include mq(){
-			@include font-size(14);
-		}
-		span{
-			background: white;
-			display: inline-block;
-			border-radius: 10px;
-			padding: 7px 12px;
-		}
-	}
+.periodontal-curative {
+  margin-bottom: 106px;
+  @include mq() {
+    margin-bottom: 50px;
+  }
+  dl {
+    background: #f3f3f3;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    padding: 36px 54px 32px;
+    @include mq() {
+      padding: 20px 15px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    dt {
+      @include font-size(20);
+      line-height: 1.4;
+      font-weight: 500;
+      color: #00a5b1;
+      margin-bottom: 13px;
+      @include mq() {
+        @include font-size(18);
+        margin-bottom: 10px;
+      }
+    }
+    dd {
+      @include font-size(14);
+      line-height: 1.5;
+      @include mq() {
+        @include font-size(14);
+      }
+      p {
+        margin-bottom: 19px;
+        @include mq() {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  &__note {
+    @include font-size(18);
+    font-weight: 500;
+    @include mq() {
+      @include font-size(14);
+    }
+    span {
+      background: white;
+      display: inline-block;
+      border-radius: 10px;
+      padding: 7px 12px;
+    }
+  }
 }
 
-
-.periodontal-relation{
-	p{
-		margin-bottom: 26px;
-		@include mq(){
-			margin-bottom: 15px;
-		}
-	}
-	&__tag{
-		@include font-size(18);
-		font-weight: 500;
-		@include mq(){
-			@include font-size(14);
-		}
-	}
+.periodontal-relation {
+  p {
+    margin-bottom: 26px;
+    @include mq() {
+      margin-bottom: 15px;
+    }
+  }
+  &__tag {
+    @include font-size(18);
+    font-weight: 500;
+    @include mq() {
+      @include font-size(14);
+    }
+  }
 }
 
 #page-orthodontics {
-	@include mq(){
-		.sec-price{
-			padding-bottom: 20px !important;
-		}
-	}
+  @include mq() {
+    .sec-price {
+      padding-bottom: 20px !important;
+    }
+  }
+}
+
+/* ----------------------------------------------------------
+// こんな症状はありませんか？
+// ---------------------------------------------------------- */
+.periodontal .c-consultation {
+  padding: 21px 85px 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+.periodontal .check-list--periodontal {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 23px;
+}
+
+.periodontal .c-consultation .check-list--periodontal .check-list__item {
+  width: fit-content;
+}
+
+.periodontal__catch {
+  margin-top: 43px;
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(46.8 / 30);
+  text-align: center;
+  @include mq() {
+    margin-top: 0;
+    @include font-size(16);
+  }
+}
+
+/* ----------------------------------------------------------
+// 歯周病とは──痛みなく進行する「沈黙の感染症」
+// ---------------------------------------------------------- */
+.periodontal__attention {
+  padding-block: 43px 49px;
+  background-color: #ebeff2;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.periodontal__attention-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include mq() {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.periodontal__attention-item-img {
+  width: 31%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.periodontal__attention-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/285;
+  border-radius: 19px;
+}
+
+.periodontal__attention-content {
+  margin-top: 17px;
+  width: 66%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.periodontal__attention-content-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(46.8 / 30);
+  @include mq() {
+    @include font-size(26);
+  }
+}
+
+.periodontal__attention-content-txt {
+  margin-top: 28px;
+  padding-left: 9px;
+  line-height: calc(30.8 / 16);
+  @include mq() {
+    margin-top: 15px;
+    padding-left: 0;
+  }
+}
+
+/* ----------------------------------------------------------
+// 進行段階の目安
+// ---------------------------------------------------------- */
+.periodontal__step {
+  padding-block: 92px 49px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.periodontal__step-table {
+  margin-top: 43px;
+  margin-bottom: 20px;
+}
+
+.periodontal__step-table table {
+  margin-bottom: 22px;
+}
+
+.general-show.periodontal__step-table table tr th:nth-child(1),
+.general-show.periodontal__step-table table tr td:nth-child(1) {
+  width: 12.5%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 20%;
+  }
+}
+.general-show.periodontal__step-table table tr th:nth-child(2),
+.general-show.periodontal__step-table table tr td:nth-child(2) {
+  width: 15%;
+  @include mq(xl) {
+    width: 29%;
+  }
+}
+
+.general-show.periodontal__step-table table tr th:nth-child(3),
+.general-show.periodontal__step-table table tr td:nth-child(3) {
+  width: 30%;
+  color: #4c4948;
+  @include mq(xl) {
+    width: 26%;
+  }
+}
+
+.general-show.periodontal__step-table table tr td:nth-child(3) {
+  font-weight: 400;
+}
+
+.general-show.periodontal__step-table table tr th,
+.general-show.periodontal__step-table table tr td {
+  padding: 19px 20px 19px 16px;
+  @include mq(xxl) {
+    padding: 19px calc(10 / 1440 * 100vw) 19px calc(16 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.periodontal__step-content-text span {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+/* ----------------------------------------------------------
+// 歯周病は全身の病気と関わっています
+// ---------------------------------------------------------- */
+.periodontal__trouble {
+  padding-block: 46px 49px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.periodontal__trouble .c-ttl__03 {
+  margin-bottom: 22px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.periodontal__trouble-text {
+  margin-bottom: 22px;
+}
+
+.periodontal__trouble-table {
+  margin-bottom: 25px;
+}
+
+.periodontal__trouble-table table {
+  margin-bottom: 45px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.general-show.periodontal__trouble-table table tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.general-show.periodontal__trouble-table table tr td:nth-child(1) {
+  width: 9.5%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 14%;
+  }
+}
+
+.general-show.periodontal__trouble-table table tr td {
+  padding: 27px 0px 27px 42px;
+  @include mq(xxl) {
+    padding: 27px calc(20 / 1440 * 100vw) 27px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+.general-show.periodontal__trouble-table table tr td:nth-child(2) {
+  padding-inline: 20px 5px;
+  @include mq(xxl) {
+    padding-inline: calc(20 / 1440 * 100vw) calc(5 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.general-show.periodontal__trouble-table table tr td a {
+  color: #1871ee;
+  text-decoration: underline;
+}
+
+.periodontal__trouble-content {
+  margin-top: 72px;
+  padding: 47px 53px 43px 53px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ebeff2;
+  border-radius: 19px;
+  @include mq() {
+    margin-top: 40px;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+.periodontal__trouble-content-img {
+  width: 34%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.periodontal__trouble-content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/257;
+  border-radius: 19px;
+}
+
+.periodontal__trouble-content-box {
+  padding-top: 29px;
+  width: 62%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.periodontal__trouble-content-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(44.8 / 30);
+  @include mq() {
+    @include font-size(26);
+  }
+}
+
+.periodontal__trouble-content-text {
+  margin-top: 29px;
+  line-height: calc(21.8 / 15);
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+.periodontal__trouble-content-text span {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+/* ----------------------------------------------------------
+// THP（トータルヘルスプログラム）とは── 4つの特徴
+// ---------------------------------------------------------- */
+.periodontal__features {
+  padding-block: 58px 49px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.periodontal__features .c-ttl__03 {
+  margin-bottom: 21px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.periodontal__features-list {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 28px;
+  counter-reset: periodontal;
+  margin-bottom: 20px;
+  @include mq(xl) {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  @include mq() {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}
+
+.periodontal__features-item {
+  background: #faf4e2;
+  border-radius: 19px;
+  padding: 46px 15px 16px;
+  position: relative;
+  @include mq(xl) {
+    padding: 25px 20px;
+  }
+}
+
+.periodontal__features-item:nth-child(1) {
+  padding-top: 60px;
+}
+
+.periodontal__features-item:before {
+  counter-increment: periodontal;
+  content: counter(periodontal, decimal-leading-zero);
+  @include font-size(55);
+  line-height: 1;
+  font-weight: bold;
+  font-family: $font-en;
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  @include mq(xl) {
+    @include font-size(40);
+  }
+}
+
+.periodontal__features-icon {
+  @include flex(center, center);
+  width: 110px;
+  margin: 0 auto 11px;
+  @include mq() {
+    width: 88px;
+  }
+}
+
+.periodontal__features-icon img {
+  max-width: 100%;
+}
+
+.periodontal__features-item-ttl {
+  margin-top: 34px;
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  @include mq() {
+    margin-top: 20px;
+    margin-top: 15px;
+    @include font-size(18);
+  }
+}
+
+.periodontal__features-item:nth-child(2) .periodontal__features-item-ttl,
+.periodontal__features-item:nth-child(3) .periodontal__features-item-ttl {
+  margin-top: 19px;
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+.periodontal__features-item-text {
+  margin-top: 17px;
+  line-height: calc(25 / 15);
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+/* ----------------------------------------------------------
+// こんな症状はありませんか？
+// ---------------------------------------------------------- */
+.periodontal__features-check {
+  margin-top: 50px;
+  @include mq() {
+    margin-top: 25px;
+  }
+}
+
+.periodontal__features-check.c-consultation {
+  background-color: #fbeeef;
+}
+
+.periodontal__features-check.c-consultation .c-consultation__title span {
+  color: #4c4948;
+}
+
+/* ----------------------------------------------------------
+// 重度の方には歯周外科・再生療法も
+// ---------------------------------------------------------- */
+.periodontal__features-content {
+  margin-top: 41px;
+  padding: 47px 53px 43px 53px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ebeff2;
+  border-radius: 19px;
+  @include mq() {
+    margin-top: 40px;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+
+.periodontal__features-content-img {
+  width: 34%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.periodontal__features-content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/257;
+  border-radius: 19px;
+}
+
+.periodontal__features-content-box {
+  padding-top: 29px;
+  width: 61%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.periodontal__features-content-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(44.8 / 30);
+  @include mq() {
+    @include font-size(26);
+  }
+}
+
+.periodontal__features-content-text {
+  margin-top: 29px;
+  line-height: calc(21.8 / 15);
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ
+// ---------------------------------------------------------- */
+.periodontal__flow {
+  padding-block: 58px 49px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.periodontal__flow .c-ttl__03 {
+  margin-bottom: 27px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 料金表（税込）
+// ---------------------------------------------------------- */
+.periodontal__price {
+  padding-block: 58px 49px;
+  @include mq() {
+    padding-block: 25px 20px;
+  }
+}
+
+.periodontal__price .c-ttl__03 {
+  margin-bottom: 14px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.periodontal__price-sub-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.periodontal__price-text {
+  margin-top: 15px;
+}
+
+.periodontal__price-list {
+  margin-top: 34px;
+  display: grid;
+  gap: 22px;
+  @include mq() {
+    margin-top: 20px;
+  }
+}
+
+.periodontal__price-item-ttl {
+  @include font-size(22);
+  font-weight: 500;
+  line-height: calc(28.8 / 22);
+  color: #00a5b1;
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.periodontal__price-table {
+  margin-top: 18px;
+  margin-bottom: 4px;
+}
+
+.periodontal__price-table table {
+  margin-bottom: 18px;
+}
+
+.general-show.periodontal__price-table table tr th:nth-child(1),
+.general-show.periodontal__price-table table tr td:nth-child(1) {
+  width: 30%;
+  @include mq(xl) {
+    width: 67%;
+  }
+}
+.general-show.periodontal__price-table table tr th:nth-child(2),
+.general-show.periodontal__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.general-show.periodontal__price-table table tr th,
+.general-show.periodontal__price-table table tr td {
+  padding-inline: 50px 53px;
+  @include mq(xxl) {
+    padding-inline: calc(50 / 1440 * 100vw) calc(53 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.periodontal__price-item-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.periodontal__faq {
+  padding-block: 38px 103px;
+  @include mq() {
+    padding-block: 20px 40px;
+  }
 }
