@@ -189,9 +189,9 @@
         <li class="denture__menu-item js-scrollin">
           <div class="denture__menu-item-img">
             <picture>
-              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/denture/img-menu-04.webp"
+              <source srcset="<?php echo esc_url(get_template_directory_uri()); ?>/img/webp/denture/img-menu-04-1.webp"
                 type="image/webp">
-              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/denture/img-menu-04.jpg"
+              <img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/denture/img-menu-04-1.png"
                 alt="コーヌス義歯（コーヌステレスコープ義歯）">
             </picture>
           </div>
