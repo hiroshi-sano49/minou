@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">DENTAL BOTOX</span>
-        <span class="c-ft--jp">歯科でボトックス治療</span>
-      </h1>
+        <h1 class="c-ft--jp">歯科でボトックス治療</h1>
+      </div>
     </div>
   </section>
 

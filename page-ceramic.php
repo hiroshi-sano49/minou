@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl sec-mv__ttl--medical">
+      <div class="sec-mv__ttl sec-mv__ttl--medical">
         <span class="c-ft--en">medical services</span>
-        <span class="c-ft--jp">セラミック・審美治療</span>
-      </h1>
+        <h1 class="c-ft--jp">セラミック・審美治療</h1>
+      </div>
     </div>
   </section>
   <div class="breadcrumb">

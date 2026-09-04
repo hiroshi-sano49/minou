@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">ACCESS</span>
-        <span class="c-ft--jp">診療時間・アクセス</span>
-      </h1>
+        <h1 class="c-ft--jp">診療時間・アクセス</h1>
+      </div>
       <p class="sec-mv__desc">北大阪急行「箕面萱野駅」より徒歩5分。<br>みのおキューズモール近く、<br class="sp">通いやすい立地です。</p>
     </div>
   </section>

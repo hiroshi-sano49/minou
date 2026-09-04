@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl sec-mv__ttl--medical">
+      <div class="sec-mv__ttl sec-mv__ttl--medical">
         <span class="c-ft--en">Treatment of TMD</span>
-        <span class="c-ft--jp">顎関節症の治療</span>
-      </h1>
+        <h1 class="c-ft--jp">顎関節症の治療</h1>
+      </div>
     </div>
   </section>
 
