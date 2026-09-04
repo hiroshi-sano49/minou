@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">STERILIZATION</span>
-        <span class="c-ft--jp">世界基準の安全を、<br class="sp-sm">すべての方へ</span>
-      </h1>
+        <h1 class="c-ft--jp">世界基準の安全を、<br class="sp-sm">すべての方へ</h1>
+      </div>
       <p class="sec-mv__desc">
         翼翔会が約束する『完全な感染予防サイクル』
       </p>

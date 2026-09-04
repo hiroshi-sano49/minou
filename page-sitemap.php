@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">SITE MAP</span>
-        <span class="c-ft--jp">サイトマップ</span>
-      </h1>
+        <h1 class="c-ft--jp">サイトマップ</h1>
+      </div>
     </div>
   </section>
   <section class="sec-sitemap">

@@ -2,10 +2,10 @@
 <main id="page-first-visit" class="wrapper">
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">FLOW</span>
-        <span class="c-ft--jp">初診の方へ</span>
-      </h1>
+        <h1 class="c-ft--jp">初診の方へ</h1>
+      </div>
       <p class="sec-mv__desc">安心してご来院いただくために</p>
     </div>
   </section>

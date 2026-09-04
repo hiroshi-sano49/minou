@@ -4,10 +4,10 @@
 
   <section class="sec-mv mbpc-13">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">Treatment policy</span>
-        <span class="c-ft--jp">治療方針</span>
-      </h1>
+        <h1 class="c-ft--jp">治療方針</h1>
+      </div>
       <p class="sec-mv__desc">翼翔会グループが大切にする6つの治療方針</p>
     </div>
   </section>

@@ -3,10 +3,10 @@
 <main id="page-news" class="wrapper">
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">NEWS</span>
-        <span class="c-ft--jp">お知らせ</span>
-      </h1>
+        <h1 class="c-ft--jp">お知らせ</h1>
+      </div>
       <h2 style="display: none;"></h2>
     </div>
   </section>

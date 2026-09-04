@@ -3,10 +3,10 @@
 <main id="page-column" class="wrapper">
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">COLUMN</span>
-        <span class="c-ft--jp">コラム</span>
-      </h1>
+        <h1 class="c-ft--jp">コラム</h1>
+      </div>
       <h2 style="display: none;"></h2>
     </div>
   </section>

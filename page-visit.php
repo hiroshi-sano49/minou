@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">MEDICAL SERVICES</span>
-        <span class="c-ft--jp">訪問診療</span>
-      </h1>
+        <h1 class="c-ft--jp">訪問診療</h1>
+      </div>
       <p class="sec-mv__desc">通院が難しい方のご自宅や施設へ伺い、歯科治療を行います。</p>
     </div>
   </section>

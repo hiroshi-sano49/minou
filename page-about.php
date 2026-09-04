@@ -3,10 +3,10 @@
 <main id="page-about" class="wrapper">
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">CLINIC CONCEPT</span>
-        <span class="c-ft--jp">医院紹介</span>
-      </h1>
+        <h1 class="c-ft--jp">医院紹介</h1>
+      </div>
       <p class="sec-mv__desc">小さなお子様から大人まで、世界基準のケアで一生涯の健康をサポートします。、</p>
     </div>
   </section>

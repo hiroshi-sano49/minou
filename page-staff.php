@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">STAFF</span>
-        <span class="c-ft--jp">院長・スタッフ紹介</span>
-      </h1>
+        <h1 class="c-ft--jp">院長・スタッフ紹介</h1>
+      </div>
       <p class="sec-mv__desc"> 専門性の高い歯科医師と、ホスピタリティ溢れるスタッフが、<br class="pc">チーム一丸となって患者様の健康をサポートします。 </p>
     </div>
   </section>

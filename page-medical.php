@@ -4,10 +4,10 @@
 
   <section class="sec-mv">
     <div class="sec-mv__ct">
-      <h1 class="sec-mv__ttl">
+      <div class="sec-mv__ttl">
         <span class="c-ft--en">MEDICAL SERVICES</span>
-        <span class="c-ft--jp">診療内容</span>
-      </h1>
+        <h1 class="c-ft--jp">診療内容</h1>
+      </div>
       <p class="sec-mv__desc">当院では、一般歯科から専門的な治療まで、患者様のお悩みやご希望に合わせた幅<br class="pc-sm">広い診療を行っています。</p>
     </div>
   </section>
