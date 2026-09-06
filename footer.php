@@ -98,11 +98,11 @@
       <nav>
         <ul>
           <li><a href="https://yasuoka-dental.net/" target="_blank"><span></span>安岡デンタルオフィス</a></li>
-          <li><a href="https://suminodo.yasuoka-dental.net" target="_blank"><span></span>ヨクシオファミリー歯科住道</a></li>
+          <li><a href="https://suminodo.yasuoka-dental.net" target="_blank"><span></span>ヨクシオ歯科 大東住道</a></li>
           <li><a
               href="https://umeda.yasuoka-dental.net/?_gl=1*1rcm24h*_gcl_au*MTMzODczOTAzNy4xNzc0MjYwMzI1*_ga*MTM4NzExNTM4LjE3NzQyNjAzMjY.*_ga_586XVF9VSV*czE3NzU4NjQ1MjkkbzQkZzAkdDE3NzU4NjQ1MzIkajU3JGwwJGgw"
               target="_blank"><span></span>YASUOKA DENTAL OFFICE UMEDA</a></li>
-          <li><a href="https://katanohoshida.yasuoka-dental.net/" target="_blank"><span></span>ヨクシオ歯科星田院</a></li>
+          <li><a href="https://katanohoshida.yasuoka-dental.net/" target="_blank"><span></span>ヨクシオ歯科 交野星田院</a></li>
           <li><a href="https://yokucio.jp/" target="_blank"><span></span>医療法人 翼翔会</a></li>
           <li><a href="https://yokucio-job.com/" target="_blank"><span></span>医療法人 翼翔会　リクルートサイト</a></li>
         </ul>
