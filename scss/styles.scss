@@ -11,7 +11,6 @@ Module
 ==================================================== */
 @use "header"; //header style Only
 @use "footer"; //footer style Only
-@use "cta";
 
 /* ====================================================
 Pages
@@ -35,10 +34,3 @@ Pages
 @use "news";
 @use "treatment-policy";
 @use "ceramic";
-@use "botox";
-@use "bruxism";
-@use "tmd";
-@use "maternity";
-@use "implant";
-@use "pediatric-ortho";
-@use "root-canal";

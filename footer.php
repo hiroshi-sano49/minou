@@ -9,8 +9,7 @@
   </div>
 
   <div class="footer-flow">
-    <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank"
-      class="footer-flow_01"><strong>初診予約はこちら</strong>
+    <a href="https://reservation.stransa.co.jp/47f4f9361243ec0de8a3020288b7d279" target="_blank" class="footer-flow_01"><strong>初診予約はこちら</strong>
       <p>24時間受付</p>
     </a>
     <!-- <a href="tel:05058404618" target="_blank" class="footer-flow_02">
@@ -44,9 +43,7 @@
           <span class="footer-nav__item-label">院内案内</span>
           <div class="footer-nav__flex">
             <ul class="footer-nav__list">
-              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>general">一般歯科</a>
-              </li>
-              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>root-canal">根管治療</a>
+              <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>general">一般歯科・根管治療</a>
               </li>
               <li class="footer-nav__list-item"><a href=" <?php echo esc_url(home_url('/')); ?>periodontal">歯周病治療</a>
               </li>
@@ -98,11 +95,11 @@
       <nav>
         <ul>
           <li><a href="https://yasuoka-dental.net/" target="_blank"><span></span>安岡デンタルオフィス</a></li>
-          <li><a href="https://suminodo.yasuoka-dental.net" target="_blank"><span></span>ヨクシオ歯科 大東住道</a></li>
+          <li><a href="https://suminodo.yasuoka-dental.net" target="_blank"><span></span>ヨクシオファミリー歯科住道</a></li>
           <li><a
               href="https://umeda.yasuoka-dental.net/?_gl=1*1rcm24h*_gcl_au*MTMzODczOTAzNy4xNzc0MjYwMzI1*_ga*MTM4NzExNTM4LjE3NzQyNjAzMjY.*_ga_586XVF9VSV*czE3NzU4NjQ1MjkkbzQkZzAkdDE3NzU4NjQ1MzIkajU3JGwwJGgw"
               target="_blank"><span></span>YASUOKA DENTAL OFFICE UMEDA</a></li>
-          <li><a href="https://katanohoshida.yasuoka-dental.net/" target="_blank"><span></span>ヨクシオ歯科 交野星田院</a></li>
+          <li><a href="https://katanohoshida.yasuoka-dental.net/" target="_blank"><span></span>ヨクシオ歯科星田院</a></li>
           <li><a href="https://yokucio.jp/" target="_blank"><span></span>医療法人 翼翔会</a></li>
           <li><a href="https://yokucio-job.com/" target="_blank"><span></span>医療法人 翼翔会　リクルートサイト</a></li>
         </ul>
@@ -123,11 +120,11 @@
 <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/setting.js"></script>
 <script>
-window.addEventListener('DOMContentLoaded', function() {
-  if ($('.js-scrollHint'.length > 0)) {
-    new ScrollHint('.js-scrollHint');
-  }
-});
+  window.addEventListener('DOMContentLoaded', function() {
+    if ($('.js-scrollHint'.length > 0)) {
+      new ScrollHint('.js-scrollHint');
+    }
+  });
 </script>
 </body>
 
