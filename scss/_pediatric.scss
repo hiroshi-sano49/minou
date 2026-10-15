@@ -1,158 +1,500 @@
 @use "vars" as *;
 
 .sec-periodontal {
-	padding: 90px 0 83px;
-	@include mq(){
-		padding: 50px 0;
-	}
+  padding: 90px 0 83px;
+  @include mq() {
+    padding: 50px 0;
+  }
 }
 
-#page-pediatric{
-	@include mq(md-min){
-		.preventive-check--periodontal {
-			margin-bottom: 121px;
-			padding: 23px 42px 36px;
-		}
-		.preventive-list__option--periodontal {
-			margin-bottom: 119px;
-			.preventive-list__option-item{
-				padding-bottom: 13px;
-			}
-			.preventive-list__option-icon{
-				width: 114px;
-			}
-		}
-
-	}
+/* ----------------------------------------------------------
+// こんなときはご相談ください
+// ---------------------------------------------------------- */
+.pediatric .c-consultation {
+  padding: 21px 39px 35px;
+  @include mq() {
+    padding: 20px;
+  }
 }
 
-
-.pediatric-menu{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 15px 35px;
-	margin-bottom: 89px;
-	@include mq(){
-		grid-template-columns: 1fr;
-		margin-bottom: 50px;
-		gap: 0;
-	}
-	&__item{
-		border-bottom: 1px solid #D3D3D3;
-		@include flex(0,start,wrap);
-		padding: 7px 21px 29px;
-		@include mq(){
-			align-items: center;
-			padding: 15px 0;
-		}
-		&-ceramic {
-			display: block;
-			padding: 0 0 19px 0;
-			.pediatric-menu__ct {
-				width: 100%;
-				padding: 0;
-			}
-		}
-	}
-	&__img{
-		width: 100px;
-		@include mq(){
-			width: 60px;
-		}
-	}
-	&__ct{
-		width: calc(100% - 100px);
-		padding: 0 0 0 34px;
-		@include mq(){
-			width: calc(100% - 60px);
-			padding: 0 0 0 15px;
-		}
-		&-ttl{
-			display: block;
-			@include font-size(20);
-			font-weight: 500;
-			color: #00A5B1;
-			margin-bottom: 10px;
-			@include mq(){
-				@include font-size(18);
-				margin-bottom: 5px;
-			}
-		}
-	}
+.pediatric .check-list--implant {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px 28px;
 }
 
-.pediatric-oral{
-	background: #EBEFF2;
-	border-radius: 19px;
-	text-align: center;
-	@include fts(14,21.8);
-	padding: 42px 40px;
-	margin-bottom: 120px;
-	@include mq(){
-		border-radius: 10px;
-		padding: 20px 15px;
-		margin-bottom: 50px;
-	}
-	p{
-		margin-bottom: 31px;
-		font-weight: 500;
-		@include mq(){
-			margin-bottom: 20px;
-		}
-	}
-	&__ttl{
-		display: block;
-		text-align: center;
-		@include font-size(30);
-		line-height: 1.4;
-		font-weight: 500;
-		margin-bottom: 28px;
-		@include mq(){
-			@include font-size(22);
-			margin-bottom: 15px;
-		}
-	}
-	&__block{
-		@include flex(0,center,wrap);
-		background: white;
-		border-radius: 19px;
-		padding: 23px 26px 30px;
-		@include mq(){
-			border-radius: 10px;
-			padding: 20px 15px;
-		}
-		&-ttl{
-			width: 35.5%;
-			display: block;
-			font-weight: 600;
-			font-size: 2rem;
-			text-align: left;
-			padding: 0 0 0 4%;
-			@include mq(xxl){
-				padding-left: 15px;
-			}
-			@include mq(xl){
-				width: 100%;
-				margin-bottom: 15px;
-			}
-			@include mq(){
-				@include font-size(18);
-				margin-bottom: 10px;
-			}
-		}
-		.check-list{
-			width: 64.5%;
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 14px 4px;
-			text-align: left;
-			@include mq(xl){
-				width: 100%;
-			}
-			@include mq(){
-				grid-template-columns: 1fr;
-				gap: 10px;
-			}
-		}
-	}
+/* ----------------------------------------------------------
+// 「乳歯はどうせ生え変わる」── その油断が、永久歯に影響します
+// ---------------------------------------------------------- */
+.pediatric__attention {
+  margin-top: 29px;
+  padding-block: 47px 48px;
+  background-color: #ebeff2;
+  @include mq() {
+    margin-top: 0;
+    padding-block: 25px 20px;
+  }
+}
+
+.pediatric__attention-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq() {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.pediatric__attention-wrapper__img {
+  width: 31%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.pediatric__attention-wrapper__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/285;
+  border-radius: 19px;
+}
+
+.pediatric__attention-wrapper__content {
+  width: 65.5%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.pediatric__attention-wrapper__title {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(46.8 / 30);
+  @include mq() {
+    @include font-size(22);
+  }
+}
+
+.pediatric__attention-wrapper__text {
+  margin-top: 30px;
+  line-height: calc(30.8 / 16);
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+.pediatric__attention-wrapper__text span {
+  font-weight: bold;
+  color: #00a5b1;
+}
+
+/* ----------------------------------------------------------
+// 乳歯のむし歯を放置すると
+// ---------------------------------------------------------- */
+.pediatric__trouble {
+  padding-block: 101px 65px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.pediatric__trouble .c-ttl__03 {
+  margin-bottom: 14px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.pediatric__trouble-table {
+  margin-bottom: 25px;
+}
+
+.general-show.pediatric__trouble-table table tr {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.general-show.pediatric__trouble-table table tr td:nth-child(1) {
+  width: 9%;
+  font-weight: bold;
+  @include mq(xl) {
+    width: 29%;
+  }
+}
+
+.general-show.pediatric__trouble-table table tr td {
+  padding: 18px 0px 19px 42px;
+  @include mq(xxl) {
+    padding: 18px calc(20 / 1440 * 100vw) 19px calc(42 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 歯医者さんデビューはいつから？
+// ---------------------------------------------------------- */
+.pediatric__debut {
+  padding-block: 45px 48px;
+  background-color: #ebeff2;
+  @include mq() {
+    padding-block: 40px 30px;
+  }
+}
+
+.pediatric__debut-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq() {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.pediatric__debut-wrapper__img {
+  width: 31%;
+  @include mq() {
+    width: 100%;
+  }
+}
+.pediatric__debut-wrapper__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/285;
+  border-radius: 19px;
+}
+
+.pediatric__debut-wrapper__content {
+  width: 65.5%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.pediatric__debut-wrapper__title {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(46.8 / 30);
+  @include mq() {
+    @include font-size(22);
+  }
+}
+
+.pediatric__debut-wrapper__text {
+  margin-top: 30px;
+  line-height: calc(30.8 / 16);
+  @include mq() {
+    margin-top: 15px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 当院の小児歯科 ── 4つの特徴
+// ---------------------------------------------------------- */
+.pediatric__features {
+  padding-block: 79px 30px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.pediatric__features-ttl {
+  margin-bottom: 42px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.pediatric__features-list {
+  display: grid;
+  counter-reset: pediatric;
+  margin-bottom: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 33px;
+  @include mq() {
+    margin-bottom: 15px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.pediatric__features-item {
+  background: #faf4e2;
+  border-radius: 19px;
+  position: relative;
+  padding: 41px 32px 33px 168px;
+  @include mq(xl) {
+    padding-left: 80px;
+    padding: 23px 15px 35px 90px;
+  }
+  @include mq() {
+    padding: 23px 15px 35px 90px;
+  }
+}
+
+.pediatric__features-item:before {
+  counter-increment: pediatric;
+  content: counter(pediatric, decimal-leading-zero);
+  @include font-size(68);
+  line-height: 1;
+  font-weight: bold;
+  font-family: $font-en;
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 19px;
+  left: 22px;
+  @include mq(xl) {
+    @include font-size(50);
+  }
+  @include mq() {
+    @include font-size(40);
+  }
+}
+
+.pediatric__features-item:after {
+  content: "";
+  width: 105px;
+  height: 89px;
+  display: block;
+  background: url("../img/pediatric/icon-features-01.png") no-repeat center
+    center / contain;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  @include mq(xl) {
+    width: 70px;
+    height: 70px;
+    left: 10px;
+    bottom: 20px;
+  }
+}
+
+.pediatric__features-item:nth-child(2)::after {
+  width: 93px;
+  height: 93px;
+  left: 35px;
+  background: url("../img/pediatric/icon-features-02.png") no-repeat center
+    center / contain;
+  @include mq(xl) {
+    width: 70px;
+    height: 70px;
+    left: 12px;
+    bottom: 20px;
+  }
+}
+
+.pediatric__features-item:nth-child(3)::after {
+  width: 82px;
+  height: 92px;
+  left: 44px;
+  background: url("../img/pediatric/icon-features-03.png") no-repeat center
+    center / contain;
+  @include mq(xl) {
+    width: 60px;
+    height: 70px;
+    left: 15px;
+    bottom: 20px;
+  }
+}
+
+.pediatric__features-item:nth-child(4)::after {
+  width: 92px;
+  height: 107px;
+  left: 41px;
+  background: url("../img/pediatric/icon-features-04.png") no-repeat center
+    center / contain;
+  @include mq(xl) {
+    width: 70px;
+    height: 80px;
+    left: 12px;
+    bottom: 20px;
+  }
+}
+
+.pediatric__features-item-ttl {
+  @include font-size(20);
+  font-weight: 500;
+  line-height: calc(28.8 / 20);
+  @include mq() {
+    @include font-size(18);
+  }
+}
+
+.pediatric__features-item-text {
+  margin-top: 19px;
+  @include mq() {
+    margin-top: 10px;
+  }
+}
+
+/* ----------------------------------------------------------
+// お子様の予防メニュー
+// ---------------------------------------------------------- */
+.pediatric__menu {
+  padding-block: 49px 30px;
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.pediatric__menu-ttl {
+  margin-bottom: 16px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.pediatric__menu-list .c-menu__item:nth-child(5) .c-menu__img {
+  text-align: center;
+}
+
+.pediatric__menu-list .c-menu__item:nth-child(5) .c-menu__img img {
+  width: 67px;
+}
+
+/* ----------------------------------------------------------
+// お口の機能の発達も診ます 口腔機能発達不全症
+// ---------------------------------------------------------- */
+.pediatric__oral {
+  padding-block: 9px 30px;
+
+  @include mq() {
+    padding-block: 20px;
+  }
+}
+
+.pediatric__oral-wrapper {
+  padding: 32px 47px 40px 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ebeff2;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px 20px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.pediatric__oral-img {
+  margin-top: 13px;
+  width: 34%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.pediatric__oral-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 375/285;
+  border-radius: 19px;
+}
+
+.pediatric__oral-content {
+  width: 59%;
+  @include mq() {
+    width: 100%;
+  }
+}
+
+.pediatric__oral-content-ttl {
+  @include font-size(30);
+  font-weight: 500;
+  line-height: calc(44.8 / 30);
+  @include mq() {
+    @include font-size(24);
+  }
+}
+
+.pediatric__oral-content-text {
+  margin-top: 20px;
+  padding: 27px 35px 31px;
+  line-height: calc(21.8 / 15);
+  background-color: #fff;
+  border-radius: 19px;
+  @include mq() {
+    padding: 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 治療の流れ
+// ---------------------------------------------------------- */
+.pediatric__flow {
+  padding-block: 82px 30px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+/* ----------------------------------------------------------
+// 料金について（税込）
+// ---------------------------------------------------------- */
+.pediatric__price {
+  padding-block: 82px 30px;
+  @include mq() {
+    padding-block: 40px 20px;
+  }
+}
+
+.pediatric__price-ttl {
+  margin-bottom: 36px;
+  @include mq() {
+    margin-bottom: 20px;
+  }
+}
+
+.pediatric__price-table {
+  margin-top: 30px;
+  margin-bottom: 4px;
+}
+
+.pediatric__price-table table {
+  margin-bottom: 15px;
+}
+
+.general-show.pediatric__price-table table tr th:nth-child(1),
+.general-show.pediatric__price-table table tr td:nth-child(1) {
+  width: 20%;
+  @include mq(xl) {
+    width: 35%;
+  }
+}
+.general-show.pediatric__price-table table tr th:nth-child(2),
+.general-show.pediatric__price-table table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.general-show.pediatric__price-table table tr th,
+.general-show.pediatric__price-table table tr td {
+  padding: 18px 58px 19px 48px;
+  @include mq(xxl) {
+    padding: 18px calc(58 / 1440 * 100vw) 19px calc(48 / 1440 * 100vw);
+  }
+  @include mq() {
+    padding: 6px 7px;
+  }
+}
+
+.pediatric__price-table-txt {
+  font-weight: 400;
+  color: #858585;
+}
+
+/* ----------------------------------------------------------
+// よくあるご質問
+// ---------------------------------------------------------- */
+.pediatric__faq {
+  padding-block: 79px 83px;
+  @include mq() {
+    padding-block: 20px 40px;
+  }
 }

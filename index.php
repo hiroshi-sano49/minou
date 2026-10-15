@@ -200,7 +200,7 @@
 							<img src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index/img-point-04.jpg" alt="Equipment">
 						</picture>
 					</div>
-					<h4 class="point-list__desc">患者様にとって一番よい治療を提供xするための最先端、最高峰の設備</h4>
+					<h4 class="point-list__desc">患者様にとって一番よい治療を提供するための最先端、最高峰の設備</h4>
 					<p class="c-txt__02 mh">CT、マイクロスコープ、口腔内スキャナーなど、大学病院レベルの最新設備を導入し、精密な診断と治療を実現します。</p>
 				</li>
 				<li class="point-list__item js-scrollin delay04">

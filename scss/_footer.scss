@@ -276,19 +276,11 @@ Footer
 
 	&_01,
 	&_02 {
-		height: 70px;
+		height: 62px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		border-radius: 8px;
-	}
-	&_02-sp {
-		flex-direction: row;
-		gap: 9px;
-		font-size: 19px;
-		img {
-			width: 26px;
-		}
 	}
 }
