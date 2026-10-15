@@ -829,21 +829,7 @@
   table
   tr
   th:nth-child(2),
-.orthodontics__price-item:nth-child(2)
-  .general-show.orthodontics__price-table
-  table
-  tr
-  td:nth-child(2) {
-  width: 29.5%;
-  padding-inline: 10px;
-  @include mq(xxl) {
-    width: 34.5%;
-    padding-inline: calc(10 / 1440 * 100vw);
-  }
-  @include mq() {
-    padding: 6px 7px;
-  }
-}
+
 .orthodontics__price-item:nth-child(2)
   .general-show.orthodontics__price-table
   table

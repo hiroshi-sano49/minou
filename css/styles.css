@@ -12636,24 +12636,6 @@ a.p-banner {
 }
 
 .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(2),
-.orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(2) {
-  width: 29.5%;
-  padding-inline: 10px;
-}
-@media screen and (max-width: 1400px) {
-  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(2),
-  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(2) {
-    width: 34.5%;
-    padding-inline: 0.6944444444vw;
-  }
-}
-@media screen and (max-width: 834px) {
-  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(2),
-  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(2) {
-    padding: 6px 7px;
-  }
-}
-
 .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(3),
 .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(3) {
   color: #4c4948;
@@ -12661,12 +12643,14 @@ a.p-banner {
   padding-inline: 10px 55px;
 }
 @media screen and (max-width: 1400px) {
+  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(2),
   .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(3),
   .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(3) {
     padding-inline: 0.6944444444vw;
   }
 }
 @media screen and (max-width: 834px) {
+  .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(2),
   .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr th:nth-child(3),
   .orthodontics__price-item:nth-child(2) .general-show.orthodontics__price-table table tr td:nth-child(3) {
     padding: 6px 7px;
@@ -18294,6 +18278,4 @@ a.p-banner {
   margin-top: 9px;
   line-height: 1.8625;
   text-align: center;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
