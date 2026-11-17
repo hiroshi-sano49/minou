@@ -4006,6 +4006,7 @@ Footer
   .footer-privacy {
     width: 100%;
     margin-bottom: 25px;
+    flex-direction: column;
   }
 }
 .footer-privacy__item a {
@@ -10125,7 +10126,8 @@ a.p-banner {
   .sec-about .c-ttl__01 strong {
     top: 17%;
   }
-  .sec-about .point-heading__icon-before, .sec-about .point-heading__icon-after {
+  .sec-about .point-heading__icon-before,
+  .sec-about .point-heading__icon-after {
     border-bottom: 20px;
   }
 }
@@ -10204,8 +10206,8 @@ a.p-banner {
 .about-block__ct-ttl .c-ft--en {
   font-size: 3.1rem;
   font-weight: bold;
-  background: #EE9394;
-  background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 9px;
@@ -10242,8 +10244,8 @@ a.p-banner {
   content: "";
   width: 60px;
   height: 4px;
-  background: #EE9394;
-  background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
   position: absolute;
   top: 13px;
   left: 4px;
@@ -10387,8 +10389,8 @@ a.p-banner {
   line-height: 1;
   font-weight: bold;
   font-family: "Teachers", sans-serif;
-  background: #EE9394;
-  background: linear-gradient(to right, #EE9394 0%, #BD92DA 100%);
+  background: #ee9394;
+  background: linear-gradient(to right, #ee9394 0%, #bd92da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
@@ -10449,7 +10451,8 @@ a.p-banner {
     margin: 0 3px 3px;
   }
 }
-.about-list__tag li a, .about-list__tag li span {
+.about-list__tag li a,
+.about-list__tag li span {
   display: block;
   border-radius: 40px;
   font-size: 1.1rem;
@@ -10457,7 +10460,8 @@ a.p-banner {
   padding: 6px 12px;
 }
 @media screen and (max-width: 834px) {
-  .about-list__tag li a, .about-list__tag li span {
+  .about-list__tag li a,
+  .about-list__tag li span {
     padding: 6px;
     font-size: 1rem;
   }
@@ -10614,6 +10618,37 @@ a.p-banner {
     height: 10px;
     top: 8px;
   }
+}
+.about-infomation__ttl2 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.about-infomation2 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.about-infomation2__weight {
+  font-weight: 600;
+}
+.about-infomation2__weight li {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+.customer-harassment {
+  scroll-margin-top: 160px;
+}
+@media screen and (max-width: 768px) {
+  .customer-harassment {
+    scroll-margin-top: 100px;
+  }
+}
+.customer-harassment_text {
+  text-align: right;
+}
+.customer-harassment_margin {
+  margin-bottom: 120px;
 }
 
 @media screen and (max-width: 834px) {

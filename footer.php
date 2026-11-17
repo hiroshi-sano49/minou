@@ -112,6 +112,8 @@
       <ul class="footer-privacy">
         <!-- <li class="footer-privacy__item"><a href=" <?php echo esc_url(home_url('/')); ?>privacy">プライバシーポリシー</a></li> -->
         <li class="footer-privacy__item"><a href=" <?php echo esc_url(home_url('/')); ?>sitemap">サイトマップ</a></li>
+        <li class="footer-privacy__item"><a href=" <?php echo esc_url(home_url('/')); ?>about#customer-harassment">カスタマーハラスメントに対する基本方針
+          </a></li>
       </ul>
       <p class="footer-copyright">&copy; 2026 Yokushio Dental Clinic Minoh Kayano. All Rights Reserved.</p>
     </div>
@@ -123,11 +125,11 @@
 <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 <script src="<?php echo esc_url(get_template_directory_uri()); ?>/js/setting.js"></script>
 <script>
-window.addEventListener('DOMContentLoaded', function() {
-  if ($('.js-scrollHint'.length > 0)) {
-    new ScrollHint('.js-scrollHint');
-  }
-});
+  window.addEventListener('DOMContentLoaded', function() {
+    if ($('.js-scrollHint'.length > 0)) {
+      new ScrollHint('.js-scrollHint');
+    }
+  });
 </script>
 </body>
 
